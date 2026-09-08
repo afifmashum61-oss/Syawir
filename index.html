@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Pembelajaran Bahasa Arab Kelas 11 - الصحة والرعاية الصحية</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emerald: {
+              850: '#065f46',
+            },
+            teal: {
+              950: '#042f2e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen flex flex-col text-stone-800 bg-stone-50">
+
+  <!-- Top Announcement Bar (Kurikulum Berbasis Cinta Identity) -->
+  <div class="bg-gradient-to-r from-rose-600 via-rose-500 to-teal-700 text-white text-xs md:text-sm py-2 px-4 text-center font-medium shadow-sm flex items-center justify-center gap-2">
+    <span>✨ Kurikulum Berbasis Cinta (Kemenag Terbaru)</span>
+    <span class="hidden md:inline">•</span>
+    <span class="hidden md:inline">Bahasa Arab SMA/MA Kelas XI: Bab Kesehatan & Perawatan Kesehatan (الصحة والرعاية الصحية)</span>
+  </div>
+
+  <!-- Main Header & Navigation -->
+  <header class="sticky top-0 z-50 glass-card bg-white/90 border-b border-stone-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-3">
+      
+      <!-- Brand Logo & Title -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-700 to-teal-500 text-white flex items-center justify-center font-bold text-xl shadow-md">
+          ❤️
+        </div>
+        <div>
+          <h1 class="font-bold text-lg md:text-xl text-teal-900 leading-tight">MedArabi <span class="text-rose-600 font-extrabold">Cinta</span></h1>
+          <p class="text-xs text-stone-500 font-medium">Bahasa Arab Kelas 11 • الصحة والرعاية الصحية</p>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <nav class="flex items-center gap-1.5 overflow-x-auto py-1 max-w-full no-scrollbar">
+        <button onclick="switchTab('sec-beranda', this)" data-target="sec-beranda" class="tab-btn active bg-teal-700 text-white shadow-md px-3.5 py-2 rounded-xl text-xs md:text-sm font-semibold transition flex items-center gap-1.5 whitespace-nowrap">
+          <span>🏠</span> Beranda
+        </button>
+        <button onclick="switchTab('sec-mufrodat', this)" data-target="sec-mufrodat" class="tab-btn px-3.5 py-2 rounded-xl text-xs md:text-sm font-semibold text-stone-600 hover:bg-stone-100 transition flex items-center gap-1.5 whitespace-nowrap">
+          <span>📚</span> Mufrodat & Af'al
+        </button>
+        <button onclick="switchTab('sec-istima', this)" data-target="sec-istima" class="tab-btn px-3.5 py-2 rounded-xl text-xs md:text-sm font-semibold text-stone-600 hover:bg-stone-100 transition flex items-center gap-1.5 whitespace-nowrap">
+          <span>🎧</span> Istima'
+        </button>
+        <button onclick="switchTab('sec-qiroah', this)" data-target="sec-qiroah" class="tab-btn px-3.5 py-2 rounded-xl text-xs md:text-sm font-semibold text-stone-600 hover:bg-stone-100 transition flex items-center gap-1.5 whitespace-nowrap">
+          <span>📜</span> Qiroah
+        </button>
+        <button onclick="switchTab('sec-quiz', this)" data-target="sec-quiz" class="tab-btn px-3.5 py-2 rounded-xl text-xs md:text-sm font-semibold text-stone-600 hover:bg-stone-100 transition flex items-center gap-1.5 whitespace-nowrap">
+          <span>✍️</span> Latihan Soal
+        </button>
+        <button onclick="switchTab('sec-refleksi', this)" data-target="sec-refleksi" class="tab-btn px-3.5 py-2 rounded-xl text-xs md:text-sm font-semibold text-stone-600 hover:bg-stone-100 transition flex items-center gap-1.5 whitespace-nowrap">
+          <span>💚</span> Refleksi Cinta
+        </button>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+    <!-- ==================== SECTION 1: BERANDA ==================== -->
+    <section id="sec-beranda" class="content-section space-y-8">
+      
+      <!-- Hero Banner -->
+      <div class="relative rounded-3xl overflow-hidden shadow-xl bg-gradient-to-br from-teal-900 via-teal-800 to-rose-900 text-white p-8 md:p-12">
+        <div class="absolute right-0 top-0 opacity-10 font-arabic text-9xl select-none translate-x-12 -translate-y-8">الصحة</div>
+        <div class="relative z-10 max-w-3xl space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-rose-200 text-xs font-semibold">
+            <span>🌸 Pendekatan Afektif & Humanis Kemenag</span>
+          </div>
+          <h2 class="text-3xl md:text-5xl font-extrabold leading-tight">
+            Menjaga Kesehatan Adalah Wujud Cinta & Syukur
+          </h2>
+          <p class="text-stone-200 text-sm md:text-base leading-relaxed">
+            Selamat datang di media pembelajaran interaktif Bahasa Arab Kelas 11 Bab <span class="font-arabic text-xl font-bold text-yellow-300">الصحة والرعاية الصحية</span> (Kesehatan dan Perawatan Kesehatan). Belajar dengan rasa gembira, penuh kasih sayang, dan motivasi positif!
+          </p>
+          <div class="pt-2 flex flex-wrap gap-3">
+            <button onclick="switchTab('sec-mufrodat')" class="px-6 py-3 rounded-2xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-sm shadow-lg hover:shadow-rose-600/30 transition flex items-center gap-2">
+              <span>Mulai Belajar Mufrodat</span> ➔
+            </button>
+            <button onclick="switchTab('sec-quiz')" class="px-6 py-3 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold text-sm transition">
+              Coba Latihan Soal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pesan Cinta Guru & Nilai Karakter -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-rose-50/80 border border-rose-200/80 space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center text-2xl font-bold">
+            ❤️
+          </div>
+          <h3 class="font-bold text-stone-900 text-lg">Cinta Diri & Tubuh</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Tubuh kita adalah amanah dari Allah. Menjaga nutrisi (<span class="font-arabic text-sm">الغِذَاء الطَّيِّب</span>) dan beristirahat yang cukup adalah bentuk cinta kita pada diri sendiri.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-teal-50/80 border border-teal-200/80 space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center text-2xl font-bold">
+            🌿
+          </div>
+          <h3 class="font-bold text-stone-900 text-lg">Ketenangan Jiwa</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Kesehatan tak hanya fisik, tapi juga jiwa (<span class="font-arabic text-sm">رِيَاضَةُ النَّفْس</span>). Hiasilah harimu dengan dzikir (<span class="font-arabic text-sm">تِلَاوَةُ الأَذْكَار</span>) dan shalat sunnah.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-amber-50/80 border border-amber-200/80 space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-2xl font-bold">
+            🌟
+          </div>
+          <h3 class="font-bold text-stone-900 text-lg">Apresiasi Belajar</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Tidak ada kegagalan dalam belajar Bahasa Arab. Setiap kekhilafan adalah proses menuju pemahaman yang lebih dalam dan penuh kebaikan.
+          </p>
+        </div>
+      </div>
+
+      <!-- Capaian & Tujuan Pembelajaran -->
+      <div class="p-6 md:p-8 rounded-3xl bg-white border border-stone-200 space-y-6 shadow-sm">
+        <h3 class="text-xl font-bold text-teal-900 flex items-center gap-2">
+          <span>🎯</span> Capaian & Tujuan Pembelajaran (Kemenag Kelas XI)
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+          <div class="space-y-3 p-4 rounded-xl bg-stone-50 border border-stone-200/80">
+            <h4 class="font-bold text-teal-800 flex items-center gap-1.5">
+              <span>📌</span> Capaian Pembelajaran (CP)
+            </h4>
+            <ul class="list-disc list-inside space-y-2 text-stone-600 text-xs md:text-sm">
+              <li>Peserta didik mampu memahami teks lisan dan tertulis tentang tema <span class="font-arabic">الصحة والرعاية الصحية</span>.</li>
+              <li>Peserta didik mampu menggunakan kosakata (<span class="font-arabic">المفردات</span>) dan struktur kata kerja (<span class="font-arabic">الأفعال</span>) secara komunikatif.</li>
+              <li>Peserta didik mampu merefleksikan nilai-nilai kesyukuran dan kepedulian kesehatan dalam kehidupan sehari-hari.</li>
+            </ul>
+          </div>
+
+          <div class="space-y-3 p-4 rounded-xl bg-stone-50 border border-stone-200/80">
+            <h4 class="font-bold text-rose-800 flex items-center gap-1.5">
+              <span>🚀</span> Tujuan Pembelajaran (TP)
+            </h4>
+            <ul class="list-disc list-inside space-y-2 text-stone-600 text-xs md:text-sm">
+              <li>Mengenal dan melafalkan 17 kosakata & ungkapan kesehatan dengan benar.</li>
+              <li>Menganalisis 8 pasangan fi'il madhi, mudhari', dan masdar seputar perawatan kesehatan.</li>
+              <li>Mendengarkan percakapan dokter-pasien (Istima') dan menjawab pertanyaan pemahaman.</li>
+              <li>Membaca teks Qiroah berharakat tentang kesehatan dalam Islam secara tepat.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ==================== SECTION 2: MUFRODAT & AF'AL ==================== -->
+    <section id="sec-mufrodat" class="content-section hidden space-y-8">
+      
+      <!-- Section Title Header -->
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-white p-6 rounded-3xl border border-stone-200 shadow-sm">
+        <div>
+          <span class="text-xs font-bold text-teal-700 uppercase tracking-wider">Materi Utama</span>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-stone-900 font-arabic">كشف المفردات والأفعال</h2>
+          <p class="text-xs md:text-sm text-stone-500 mt-1">Kosakata, Ungkapan Kesehatan & Tabel Kata Kerja (Fi'il Madhi, Mudhari', Masdar)</p>
+        </div>
+        
+        <!-- Search bar -->
+        <div class="relative min-w-[260px]">
+          <input type="text" id="search-mufrodat" placeholder="Cari kosakata / arti..." class="w-full pl-10 pr-4 py-2.5 rounded-2xl bg-stone-100 border border-stone-200 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+          <span class="absolute left-3 top-3 text-stone-400">🔍</span>
+        </div>
+      </div>
+
+      <!-- Part A: Mufrodat & Ungkapan Flashcards -->
+      <div class="space-y-4">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-bold text-teal-900 flex items-center gap-2">
+            <span>🎴</span> Ungkapan & Kosakata Interaktif (<span class="font-arabic text-xl">المفردات والعبارات</span>)
+          </h3>
+          <span class="text-xs text-stone-500 font-medium">Klik kartu untuk melihat arti & kalimat</span>
+        </div>
+
+        <!-- Flashcard Grid -->
+        <div id="mufrodat-cards-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Part B: Tabel Af'al (Kata Kerja) -->
+      <div class="space-y-4 pt-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="text-lg font-bold text-rose-900 flex items-center gap-2">
+              <span>📝</span> Tabel Kata Kerja (<span class="font-arabic text-xl">جدول الأفعال</span>)
+            </h3>
+            <p class="text-xs text-stone-500">Berdasarkan buku paket Bahasa Arab Kelas 11 Kemenag</p>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto rounded-2xl border border-stone-200 bg-white shadow-sm">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-teal-900 text-white text-sm font-semibold">
+                <th class="px-4 py-3.5 text-center">No</th>
+                <th class="px-4 py-3.5 text-center font-arabic text-lg">ماض (Madhi)</th>
+                <th class="px-4 py-3.5 text-center font-arabic text-lg">مضارع (Mudhari')</th>
+                <th class="px-4 py-3.5 text-center font-arabic text-lg">مصدر (Masdar)</th>
+              </tr>
+            </thead>
+            <tbody id="afal-table-body">
+              <!-- Populated by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ==================== SECTION 3: ISTIMA' (LISTENING) ==================== -->
+    <section id="sec-istima" class="content-section hidden space-y-8">
+      
+      <div class="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm space-y-4">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <span class="text-xs font-bold text-rose-600 uppercase tracking-wider">Maharah Istima' (Buku Paket Kemenag Terbaru)</span>
+            <h2 class="text-2xl md:text-3xl font-extrabold text-stone-900 font-arabic">الإِسْتِمَاع - MATERI INTI</h2>
+            <p class="text-xs md:text-sm text-stone-500 mt-1">Dengarkan teks materi inti tentang cara menjaga kesehatan tubuh dan jiwa secara interaktif</p>
+          </div>
+
+          <!-- Audio Controls -->
+          <div class="flex items-center gap-3 bg-stone-100 p-2 rounded-2xl border border-stone-200">
+            <span class="text-xs font-semibold text-stone-600 pl-2">Kecepatan:</span>
+            <button id="rate-1x" onclick="setAudioRate(1.0)" class="px-3 py-1 bg-teal-700 text-white rounded-lg text-xs font-bold transition">1.0x Normal</button>
+            <button id="rate-08x" onclick="setAudioRate(0.8)" class="px-3 py-1 bg-stone-200 text-stone-700 rounded-lg text-xs transition">0.8x Pelan</button>
+          </div>
+        </div>
+
+        <!-- Master Play Button for Materi Inti -->
+        <div class="pt-2 flex items-center justify-between bg-gradient-to-r from-teal-50 to-rose-50 p-4 rounded-2xl border border-teal-100">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-rose-600 text-white flex items-center justify-center font-bold text-lg">📖</div>
+            <div>
+              <h4 class="font-bold text-stone-800 text-sm">Teks Materi Inti Istima' (مَاذَا نَفْعَلُ لِيَكُوْنَ جِسْمُنَا صَحِيْحًا؟)</h4>
+              <p class="text-xs text-stone-500">Putar seluruh bacaan materi inti secara lengkap</p>
+            </div>
+          </div>
+          <button id="btn-play-materi-inti" onclick="playAllMateriInti()" class="px-5 py-2.5 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs shadow-md transition flex items-center gap-2">
+            <span>▶️ Putar Seluruh Materi Inti</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Container 1: Materi Inti (Buku Paket) -->
+      <div id="istima-materi-container" class="max-w-4xl mx-auto space-y-6">
+        <!-- Populated by JS -->
+      </div>
+
+      <!-- Subtitle for Dialogue Practice -->
+      <div class="max-w-4xl mx-auto pt-8 border-t border-stone-200 space-y-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-teal-900 flex items-center gap-2">
+              <span>💬</span> Pengayaan Istima': Percakapan di Klinik (<span class="font-arabic">فِي العِيَادَةِ</span>)
+            </h3>
+            <p class="text-xs text-stone-500">Dialog antara Dokter (الطبيب) dan Umar (عمر)</p>
+          </div>
+          <button id="btn-play-all-istima" onclick="playAllIstima()" class="px-4 py-2 rounded-xl bg-teal-700 hover:bg-teal-800 text-white font-bold text-xs shadow-sm transition flex items-center gap-1.5">
+            <span>▶️ Putar Dialog</span>
+          </button>
+        </div>
+
+        <!-- Container 2: Dialogue Bubbles -->
+        <div id="istima-dialog-container" class="space-y-4">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ==================== SECTION 4: QIROAH (READING) ==================== -->
+    <section id="sec-qiroah" class="content-section hidden space-y-8">
+      
+      <div class="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm space-y-4">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <span class="text-xs font-bold text-teal-700 uppercase tracking-wider">Maharah Qiroah (Buku Paket Kemenag Terbaru)</span>
+            <h2 class="text-2xl md:text-3xl font-extrabold text-teal-900 font-arabic">الحَيَاةُ الصِّحِّيَّةُ (Kehidupan yang Sehat)</h2>
+            <p class="text-xs md:text-sm text-stone-500 mt-1">Teks bacaan bahasa Arab berharakat presisi bagian (أ), (ب), (ج) beserta latihan soal Benar / Salah interaktif</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Container 1: Teks Bacaan Qiroah -->
+      <div id="qiroah-paragraphs" class="max-w-4xl mx-auto space-y-4">
+        <!-- Populated by JS -->
+      </div>
+
+      <!-- Container 2: Tadrib 1 - Soal Benar / Salah (صَحِيْح أَوْ خَطَأ) -->
+      <div class="max-w-4xl mx-auto pt-8 border-t border-stone-200 space-y-4">
+        <div class="bg-gradient-to-r from-rose-600 to-teal-800 text-white p-6 rounded-3xl shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <div>
+            <span class="text-xs font-bold text-rose-200 uppercase tracking-wider">تدريبات على القراءة - Tadrib 1</span>
+            <h3 class="text-2xl font-bold font-arabic text-yellow-300 mt-1">تدريب (١) : قُلْ (صَحِيْح) أَوْ (خَطَأ) وَفْقًا لِنَصِّ القِرَاءَةِ وَصَحِّحِ الخَطَأَ !</h3>
+            <p class="text-xs text-stone-100 mt-1">Pilihlah Benar (صَحِيْح) atau Salah (خَطَأ) berdasarkan teks Qiroah di atas, dilengkapi pembetulan otomatis!</p>
+          </div>
+        </div>
+
+        <div id="qiroah-tadrib1-container" class="space-y-4">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Container 3: Tadrib 2 - Tanya Jawab Pemahaman (أَجِبْ عَنِ الأَسْئِلَةِ) -->
+      <div class="max-w-4xl mx-auto pt-8 border-t border-stone-200 space-y-4">
+        <div class="bg-teal-900 text-white p-6 rounded-3xl shadow-sm">
+          <span class="text-xs font-bold text-teal-200 uppercase tracking-wider">تدريبات على القراءة - Tadrib 2</span>
+          <h3 class="text-2xl font-bold font-arabic text-yellow-300 mt-1">تدريب (٢) : أَجِبْ عَنِ الأَسْئِلَةِ الآتِيَةِ وَفْقًا لِنَصِّ القِرَاءَةِ !</h3>
+          <p class="text-xs text-stone-200 mt-1">Jawablah pertanyaan-pertanyaan pemahaman berikut sesuai isi teks Qiroah (Dilengkapi Kunci Jawaban & Audio)</p>
+        </div>
+
+        <div id="qiroah-tadrib2-container" class="space-y-4">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ==================== SECTION 5: LATIHAN SOAL (QUIZ) ==================== -->
+    <section id="sec-quiz" class="content-section hidden space-y-8">
+      
+      <div class="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm">
+        <span class="text-xs font-bold text-rose-600 uppercase tracking-wider">Asesmen Interaktif Berbasis Cinta</span>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-stone-900 font-arabic">الاختبار المحبوب (Kuis Cinta Ilmu)</h2>
+        <p class="text-xs md:text-sm text-stone-500 mt-1">Uji pemahamanmu seputar Mufrodat, Af'al, Istima', dan Qiroah dengan umpan balik afektif yang ramah!</p>
+      </div>
+
+      <!-- Quiz Questions Container -->
+      <div id="quiz-container" class="max-w-4xl mx-auto">
+        <!-- Populated by JS -->
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center pt-4">
+        <button onclick="submitQuiz()" class="px-8 py-4 rounded-2xl bg-gradient-to-r from-rose-600 to-teal-700 text-white font-extrabold text-base shadow-xl hover:shadow-rose-600/30 hover:scale-[1.02] transition transform">
+          ✨ Selesaikan & Lihat Hasil Berbasis Cinta
+        </button>
+      </div>
+
+      <!-- Score & Encouragement Result Card (Hidden by default) -->
+      <div id="quiz-result-card" class="hidden max-w-2xl mx-auto p-8 rounded-3xl bg-white border-2 border-rose-200 shadow-2xl text-center space-y-4">
+        <div class="w-16 h-16 mx-auto rounded-full bg-rose-100 text-rose-600 flex items-center justify-center text-3xl font-extrabold">
+          ❤️
+        </div>
+        <div class="text-4xl font-extrabold text-teal-900">
+          Skor Kamu: <span id="final-score" class="text-rose-600">0</span> / 100
+        </div>
+        <h3 id="score-title" class="text-xl font-bold text-stone-800">Title</h3>
+        <p id="score-message" class="text-sm text-stone-600 leading-relaxed bg-rose-50 p-4 rounded-2xl border border-rose-100">
+          Message
+        </p>
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="px-6 py-2.5 rounded-xl bg-teal-700 text-white font-bold text-xs">
+          Kembali ke Atas
+        </button>
+      </div>
+
+    </section>
+
+
+    <!-- ==================== SECTION 6: REFLEKSI CINTA ==================== -->
+    <section id="sec-refleksi" class="content-section hidden space-y-8">
+      
+      <div class="bg-gradient-to-r from-teal-900 to-rose-900 text-white p-8 rounded-3xl shadow-lg space-y-4">
+        <span class="text-xs font-bold uppercase tracking-wider text-rose-300">Refleksi Kesyukuran</span>
+        <h2 class="text-3xl font-extrabold font-arabic">العَقْلُ السَّلِيْمُ فِي الجِسْمِ السَّلِيْمِ</h2>
+        <p class="text-sm text-stone-200 leading-relaxed">
+          "Akal yang sehat terdapat pada tubuh yang sehat." Kesehatan adalah sarana utama bagi kita untuk beribadah, menuntut ilmu, dan menabur kasih sayang kepada sesama.
+        </p>
+      </div>
+
+      <!-- Self Assessment Checklist -->
+      <div class="p-6 md:p-8 rounded-3xl bg-white border border-stone-200 space-y-6 shadow-sm max-w-4xl mx-auto">
+        <h3 class="text-xl font-bold text-teal-900 flex items-center gap-2">
+          <span>📋</span> Jurnal Kebiasaan Sehat & Dzikir Harian (العَادَات المُفِيدَة)
+        </h3>
+        <p class="text-xs text-stone-500">Tandai kebiasaan baik yang sudah kamu lakukan hari ini sebagai wujud syukur atas nikmat kesehatan:</p>
+
+        <div class="space-y-3">
+          <div onclick="toggleHabit(this)" class="cursor-pointer p-4 rounded-2xl border border-stone-200 hover:border-teal-400 transition flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl">🥗</span>
+              <div>
+                <h4 class="font-bold text-stone-800 text-sm">Mengonsumsi Makanan Sehat (<span class="font-arabic">الغِذَاء الطَّيِّب</span>)</h4>
+                <p class="text-xs text-stone-500">Makan makanan bergizi kaya protein, vitamin, dan zat besi.</p>
+              </div>
+            </div>
+            <span class="text-teal-600 font-bold text-lg">✓</span>
+          </div>
+
+          <div onclick="toggleHabit(this)" class="cursor-pointer p-4 rounded-2xl border border-stone-200 hover:border-teal-400 transition flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl">🏃‍♂️</span>
+              <div>
+                <h4 class="font-bold text-stone-800 text-sm">Olahraga Teratur (<span class="font-arabic">الجَرْي / السِّبَاحَة</span>)</h4>
+                <p class="text-xs text-stone-500">Melatih dan merangsang fisik (<span class="font-arabic">تَنْشِيْط العَضَلَات</span>) agar tetap bugar.</p>
+              </div>
+            </div>
+            <span class="text-teal-600 font-bold text-lg">✓</span>
+          </div>
+
+          <div onclick="toggleHabit(this)" class="cursor-pointer p-4 rounded-2xl border border-stone-200 hover:border-teal-400 transition flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl">📿</span>
+              <div>
+                <h4 class="font-bold text-stone-800 text-sm">Membaca Dzikir & Shalat Sunnah (<span class="font-arabic">تِلَاوَة الأَذْكَار & نَوَافِل الصَّلَوَات</span>)</h4>
+                <p class="text-xs text-stone-500">Melatih ketenangan jiwa (<span class="font-arabic">رِيَاضَةُ النَّفْس</span>) untuk kedamaian batin.</p>
+              </div>
+            </div>
+            <span class="text-teal-600 font-bold text-lg">✓</span>
+          </div>
+
+          <div onclick="toggleHabit(this)" class="cursor-pointer p-4 rounded-2xl border border-stone-200 hover:border-teal-400 transition flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl">😴</span>
+              <div>
+                <h4 class="font-bold text-stone-800 text-sm">Istirahat Cukup & Tidur Awal (<span class="font-arabic">الرَّاحَة الكَافِيَة & مُبَكِّرًا</span>)</h4>
+                <p class="text-xs text-stone-500">Memberikan hak tubuh untuk memulihkan energi (<span class="font-arabic">الطَّاقَة</span>).</p>
+              </div>
+            </div>
+            <span class="text-teal-600 font-bold text-lg">✓</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-teal-950 text-stone-400 py-8 border-t border-teal-900 mt-12">
+    <div class="max-w-7xl mx-auto px-4 text-center space-y-3">
+      <div class="flex items-center justify-center gap-2 text-white font-bold text-lg">
+        <span>❤️ MedArabi Cinta</span>
+      </div>
+      <p class="text-xs text-stone-400">Media Pembelajaran Bahasa Arab Kelas 11 MA/SMA • Bab الصحة والرعاية الصحية</p>
+      <p class="text-[11px] text-stone-500">Dikembangkan berdasarkan Kurikulum Berbasis Cinta (Kemenag Terbaru)</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>

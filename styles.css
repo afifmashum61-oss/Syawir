@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap');
+
+:root {
+  --primary-emerald: #0f766e;
+  --primary-light: #14b8a6;
+  --love-rose: #e11d48;
+  --love-pink: #ffe4e6;
+  --gold-accent: #d97706;
+  --bg-cream: #fafaf9;
+  --card-bg: #ffffff;
+  --text-main: #1c1917;
+  --text-muted: #78716c;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #f7f9fb;
+  color: var(--text-main);
+  background-image: radial-gradient(#0f766e0d 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.font-arabic {
+  font-family: 'Amiri', 'Tajawal', serif;
+  line-height: 2.8 !important;
+  word-spacing: 0.12em;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.font-arabic-lg {
+  font-family: 'Amiri', 'Tajawal', serif;
+  line-height: 3.0 !important;
+  word-spacing: 0.15em;
+}
+
+p.font-arabic, div.font-arabic {
+  line-height: 2.8 !important;
+  margin-bottom: 1.25rem;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #0f766e66;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-emerald);
+}
+
+/* Card glassmorphism & shadow */
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 4px 20px -2px rgba(15, 118, 110, 0.08);
+}
+
+.love-gradient {
+  background: linear-gradient(135deg, #0f766e 0%, #0d9488 50%, #e11d48 100%);
+}
+
+.love-badge {
+  background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
+  color: #be123c;
+  border: 1px solid #fecdd3;
+}
+
+/* Card Flip Animation */
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+  height: 220px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.flip-card-front {
+  background: white;
+  border: 2px solid #e2e8f0;
+}
+
+.flip-card-back {
+  background: linear-gradient(135deg, #f0fdf4 0%, #ccfbf1 100%);
+  color: #064e3b;
+  border: 2px solid #99f6e4;
+  transform: rotateY(180deg);
+}
+
+/* Highlight word interactive */
+.arabic-word-highlight {
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.arabic-word-highlight:hover {
+  background-color: #fef08a;
+  color: #854d0e;
+  transform: translateY(-2px);
+}
+
+/* Audio Wave Pulse */
+@keyframes audioPulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+.speaking-active {
+  animation: audioPulse 1.2s infinite ease-in-out;
+  background-color: #e11d48 !important;
+  color: white !important;
+}
+
+/* Tab active indicator */
+.tab-btn.active {
+  background-color: #0f766e;
+  color: white;
+  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.25);
+}
