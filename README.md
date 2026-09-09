@@ -1,6 +1,6 @@
-# Syawir - Media Pembelajaran Bahasa Arab Kelas 11 (الصحة والرعاية الصحية)
+# Syawir - XI Bahasa Arab Tindak Lanjut MAN 4 Aceh Besar (الصحة والرعاية الصحية)
 
-Aplikasi Web Media Pembelajaran Bahasa Arab Interaktif untuk SMA/MA Kelas XI pada Bab **الصحة والرعاية الصحية** (Kesehatan dan Perawatan Kesehatan) yang dikembangkan berdasarkan **Kurikulum Berbasis Cinta (Kemenag Terbaru)**.
+Aplikasi Web Media Pembelajaran Bahasa Arab Interaktif untuk **XI Bahasa Arab Tindak Lanjut MAN 4 Aceh Besar** pada Bab **الصحة والرعاية الصحية** (Kesehatan dan Perawatan Kesehatan) yang dikembangkan berdasarkan **Kurikulum Berbasis Cinta (Kemenag Terbaru)**.
 
 ---
 
