@@ -418,6 +418,7 @@ function renderMufrodatCards(filter = '') {
 
   const filtered = mufrodatData.filter(item => 
     item.arabic.includes(filter) || 
+    item.translation.toLowerCase().includes(filter) ||
     item.category.toLowerCase().includes(filter)
   );
 
@@ -431,7 +432,7 @@ function renderMufrodatCards(filter = '') {
       <div class="flip-card-inner">
         <!-- Front -->
         <div class="flip-card-front shadow-sm">
-          <div class="w-full flex justify-between items-center mb-2">
+          <div class="w-full flex justify-between items-center mb-1">
             <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 border border-teal-200">${item.category}</span>
             <button onclick="event.stopPropagation(); speakArabic('${item.arabic}', this)" class="p-2 rounded-full hover:bg-stone-100 text-teal-700 transition" title="Dengarkan Lafal">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -439,14 +440,20 @@ function renderMufrodatCards(filter = '') {
               </svg>
             </button>
           </div>
-          <h3 class="font-arabic text-3xl font-bold text-teal-900 my-auto dir-rtl">${item.arabic}</h3>
-          <p class="text-xs text-rose-500 font-medium mt-auto flex items-center gap-1">
-            <span>Klik untuk balik kartu (مِثَال)</span> ➔
+          
+          <!-- Arabic Word & Indonesian Translation -->
+          <div class="my-auto text-center space-y-1">
+            <h3 class="font-arabic text-3xl font-bold text-teal-900 dir-rtl">${item.arabic}</h3>
+            <p class="text-sm font-semibold text-rose-700 bg-rose-50/80 px-3 py-1 rounded-xl border border-rose-100 inline-block">${item.translation}</p>
+          </div>
+
+          <p class="text-xs text-teal-600 font-medium mt-auto flex items-center justify-center gap-1">
+            <span>Klik untuk balik kartu (Contoh Kalimat)</span> ➔
           </p>
         </div>
-        <!-- Back (Pure Arabic Example) -->
+        <!-- Back (Pure Arabic Example & Translation) -->
         <div class="flip-card-back shadow-md">
-          <span class="text-xs font-bold text-teal-800 uppercase tracking-wider mb-2">مِثَالٌ فِي جُمْلَةٍ</span>
+          <span class="text-xs font-bold text-teal-800 uppercase tracking-wider mb-2">مِثَالٌ فِي جُمْلَةٍ (Contoh Kalimat)</span>
           <p class="text-xl text-teal-900 font-arabic text-center dir-rtl leading-[2.6] bg-white/80 p-3 rounded-xl border border-teal-100 my-auto w-full font-bold">
             "${item.example}"
           </p>
@@ -461,7 +468,7 @@ function toggleCardFlip(cardElement) {
   cardElement.classList.toggle('flipped');
 }
 
-// Render Table Af'al (Pure Arabic)
+// Render Table Af'al
 function renderAfalTable() {
   const tableBody = document.getElementById('afal-table-body');
   if (!tableBody) return;
@@ -480,6 +487,9 @@ function renderAfalTable() {
       <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-rose-800 text-center dir-rtl">
         <span>${row.masdar}</span>
         <button onclick="speakArabic('${row.masdar}')" class="ml-2 inline-block text-teal-600 hover:text-teal-800 text-xs">🔊</button>
+      </td>
+      <td class="px-4 py-3.5 text-center text-xs md:text-sm text-stone-700 font-semibold bg-stone-50/50">
+        ${row.meaning}
       </td>
     </tr>
   `).join('');
