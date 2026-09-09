@@ -872,147 +872,147 @@ function toggleHabit(el) {
   el.classList.toggle('border-teal-400');
 }
 
-// Data Tadrib Qowaid (20 Soal Klasifikasi Kata: Isim, Fi'il, Harf)
+// Data Tadrib Qowaid (20 Soal Interaktif tentang المَفْعُوْلُ بِهِ)
 const qowaidQuestions = [
   {
     id: 1,
-    word: "المَدْرَسَةُ",
-    options: ["إِسْم (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
-    answer: 0,
-    explanation: "المَدْرَسَةُ adalah ISIM (إِسْم) karena diawali alif lam (الـ) dan menunjukkan nama benda/tempat."
+    word: "فِي جُمْلَةِ \"يَقْرَأُ الطَّالِبُ القُرْآنَ\"، المَفْعُوْلُ بِهِ هُوَ .....",
+    options: ["أ - يَقْرَأُ", "ب - الطَّالِبُ", "ج - القُرْآنَ"],
+    answer: 2,
+    explanation: "المَفْعُوْلُ بِهِ هُوَ \"القُرْآنَ\" (Objek penderita yang dibaca oleh siswa)."
   },
   {
     id: 2,
-    word: "يَقْرَأُ",
-    options: ["إِسْم (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
+    word: "عَلَامَةُ إِعْرَابِ (نَصْبِ) المَفْعُوْلِ بِهِ فِي الإِسْمِ المُفْرَدِ هِيَ .....",
+    options: ["أ - الضَّمَّةُ", "ب - الفَتْحَةُ", "ج - الكَسْرَةُ"],
     answer: 1,
-    explanation: "يَقْرَأُ adalah FI'IL (فِعْل مُضَارِع) yang menunjukkan perbuatan membaca pada masa sekarang."
+    explanation: "المَفْعُوْلُ بِهِ فِي الإِسْمِ المُفْرَدِ يُنْصَبُ بِالفَتْحَةِ (Tanda harakat objek tunggal adalah Fathah)."
   },
   {
     id: 3,
-    word: "وَ",
-    options: ["إِسْم (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
-    answer: 2,
-    explanation: "وَ adalah HARF (حَرْف) yaitu kata tugas/penghubung ('dan') yang tidak berdiri sendiri."
+    word: "فِي جُمْلَةِ \"بَعَثَ اللهُ مُحَمَّدًا\"، كَلِمَةُ \"مُحَمَّدًا\" تُعْرَبُ .....",
+    options: ["أ - فَاعِلًا", "ب - مَفْعُوْلًا بِهِ", "ج - خَبَرًا"],
+    answer: 1,
+    explanation: "كَلِمَةُ \"مُحَمَّدًا\" هِيَ مَفْعُوْلٌ بِهِ مَنْصُوْبٌ (Objek yang diutus oleh Allah)."
   },
   {
     id: 4,
-    word: "ذَلِكَ",
-    options: ["اسم الإِشَارَة (Isim)", "فِعْل أَمْر (Fi'il)", "حَرْف (Harf)"],
-    answer: 0,
-    explanation: "ذَلِكَ adalah Isim Penunjuk / Isim Isyarah (اسم الإشارة) yang berarti 'itu'."
+    word: "فِي جُمْلَةِ \"لَا يَهْدِي اللهُ الظَّالِمِيْنَ\"، المَفْعُوْلُ بِهِ \"الظَّالِمِيْنَ\" مَنْصُوْبٌ بِـ .....",
+    options: ["أ - الفَتْحَةِ", "ب - اليَاءِ (ـِيْنَ)", "ج - الوَاوِ (ـُوْنَ)"],
+    answer: 1,
+    explanation: "الظَّالِمِيْنَ adalah Jama' Mudzakkar As-Salim, tanda manshub-nya adalah Ya (ـِيْنَ) bukan Wau."
   },
   {
     id: 5,
-    word: "اُكْتُبْ",
-    options: ["فِعْل مَاضٍ", "فِعْل أَمْر", "إِسْم مَصْدَر"],
+    word: "تُعْتَبَرُ الجُمْلَةُ \"الطَّالِبُ يَقْرَأُ القُرْآنَ\" جُمْلَةً .....",
+    options: ["أ - فِعْلِيَّةً", "ب - إِسْمِيَّةً", "ج - حَرْفِيَّةً"],
     answer: 1,
-    explanation: "اُكْتُبْ adalah Fi'il Amar (فِعْل أَمْر) yaitu kata kerja perintah ('Tulislah!')."
+    explanation: "جُمْلَةٌ إِسْمِيَّةٌ karena diawali oleh isim (مُبْتَدَأٌ: الطَّالِبُ)."
   },
   {
     id: 6,
-    word: "رَسُوْلٌ",
-    options: ["إِسْم (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
-    answer: 0,
-    explanation: "رَسُوْلٌ adalah ISIM (إِسْم) karena ditandai dengan tanwin (ـٌ) dan menunjukkan nama perantara/benda."
+    word: "فِي جُمْلَةِ \"تُصَلِّي الطَّالِبَةُ الظُّهْرَ\"، كَلِمَةُ \"الظُّهْرَ\" تُعْرَبُ .....",
+    options: ["أ - فَاعِلًا", "ب - مَفْعُوْلًا بِهِ", "ج - مُبْتَدَأً"],
+    answer: 1,
+    explanation: "كَلِمَةُ \"الظُّهْرَ\" هِيَ مَفْعُوْلٌ بِهِ (Objek shalat yang dikerjakan oleh siswi)."
   },
   {
     id: 7,
-    word: "تَكَلَّمَ",
-    options: ["فِعْل مَاضٍ", "فِعْل مُضَارِع", "فِعْل أَمْر"],
-    answer: 0,
-    explanation: "تَكَلَّمَ adalah FI'IL MADHI (فِعْل مَاضٍ) yang menunjukkan perbuatan berbicara di masa lampau."
+    word: "عَلَامَةُ نَصْبِ المَفْعُوْلِ بِهِ فِي جَمْعِ المُذَكَّرِ السَّالِمِ هِيَ .....",
+    options: ["أ - الوَاوُ (ـُوْنَ)", "ب - اليَاءُ (ـِيْنَ)", "ج - الضَّمَّةُ"],
+    answer: 1,
+    explanation: "Jama' Mudzakkar Salim ketika menjadi Maf'ul Bihi ditandai dengan Ya (ـِيْنَ) bukan Wau."
   },
   {
     id: 8,
-    word: "الَّذِي",
-    options: ["اسم المَوْصُوْل (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
-    answer: 0,
-    explanation: "الَّذِي adalah Isim Penghubung / Isim Maushul (اسم الموصول) yang berarti 'yang'."
+    word: "فِي جُمْلَةِ \"يَأْكُلُ المُرَاهِقُوْنَ الغِذَاءَ الطَّيِّبَ\"، المَفْعُوْلُ بِهِ هُوَ .....",
+    options: ["أ - يَأْكُلُ", "ب - المُرَاهِقُوْنَ", "ج - الغِذَاءَ"],
+    answer: 2,
+    explanation: "المَفْعُوْلُ بِهِ هُوَ \"الغِذَاءَ\" (Makanan yang dimakan oleh para remaja)."
   },
   {
     id: 9,
-    word: "فَ",
-    options: ["إِسْم (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
-    answer: 2,
-    explanation: "فَ adalah HARF (حَرْف) yaitu kata tugas/penghubung yang berarti 'maka/lalu'."
+    word: "فِي جُمْلَةِ \"بَلَغْتُمْ مَرْحَلَةَ المُرَاهَقَةِ\"، المَفْعُوْلُ بِهِ هُوَ .....",
+    options: ["أ - بَلَغْتُمْ", "ب - مَرْحَلَةَ", "ج - المُرَاهَقَةِ"],
+    answer: 1,
+    explanation: "المَفْعُوْلُ بِهِ هُوَ \"مَرْحَلَةَ\" berharakat fathah."
   },
   {
     id: 10,
-    word: "كَبِيْرٌ",
-    options: ["إِسْم صِفَة (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
+    word: "تُعْتَبَرُ الجُمْلَةُ \"تَسْتَقْبِلُ الطَّالِبَاتُ المَدْعُوِّيْنَ\" جُمْلَةً .....",
+    options: ["أ - فِعْلِيَّةً", "ب - إِسْمِيَّةً", "ج - حَرْفِيَّةً"],
     answer: 0,
-    explanation: "كَبِيْرٌ adalah ISIM SIFAT (إِسْم صِفَة) yang menunjukkan sifat benda ('besar')."
+    explanation: "جُمْلَةٌ فِعْلِيَّةٌ karena diawali oleh fi'il (تَسْتَقْبِلُ)."
   },
   {
     id: 11,
-    word: "يُحْسِنُ",
-    options: ["فِعْل مَاضٍ", "فِعْل مُضَارِع", "فِعْل أَمْر"],
+    word: "فِي جُمْلَةِ \"تَسْتَقْبِلُ الطَّالِبَاتُ المَدْعُوِّيْنَ\"، المَفْعُوْلُ بِهِ \"المَدْعُوِّيْنَ\" مَنْصُوْبٌ بِـ .....",
+    options: ["أ - الفَتْحَةِ", "ب - اليَاءِ (ـِيْنَ)", "ج - الكَسْرَةِ"],
     answer: 1,
-    explanation: "يُحْسِنُ adalah FI'IL MUDHARI' (فِعْل مُضَارِع) yang menunjukkan perbuatan berbuat baik pada masa sekarang/kebiasaan."
+    explanation: "المَدْعُوِّيْنَ adalah Jama' Mudzakkar Salim, tanda manshub-nya adalah Ya (ـِيْنَ)."
   },
   {
     id: 12,
-    word: "أَنَا",
-    options: ["اسم الضَّمِيْر (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
+    word: "فِي جُمْلَةِ \"المُرَاهِقُوْنَ يَأْكُلُوْنَ الغِذَاءَ\"، كَلِمَةُ \"المُرَاهِقُوْنَ\" تُعْرَبُ .....",
+    options: ["أ - مُبْتَدَأً", "ب - مَفْعُوْلًا بِهِ", "ج - فِعْلًا"],
     answer: 0,
-    explanation: "أَنَا adalah Isim Kata Ganti Orang Pertama / Isim Dhomir (اسم الضمير) yang berarti 'saya'."
+    explanation: "المُرَاهِقُوْنَ adalah Mubtada' (di awal kalimat Ismiyyah), sedangkan Maf'ul Bihi-nya adalah الغِذَاءَ."
   },
   {
     id: 13,
-    word: "قِرَاءَةٌ",
-    options: ["إِسْم مَصْدَر (Isim)", "فِعْل أَمْر (Fi'il)", "حَرْف (Harf)"],
-    answer: 0,
-    explanation: "قِرَاءَةٌ adalah ISIM MASDAR (إِسْم مَصْدَر) yaitu kata kerja yang dibendakan ('membaca/bacaan')."
+    word: "عَلَامَةُ نَصْبِ المَفْعُوْلِ بِهِ فِي التَّثْنِيَةِ (المُثَنَّى) هِيَ .....",
+    options: ["أ - (ـَانِ)", "ب - (ـَيْنِ)", "ج - (ـُوْنَ)"],
+    answer: 1,
+    explanation: "Mutsanna (dua) ketika menjadi Maf'ul Bihi ditandai dengan (ـَيْنِ)."
   },
   {
     id: 14,
-    word: "لِـ",
-    options: ["إِسْم (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
-    answer: 2,
-    explanation: "لِـ adalah HARF (حَرْف) yaitu kata tugas yang berarti 'untuk/bagi'."
+    word: "فِي جُمْلَةِ \"اللهُ بَعَثَ مُحَمَّدًا نَبِيًّا\"، كَلِمَةُ \"نَبِيًّا\" تُعْرَبُ .....",
+    options: ["أ - مَفْعُوْلًا بِهِ", "ب - فَضْلَةً (تَمْيِيْزًا/حَالًا)", "ج - مُبْتَدَأً"],
+    answer: 1,
+    explanation: "كَلِمَةُ \"نَبِيًّا\" هِيَ فَضْلَة (Pelengkap kalimat), sedangkan Maf'ul Bihi utamanya adalah مُحَمَّدًا."
   },
   {
     id: 15,
-    word: "اُنْظُرْ",
-    options: ["فِعْل مَاضٍ", "فِعْل مُضَارِع", "فِعْل أَمْر"],
-    answer: 2,
-    explanation: "اُنْظُرْ adalah FI'IL AMAR (فِعْل أَمْر) yaitu kata kerja perintah ('Lihatlah!')."
+    word: "المَفْعُوْلُ بِهِ (الكَلاَمُ الَّذِي يَقَعُ عَلَيْهِ فِعْلُ الفَاعِلِ) يَكُوْنُ حُكْمُهُ دَائِمًا .....",
+    options: ["أ - مَرْفُوْعًا", "ب - مَنْصُوْبًا", "ج - مَجْرُوْرًا"],
+    answer: 1,
+    explanation: "المَفْعُوْلُ بِهِ hukumnya selalu MANSHUB (مَنْصُوْب)."
   },
   {
     id: 16,
-    word: "هَذِهِ",
-    options: ["اسم الإِشَارَة (Isim)", "اسم المَوْصُوْل (Isim)", "حَرْف (Harf)"],
-    answer: 0,
-    explanation: "هَذِهِ adalah Isim Penunjuk Dekat untuk Muannats / Isim Isyarah (اسم الإشارة) yang berarti 'ini'."
+    word: "أَيُّ الجُمَلِ الآتِيَةِ تَحْتَوِي عَلَى مَفْعُوْلٍ بِهِ فِي صِيْغَةِ جَمْعِ المُذَكَّرِ السَّالِمِ؟",
+    options: ["أ - يَقْرَأُ الطَّالِبُ القُرْآنَ", "ب - لَا يَهْدِي اللهُ الظَّالِمِيْنَ", "ج - تُصَلِّي الطَّالِبَةُ الظُّهْرَ"],
+    answer: 1,
+    explanation: "الظَّالِمِيْنَ adalah Maf'ul Bihi bertipe Jama' Mudzakkar Salim."
   },
   {
     id: 17,
-    word: "أَحْسَنَ",
-    options: ["فِعْل مَاضٍ", "فِعْل مُضَارِع", "فِعْل أَمْر"],
+    word: "فِي جُمْلَةِ \"أَنْتُمْ بَلَغْتُمْ مَرْحَلَةَ المُرَاهَقَةِ\"، الفَاعِلُ هُوَ .....",
+    options: ["أ - أَنْتُمْ / التَّاءُ فِي بَلَغْتُمْ", "ب - مَرْحَلَةَ", "ج - المُرَاهَقَةِ"],
     answer: 0,
-    explanation: "أَحْسَنَ adalah FI'IL MADHI (فِعْل مَاضٍ) yang menunjukkan perbuatan berbuat baik di masa lampau."
+    explanation: "Fa'il-nya adalah Dhomir (Taa' / Antum), sedangkan Maf'ul Bihi-nya adalah مَرْحَلَةَ."
   },
   {
     id: 18,
-    word: "نَحْنُ",
-    options: ["اسم الضَّمِيْر (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
-    answer: 0,
-    explanation: "نَحْنُ adalah Isim Dhomir Munfashil (اسم الضمير) yang berarti 'kami/kita'."
+    word: "فِي جُمْلَةِ \"تَسْتَقْبِلُ الطَّالِبَاتُ المَدْعُوِّيْنَ أَمَامَ البَابِ\"، كَلِمَةُ \"أَمَامَ\" تُعْرَبُ .....",
+    options: ["أ - مَفْعُوْلًا بِهِ", "ب - ظَرْفَ مَكَانٍ (فَضْلَة)", "ج - فَاعِلًا"],
+    answer: 1,
+    explanation: "أَمَامَ adalah Zharaf Makan / Pelengkap (فضلة), sedangkan Maf'ul Bihi-nya adalah المَدْعُوِّيْنَ."
   },
   {
     id: 19,
-    word: "نَظَرَ",
-    options: ["فِعْل مَاضٍ", "فِعْل مُضَارِع", "فِعْل أَمْر"],
-    answer: 0,
-    explanation: "نَظَرَ adalah FI'IL MADHI (فِعْل مَاضٍ) yang berarti 'telah melihat'."
+    word: "مَا هِيَ الحَرَكَةُ الصَّحِيْحَةُ لِلْمَفْعُوْلِ بِهِ فِي \"يَأْكُلُ المُرَاهِقُوْنَ الغِذَاء...\"؟",
+    options: ["أ - الغِذَاءُ (ضَمَّة)", "ب - الغِذَاءَ (فَتْحَة)", "ج - الغِذَاءِ (كَسْرَة)"],
+    answer: 1,
+    explanation: "Karena merupakan Isim Mufrad, Maf'ul Bihi diberi harakat Fathah (الغِذَاءَ)."
   },
   {
     id: 20,
-    word: "مَنْ",
-    options: ["اسم المَوْصُوْل (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
+    word: "الْفَرْقُ بَيْنَ الجُمْلَةِ الفِعْلِيَّةِ وَالجُمْلَةِ الإِسْمِيَّةِ عِنْدَ وُجُوْدِ المَفْعُوْلِ بِهِ هُوَ .....",
+    options: ["أ - الجُمْلَةُ الفِعْلِيَّةُ تَبْدَأُ بِالفِعْلِ، وَالإِسْمِيَّةُ تَبْدَأُ بِالإِسْمِ", "ب - المَفْعُوْلُ بِهِ يَكُوْنُ مَرْفُوْعًا فِي الإِسْمِيَّةِ", "ج - لَا يُوْجَدُ مَفْعُوْلٌ بِهِ فِي الجُمْلَةِ الإِسْمِيَّةِ"],
     answer: 0,
-    explanation: "مَنْ adalah Isim Penghubung / Penanya (اسم الموصول / الاستفهام) yang berarti 'siapa / barangsiapa'."
+    explanation: "Perbedaan utamanya adalah pembuka kalimat: Jumlah Fi'liyyah diawali Fi'il, sedangkan Jumlah Ismiyyah diawali Isim (Mubtada'). Objek (Maf'ul Bihi) tetap sama-sama manshub."
   }
 ];
 
@@ -1022,19 +1022,19 @@ function renderQowaidQuiz() {
 
   container.innerHTML = qowaidQuestions.map((q, idx) => `
     <div class="p-5 rounded-2xl bg-white border border-stone-200 shadow-sm space-y-3">
-      <div class="flex items-center justify-between gap-3">
+      <div class="flex items-center justify-between gap-3 border-b border-stone-100 pb-2">
         <div class="flex items-center gap-3">
           <span class="w-7 h-7 rounded-full bg-teal-100 text-teal-800 font-bold text-xs flex items-center justify-center">${q.id}</span>
-          <span class="text-xs text-stone-500 font-semibold">Tentukan jenis kata berikut:</span>
+          <span class="text-xs text-stone-500 font-semibold">Analisislah Maf'ul Bihi (المَفْعُوْلُ بِهِ):</span>
         </div>
         <button onclick="speakArabic('${q.word}')" class="p-2 text-teal-700 hover:bg-teal-50 rounded-full transition" title="Lafalkan">🔊</button>
       </div>
 
-      <div class="py-1 text-center bg-stone-50 rounded-xl border border-stone-100">
-        <p class="font-arabic text-3xl font-bold text-teal-900 dir-rtl">${q.word}</p>
+      <div class="py-2 text-center bg-stone-50 rounded-xl border border-stone-100">
+        <p class="font-arabic text-2xl md:text-3xl font-bold text-teal-950 dir-rtl leading-[2.6]">${q.word}</p>
       </div>
 
-      <div class="grid grid-cols-3 gap-2 pt-1">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-2 pt-1">
         ${q.options.map((opt, optIdx) => `
           <button 
             type="button" 
