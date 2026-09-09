@@ -59,6 +59,9 @@
         <button onclick="switchTab('sec-mufrodat', this)" data-target="sec-mufrodat" class="tab-btn px-3.5 py-2 rounded-xl text-xs md:text-sm font-semibold text-stone-600 hover:bg-stone-100 transition flex items-center gap-1.5 whitespace-nowrap">
           <span>📚</span> Mufrodat & Af'al
         </button>
+        <button onclick="switchTab('sec-qowaid', this)" data-target="sec-qowaid" class="tab-btn px-3.5 py-2 rounded-xl text-xs md:text-sm font-semibold text-stone-600 hover:bg-stone-100 transition flex items-center gap-1.5 whitespace-nowrap">
+          <span>📐</span> Qowa'id
+        </button>
         <button onclick="switchTab('sec-istima', this)" data-target="sec-istima" class="tab-btn px-3.5 py-2 rounded-xl text-xs md:text-sm font-semibold text-stone-600 hover:bg-stone-100 transition flex items-center gap-1.5 whitespace-nowrap">
           <span>🎧</span> Istima'
         </button>
@@ -238,7 +241,416 @@
     </section>
 
 
-    <!-- ==================== SECTION 3: ISTIMA' (LISTENING) ==================== -->
+    <!-- ==================== SECTION: QOWA'ID (TATA BAHASA ARAB) ==================== -->
+    <section id="sec-qowaid" class="content-section hidden space-y-8">
+      
+      <!-- Header Banner -->
+      <div class="bg-gradient-to-br from-teal-900 via-teal-800 to-rose-900 text-white p-6 md:p-8 rounded-3xl shadow-lg space-y-4">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <span class="px-3 py-1 rounded-full bg-rose-500/30 text-rose-200 font-bold text-xs border border-rose-400/30">دُرُوْسٌ إِضَافِيَّةٌ • Tata Bahasa Arab</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold font-arabic mt-2 text-yellow-300">الكَـلِمَةُ وَأَنْوَاعُهَا</h2>
+            <p class="text-xs md:text-sm text-stone-200 mt-1 leading-relaxed">
+              Dari segi bentuknya, <span class="font-arabic text-lg font-bold text-yellow-200">كَلِمَة</span> (dalam Bahasa Indonesia disebut 'kata') dibagi menjadi tiga macam utama:
+            </p>
+          </div>
+        </div>
+
+        <!-- 3 Main Types Pills -->
+        <div class="grid grid-cols-3 gap-3 pt-2">
+          <div class="p-3 md:p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-center hover:bg-white/20 transition">
+            <span class="block text-stone-300 text-xs font-semibold mb-1">١ - النوع الأول</span>
+            <span class="font-arabic text-2xl md:text-3xl font-bold text-yellow-300">إِسْم</span>
+            <span class="block text-[11px] text-stone-200 mt-1">(Kata Benda/Sifat)</span>
+          </div>
+
+          <div class="p-3 md:p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-center hover:bg-white/20 transition">
+            <span class="block text-stone-300 text-xs font-semibold mb-1">٢ - النوع الثاني</span>
+            <span class="font-arabic text-2xl md:text-3xl font-bold text-yellow-300">فِعْل</span>
+            <span class="block text-[11px] text-stone-200 mt-1">(Kata Kerja)</span>
+          </div>
+
+          <div class="p-3 md:p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-center hover:bg-white/20 transition">
+            <span class="block text-stone-300 text-xs font-semibold mb-1">٣ - النوع الثالث</span>
+            <span class="font-arabic text-2xl md:text-3xl font-bold text-yellow-300">حَرْف</span>
+            <span class="block text-[11px] text-stone-200 mt-1">(Kata Tugas)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part 1: Al-Ism (١- الإِسْم) -->
+      <div class="p-6 md:p-8 rounded-3xl bg-white border border-stone-200 shadow-sm space-y-6">
+        <div class="flex items-center justify-between border-b border-stone-100 pb-4">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 rounded-2xl bg-teal-700 text-white font-arabic text-2xl font-bold flex items-center justify-center shadow-md">١</span>
+            <div>
+              <h3 class="font-arabic text-3xl font-bold text-teal-900 dir-rtl">١- الإِسْم</h3>
+              <p class="text-xs text-stone-500 mt-0.5">Kata yang menunjukkan benda, sifat benda, atau pengganti benda</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 rounded-full bg-teal-50 text-teal-700 font-bold text-xs border border-teal-200">النوع الأول</span>
+        </div>
+
+        <!-- Definition Box -->
+        <div class="p-4 rounded-2xl bg-teal-50/70 border border-teal-100 text-sm text-stone-700 space-y-2">
+          <p class="font-semibold text-teal-900">💡 Pengertian Isim:</p>
+          <p class="leading-relaxed">
+            <span class="font-arabic text-xl font-bold text-teal-900">إِسْم</span> yaitu kata yang menunjukkan benda, sifat benda, atau pengganti benda.
+          </p>
+          <div class="p-3 rounded-xl bg-white border border-teal-200 text-xs text-stone-600 font-medium">
+            📌 <strong>Ciri Utama Isim:</strong> Ketiga bentuk isim pada umumnya ditandai dengan <strong>tanwin</strong> (<span class="font-arabic text-sm font-bold">ـً ـٍ ـٌ</span>) atau diawali alif lam (<span class="font-arabic text-base font-bold text-teal-800">الـ</span>).
+          </div>
+        </div>
+
+        <!-- 4 Subcategories of Isim Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+          
+          <!-- Sub 1: Nama Benda -->
+          <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200 space-y-3">
+            <h4 class="font-bold text-teal-900 text-sm flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center text-xs font-bold">1</span>
+              <span>Menunjukkan Benda atau Nama Benda</span>
+            </h4>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <div class="group px-3 py-2 rounded-xl bg-white border border-stone-200 hover:border-teal-500 hover:shadow-xs transition flex items-center gap-2">
+                <span class="font-arabic text-xl font-bold text-stone-900 dir-rtl">رَسُوْلٌ</span>
+                <button onclick="speakArabic('رَسُوْلٌ')" class="text-teal-600 hover:text-teal-800 text-xs opacity-80" title="Lafalkan">🔊</button>
+              </div>
+              <div class="group px-3 py-2 rounded-xl bg-white border border-stone-200 hover:border-teal-500 hover:shadow-xs transition flex items-center gap-2">
+                <span class="font-arabic text-xl font-bold text-stone-900 dir-rtl">الرَّجُلُ</span>
+                <button onclick="speakArabic('الرَّجُلُ')" class="text-teal-600 hover:text-teal-800 text-xs opacity-80" title="Lafalkan">🔊</button>
+              </div>
+              <div class="group px-3 py-2 rounded-xl bg-white border border-stone-200 hover:border-teal-500 hover:shadow-xs transition flex items-center gap-2">
+                <span class="font-arabic text-xl font-bold text-stone-900 dir-rtl">المَدْرَسَةُ</span>
+                <button onclick="speakArabic('المَدْرَسَةُ')" class="text-teal-600 hover:text-teal-800 text-xs opacity-80" title="Lafalkan">🔊</button>
+              </div>
+              <div class="group px-3 py-2 rounded-xl bg-white border border-stone-200 hover:border-teal-500 hover:shadow-xs transition flex items-center gap-2">
+                <span class="font-arabic text-xl font-bold text-stone-900 dir-rtl">طَالِبٌ</span>
+                <button onclick="speakArabic('طَالِبٌ')" class="text-teal-600 hover:text-teal-800 text-xs opacity-80" title="Lafalkan">🔊</button>
+              </div>
+              <div class="group px-3 py-2 rounded-xl bg-white border border-stone-200 hover:border-teal-500 hover:shadow-xs transition flex items-center gap-2">
+                <span class="font-arabic text-xl font-bold text-stone-900 dir-rtl">الأُسْتَاذَةُ</span>
+                <button onclick="speakArabic('الأُسْتَاذَةُ')" class="text-teal-600 hover:text-teal-800 text-xs opacity-80" title="Lafalkan">🔊</button>
+              </div>
+              <div class="group px-3 py-2 rounded-xl bg-white border border-stone-200 hover:border-teal-500 hover:shadow-xs transition flex items-center gap-2">
+                <span class="font-arabic text-xl font-bold text-stone-900 dir-rtl">الكُرْسِيُّ</span>
+                <button onclick="speakArabic('الكُرْسِيُّ')" class="text-teal-600 hover:text-teal-800 text-xs opacity-80" title="Lafalkan">🔊</button>
+              </div>
+              <div class="group px-3 py-2 rounded-xl bg-white border border-stone-200 hover:border-teal-500 hover:shadow-xs transition flex items-center gap-2">
+                <span class="font-arabic text-xl font-bold text-stone-900 dir-rtl">مُحَمَّدٌ</span>
+                <button onclick="speakArabic('مُحَمَّدٌ')" class="text-teal-600 hover:text-teal-800 text-xs opacity-80" title="Lafalkan">🔊</button>
+              </div>
+              <div class="group px-3 py-2 rounded-xl bg-white border border-stone-200 hover:border-teal-500 hover:shadow-xs transition flex items-center gap-2">
+                <span class="font-arabic text-xl font-bold text-stone-900 dir-rtl">مَكَّةُ</span>
+                <button onclick="speakArabic('مَكَّةُ')" class="text-teal-600 hover:text-teal-800 text-xs opacity-80" title="Lafalkan">🔊</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub 2: Sifat Benda -->
+          <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200 space-y-3">
+            <h4 class="font-bold text-rose-900 text-sm flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-rose-100 text-rose-800 flex items-center justify-center text-xs font-bold">2</span>
+              <span>Sifat Benda</span>
+            </h4>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <div class="group px-3 py-2 rounded-xl bg-white border border-stone-200 hover:border-rose-500 hover:shadow-xs transition flex items-center gap-2">
+                <span class="font-arabic text-xl font-bold text-rose-900 dir-rtl">كَبِيْرٌ</span>
+                <button onclick="speakArabic('كَبِيْرٌ')" class="text-rose-600 hover:text-rose-800 text-xs opacity-80" title="Lafalkan">🔊</button>
+              </div>
+              <div class="group px-3 py-2 rounded-xl bg-white border border-stone-200 hover:border-rose-500 hover:shadow-xs transition flex items-center gap-2">
+                <span class="font-arabic text-xl font-bold text-rose-900 dir-rtl">صَغِيْرٌ</span>
+                <button onclick="speakArabic('صَغِيْرٌ')" class="text-rose-600 hover:text-rose-800 text-xs opacity-80" title="Lafalkan">🔊</button>
+              </div>
+              <div class="group px-3 py-2 rounded-xl bg-white border border-stone-200 hover:border-rose-500 hover:shadow-xs transition flex items-center gap-2">
+                <span class="font-arabic text-xl font-bold text-rose-900 dir-rtl">وَاسِعٌ</span>
+                <button onclick="speakArabic('وَاسِعٌ')" class="text-rose-600 hover:text-rose-800 text-xs opacity-80" title="Lafalkan">🔊</button>
+              </div>
+              <div class="group px-3 py-2 rounded-xl bg-white border border-stone-200 hover:border-rose-500 hover:shadow-xs transition flex items-center gap-2">
+                <span class="font-arabic text-xl font-bold text-rose-900 dir-rtl">جَمِيْلَةٌ</span>
+                <button onclick="speakArabic('جَمِيْلَةٌ')" class="text-rose-600 hover:text-rose-800 text-xs opacity-80" title="Lafalkan">🔊</button>
+              </div>
+              <div class="group px-3 py-2 rounded-xl bg-white border border-stone-200 hover:border-rose-500 hover:shadow-xs transition flex items-center gap-2">
+                <span class="font-arabic text-xl font-bold text-rose-900 dir-rtl">جَدِيْدٌ</span>
+                <button onclick="speakArabic('جَدِيْدٌ')" class="text-rose-600 hover:text-rose-800 text-xs opacity-80" title="Lafalkan">🔊</button>
+              </div>
+              <div class="group px-3 py-2 rounded-xl bg-white border border-stone-200 hover:border-rose-500 hover:shadow-xs transition flex items-center gap-2">
+                <span class="font-arabic text-xl font-bold text-rose-900 dir-rtl">سَرِيْعٌ</span>
+                <button onclick="speakArabic('سَرِيْعٌ')" class="text-rose-600 hover:text-rose-800 text-xs opacity-80" title="Lafalkan">🔊</button>
+              </div>
+              <div class="group px-3 py-2 rounded-xl bg-white border border-stone-200 hover:border-rose-500 hover:shadow-xs transition flex items-center gap-2">
+                <span class="font-arabic text-xl font-bold text-rose-900 dir-rtl">المَشْهُوْرُ</span>
+                <button onclick="speakArabic('المَشْهُوْرُ')" class="text-rose-600 hover:text-rose-800 text-xs opacity-80" title="Lafalkan">🔊</button>
+              </div>
+              <div class="group px-3 py-2 rounded-xl bg-white border border-stone-200 hover:border-rose-500 hover:shadow-xs transition flex items-center gap-2">
+                <span class="font-arabic text-xl font-bold text-rose-900 dir-rtl">مَعْلُوْمٌ</span>
+                <button onclick="speakArabic('مَعْلُوْمٌ')" class="text-rose-600 hover:text-rose-800 text-xs opacity-80" title="Lafalkan">🔊</button>
+              </div>
+              <div class="group px-3 py-2 rounded-xl bg-white border border-stone-200 hover:border-rose-500 hover:shadow-xs transition flex items-center gap-2">
+                <span class="font-arabic text-xl font-bold text-rose-900 dir-rtl">أَكْبَرُ</span>
+                <button onclick="speakArabic('أَكْبَرُ')" class="text-rose-600 hover:text-rose-800 text-xs opacity-80" title="Lafalkan">🔊</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub 3: Masdar (Kata Kerja yang Dibendakan) -->
+          <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200 space-y-3 md:col-span-2">
+            <h4 class="font-bold text-amber-900 text-sm flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center text-xs font-bold">3</span>
+              <span>Masdar (Kata Kerja yang Dibendakan)</span>
+            </h4>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 pt-1">
+              <div class="p-3 rounded-xl bg-white border border-stone-200 space-y-1 hover:border-amber-400 transition">
+                <div class="flex justify-between items-center">
+                  <span class="font-arabic text-2xl font-bold text-teal-900 dir-rtl">قِرَاءَةٌ</span>
+                  <button onclick="speakArabic('قِرَاءَةٌ')" class="text-teal-600 hover:text-teal-800 text-xs">🔊</button>
+                </div>
+                <p class="text-xs text-stone-500 font-medium">(membaca, bacaan)</p>
+              </div>
+
+              <div class="p-3 rounded-xl bg-white border border-stone-200 space-y-1 hover:border-amber-400 transition">
+                <div class="flex justify-between items-center">
+                  <span class="font-arabic text-2xl font-bold text-teal-900 dir-rtl">عِلْمٌ</span>
+                  <button onclick="speakArabic('عِلْمٌ')" class="text-teal-600 hover:text-teal-800 text-xs">🔊</button>
+                </div>
+                <p class="text-xs text-stone-500 font-medium">(mengetahui, pengetahuan)</p>
+              </div>
+
+              <div class="p-3 rounded-xl bg-white border border-stone-200 space-y-1 hover:border-amber-400 transition">
+                <div class="flex justify-between items-center">
+                  <span class="font-arabic text-2xl font-bold text-teal-900 dir-rtl">بِنَاءٌ</span>
+                  <button onclick="speakArabic('بِنَاءٌ')" class="text-teal-600 hover:text-teal-800 text-xs">🔊</button>
+                </div>
+                <p class="text-xs text-stone-500 font-medium">(bangunan, membangun)</p>
+              </div>
+
+              <div class="p-3 rounded-xl bg-white border border-stone-200 space-y-1 hover:border-amber-400 transition">
+                <div class="flex justify-between items-center">
+                  <span class="font-arabic text-2xl font-bold text-teal-900 dir-rtl">حُبٌّ</span>
+                  <button onclick="speakArabic('حُبٌّ')" class="text-teal-600 hover:text-teal-800 text-xs">🔊</button>
+                </div>
+                <p class="text-xs text-stone-500 font-medium">(cinta, mencintai)</p>
+              </div>
+
+              <div class="p-3 rounded-xl bg-white border border-stone-200 space-y-1 hover:border-amber-400 transition">
+                <div class="flex justify-between items-center">
+                  <span class="font-arabic text-2xl font-bold text-teal-900 dir-rtl">الدَّعْوَةُ</span>
+                  <button onclick="speakArabic('الدَّعْوَةُ')" class="text-teal-600 hover:text-teal-800 text-xs">🔊</button>
+                </div>
+                <p class="text-xs text-stone-500 font-medium">(mengajak, ajakan)</p>
+              </div>
+
+              <div class="p-3 rounded-xl bg-white border border-stone-200 space-y-1 hover:border-amber-400 transition">
+                <div class="flex justify-between items-center">
+                  <span class="font-arabic text-2xl font-bold text-teal-900 dir-rtl">نَوْمٌ</span>
+                  <button onclick="speakArabic('نَوْمٌ')" class="text-teal-600 hover:text-teal-800 text-xs">🔊</button>
+                </div>
+                <p class="text-xs text-stone-500 font-medium">(tidur)</p>
+              </div>
+
+              <div class="p-3 rounded-xl bg-white border border-stone-200 space-y-1 hover:border-amber-400 transition sm:col-span-2 md:col-span-2">
+                <div class="flex justify-between items-center">
+                  <span class="font-arabic text-2xl font-bold text-teal-900 dir-rtl">مُخَالَفَةٌ</span>
+                  <button onclick="speakArabic('مُخَالَفَةٌ')" class="text-teal-600 hover:text-teal-800 text-xs">🔊</button>
+                </div>
+                <p class="text-xs text-stone-500 font-medium">(melanggar, pelanggaran)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub 4: Kelompok Isim Lainnya (Pronoun, Isyarah, Maushul) -->
+          <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200 space-y-4 md:col-span-2">
+            <h4 class="font-bold text-stone-900 text-sm flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-stone-200 text-stone-800 flex items-center justify-center text-xs font-bold">4</span>
+              <span>Kelompok Isim Lainnya (Kata Ganti, Penunjuk & Penghubung)</span>
+            </h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <!-- (a) Kata Ganti / Isim Dhomir -->
+              <div class="p-4 rounded-xl bg-white border border-stone-200 space-y-2">
+                <span class="text-xs font-bold text-teal-800 px-2.5 py-1 rounded-md bg-teal-50 border border-teal-100 inline-block">(a) Kata Ganti (اسْمُ الضَّمِيْر)</span>
+                <div class="space-y-2 pt-1">
+                  <div>
+                    <span class="text-[11px] text-stone-500 font-semibold block">Dhomir Munfashil (Terpisah):</span>
+                    <p class="font-arabic text-xl font-bold text-teal-900 dir-rtl leading-[2.6] py-0.5">
+                      هُوَ - هِيَ - هُمْ - أَنَا - أَنْتَ - أَنْتِ - أَنْتُمْ - نَحْنُ
+                    </p>
+                  </div>
+                  <div class="border-t border-stone-100 pt-2">
+                    <span class="text-[11px] text-stone-500 font-semibold block">Dhomir Muttashil (Bersambung):</span>
+                    <p class="font-arabic text-xl font-bold text-teal-800 dir-rtl leading-[2.6] py-0.5">
+                      ـه - ـهَا - ـهُمْ - ـي - ـك - ـكِ - ـكُمْ - ـنَا
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- (b) Kata Penunjuk / Isim Isyarah -->
+              <div class="p-4 rounded-xl bg-white border border-stone-200 space-y-2">
+                <span class="text-xs font-bold text-rose-800 px-2.5 py-1 rounded-md bg-rose-50 border border-rose-100 inline-block">(b) Kata Penunjuk (الإِشَارَة)</span>
+                <p class="text-xs text-stone-500 font-medium">Kata penunjuk dekat/jauh:</p>
+                <p class="font-arabic text-2xl font-bold text-rose-900 dir-rtl leading-[2.8] pt-1">
+                  هَذَا - هَذِهِ - ذَلِكَ - تِلْكَ - هَؤُلَاءِ - أُولَئِكَ
+                </p>
+              </div>
+
+              <!-- (c) Kata Penghubung / Isim Maushul -->
+              <div class="p-4 rounded-xl bg-white border border-stone-200 space-y-2">
+                <span class="text-xs font-bold text-amber-800 px-2.5 py-1 rounded-md bg-amber-50 border border-amber-100 inline-block">(c) Kata Penghubung (المَوْصُوْل)</span>
+                <p class="text-xs text-stone-500 font-medium">Kata hubung (yang/siapa/apa):</p>
+                <p class="font-arabic text-2xl font-bold text-amber-900 dir-rtl leading-[2.8] pt-1">
+                  الَّذِي - الَّتِي - الَّذِيْنَ - مَنْ - مَا
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Part 2: Al-Fi'l (٢- الفِعْل) -->
+      <div class="p-6 md:p-8 rounded-3xl bg-white border border-stone-200 shadow-sm space-y-6">
+        <div class="flex items-center justify-between border-b border-stone-100 pb-4">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 rounded-2xl bg-rose-600 text-white font-arabic text-2xl font-bold flex items-center justify-center shadow-md">٢</span>
+            <div>
+              <h3 class="font-arabic text-3xl font-bold text-rose-900 dir-rtl">٢- الفِعْل</h3>
+              <p class="text-xs text-stone-500 mt-0.5">Kata yang menunjukkan perbuatan dan terikat dengan waktu tertentu</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 rounded-full bg-rose-50 text-rose-700 font-bold text-xs border border-rose-200">النوع الثاني</span>
+        </div>
+
+        <!-- Definition & 3 Tenses -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="p-4 rounded-2xl bg-rose-50/70 border border-rose-100 space-y-1">
+            <span class="text-xs font-bold text-rose-800">1. فِعْل مَاضٍ (Fi'il Madhi)</span>
+            <p class="text-xs text-stone-600 leading-relaxed">Menunjukkan perbuatan pada <strong>masa lampau</strong> (telah selesai dilakukan).</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-teal-50/70 border border-teal-100 space-y-1">
+            <span class="text-xs font-bold text-teal-800">2. فِعْل مُضَارِع (Fi'il Mudhari')</span>
+            <p class="text-xs text-stone-600 leading-relaxed">Menunjukkan perbuatan pada <strong>masa sekarang</strong>, <strong>akan datang</strong>, atau <strong>kebiasaan</strong>.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-amber-50/70 border border-amber-100 space-y-1">
+            <span class="text-xs font-bold text-amber-800">3. فِعْل أَمْر (Fi'il Amar)</span>
+            <p class="text-xs text-stone-600 leading-relaxed">Menunjukkan <strong>perintah</strong> atau permintaan untuk melakukan perbuatan.</p>
+          </div>
+        </div>
+
+        <!-- Table of Fi'il Examples from Attached Image -->
+        <div class="space-y-3 pt-2">
+          <h4 class="font-bold text-stone-800 text-sm flex items-center gap-2">
+            <span>📋</span> Tabel Contoh Perubahan Fi'il (Lampau, Sekarang & Perintah)
+          </h4>
+
+          <div class="overflow-x-auto rounded-2xl border border-stone-200 shadow-xs">
+            <table class="w-full text-center border-collapse">
+              <thead>
+                <tr class="bg-rose-900 text-white text-sm font-semibold">
+                  <th class="px-4 py-3 font-arabic text-xl">مَاضٍ (Madhi)</th>
+                  <th class="px-4 py-3 font-arabic text-xl">مُضَارِع (Mudhari')</th>
+                  <th class="px-4 py-3 font-arabic text-xl">أَمْر (Amar)</th>
+                  <th class="px-4 py-3 text-xs font-sans">Dengarkan</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-stone-100 bg-white">
+                <tr class="hover:bg-rose-50/50 transition">
+                  <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">أَحْسَنَ</td>
+                  <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-800 dir-rtl">يُحْسِنُ</td>
+                  <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-rose-800 dir-rtl">أَحْسِنْ</td>
+                  <td class="px-4 py-3.5">
+                    <button onclick="speakArabic('أَحْسَنَ يُحْسِنُ أَحْسِنْ')" class="p-2 rounded-full bg-stone-100 hover:bg-rose-600 hover:text-white text-stone-600 text-xs transition" title="Putar audio">🔊</button>
+                  </td>
+                </tr>
+                <tr class="hover:bg-rose-50/50 transition">
+                  <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">تَكَلَّمَ</td>
+                  <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-800 dir-rtl">يَتَكَلَّمُ</td>
+                  <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-rose-800 dir-rtl">تَكَلَّمْ</td>
+                  <td class="px-4 py-3.5">
+                    <button onclick="speakArabic('تَكَلَّمَ يَتَكَلَّمُ تَكَلَّمْ')" class="p-2 rounded-full bg-stone-100 hover:bg-rose-600 hover:text-white text-stone-600 text-xs transition" title="Putar audio">🔊</button>
+                  </td>
+                </tr>
+                <tr class="hover:bg-rose-50/50 transition">
+                  <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">نَظَرَ</td>
+                  <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-800 dir-rtl">يَنْظُرُ</td>
+                  <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-rose-800 dir-rtl">اُنْظُرْ</td>
+                  <td class="px-4 py-3.5">
+                    <button onclick="speakArabic('نَظَرَ يَنْظُرُ اُنْظُرْ')" class="p-2 rounded-full bg-stone-100 hover:bg-rose-600 hover:text-white text-stone-600 text-xs transition" title="Putar audio">🔊</button>
+                  </td>
+                </tr>
+                <tr class="hover:bg-rose-50/50 transition">
+                  <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">قَرَأَ</td>
+                  <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-800 dir-rtl">يَقْرَأُ</td>
+                  <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-rose-800 dir-rtl">اِقْرَأْ</td>
+                  <td class="px-4 py-3.5">
+                    <button onclick="speakArabic('قَرَأَ يَقْرَأُ اِقْرَأْ')" class="p-2 rounded-full bg-stone-100 hover:bg-rose-600 hover:text-white text-stone-600 text-xs transition" title="Putar audio">🔊</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part 3: Al-Harf (٣- الحَرْف) -->
+      <div class="p-6 md:p-8 rounded-3xl bg-white border border-stone-200 shadow-sm space-y-6">
+        <div class="flex items-center justify-between border-b border-stone-100 pb-4">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 rounded-2xl bg-amber-600 text-white font-arabic text-2xl font-bold flex items-center justify-center shadow-md">٣</span>
+            <div>
+              <h3 class="font-arabic text-3xl font-bold text-amber-900 dir-rtl">٣- الحَرْف</h3>
+              <p class="text-xs text-stone-500 mt-0.5">Kata tugas / kata sambung yang tidak memiliki pengertian utuh kecuali dihubungkan</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 rounded-full bg-amber-50 text-amber-700 font-bold text-xs border border-amber-200">النوع الثالث</span>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-amber-50/70 border border-amber-100 space-y-3">
+          <p class="text-sm text-stone-800 leading-relaxed">
+            <span class="font-arabic text-2xl font-bold text-amber-900">كَلِمَة حَرْف</span> yaitu kata selain <strong>isim</strong> dan <strong>fi'il</strong>, yang tidak memiliki pengertian utuh kecuali setelah dihubungkan dengan isim atau fi'il.
+          </p>
+
+          <div class="pt-2">
+            <span class="text-xs font-bold text-amber-900 block mb-2">📌 Contoh Kata Harf (الحروف):</span>
+            <div class="flex flex-wrap gap-3">
+              <div class="px-4 py-2.5 rounded-xl bg-white border border-amber-200 flex items-center gap-3 shadow-xs">
+                <span class="font-arabic text-2xl font-bold text-amber-900">وَ</span>
+                <span class="text-xs text-stone-500 font-medium">(dan)</span>
+                <button onclick="speakArabic('وَ')" class="text-amber-700 text-xs">🔊</button>
+              </div>
+
+              <div class="px-4 py-2.5 rounded-xl bg-white border border-amber-200 flex items-center gap-3 shadow-xs">
+                <span class="font-arabic text-2xl font-bold text-amber-900">فَ</span>
+                <span class="text-xs text-stone-500 font-medium">(maka / lalu)</span>
+                <button onclick="speakArabic('فَ')" class="text-amber-700 text-xs">🔊</button>
+              </div>
+
+              <div class="px-4 py-2.5 rounded-xl bg-white border border-amber-200 flex items-center gap-3 shadow-xs">
+                <span class="font-arabic text-2xl font-bold text-amber-900">لِـ</span>
+                <span class="text-xs text-stone-500 font-medium">(untuk / bagi)</span>
+                <button onclick="speakArabic('لِـ')" class="text-amber-700 text-xs">🔊</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part 4: Mini Quiz / Interactive Exercise for Qowa'id -->
+      <div class="p-6 md:p-8 rounded-3xl bg-gradient-to-r from-teal-900 to-rose-900 text-white shadow-lg space-y-6 max-w-4xl mx-auto">
+        <div>
+          <span class="px-3 py-1 rounded-full bg-yellow-400/20 text-yellow-300 font-bold text-xs border border-yellow-400/30">اختبار سريع</span>
+          <h3 class="text-2xl md:text-3xl font-bold font-arabic text-yellow-300 mt-2">تَدْرِيْبُ القَوَاعِدِ (Uji Pemahaman Qowa'id)</h3>
+          <p class="text-xs text-stone-200 mt-1">Klasifikasikan kata-kata berikut ke dalam kelompok الإِسْم atau الفِعْل atau الحَرْف:</p>
+        </div>
+
+        <div id="qowaid-quiz-container" class="space-y-4 text-stone-900">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+    </section>
     <section id="sec-istima" class="content-section hidden space-y-8">
       
       <div class="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm space-y-4">

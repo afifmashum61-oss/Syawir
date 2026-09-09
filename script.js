@@ -315,6 +315,7 @@ function switchTab(targetId, btnElement = null) {
 document.addEventListener('DOMContentLoaded', () => {
   renderMufrodatCards();
   renderAfalTable();
+  renderQowaidQuiz();
   renderIstimaSection();
   renderQiroahSection();
   renderQuizSection();
@@ -789,4 +790,121 @@ function submitQuiz() {
 function toggleHabit(el) {
   el.classList.toggle('bg-teal-50');
   el.classList.toggle('border-teal-400');
+}
+
+// Data Tadrib Qowaid (Klasifikasi Kata: Isim, Fi'il, Harf)
+const qowaidQuestions = [
+  {
+    id: 1,
+    word: "المَدْرَسَةُ",
+    options: ["إِسْم (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
+    answer: 0,
+    explanation: "المَدْرَسَةُ adalah ISIM (إِسْم) karena diawali alif lam (الـ) dan menunjukkan nama benda/tempat."
+  },
+  {
+    id: 2,
+    word: "يَقْرَأُ",
+    options: ["إِسْم (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
+    answer: 1,
+    explanation: "يَقْرَأُ adalah FI'IL (فِعْل مُضَارِع) yang menunjukkan perbuatan membaca pada masa sekarang."
+  },
+  {
+    id: 3,
+    word: "وَ",
+    options: ["إِسْم (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
+    answer: 2,
+    explanation: "وَ adalah HARF (حَرْف) yaitu kata tugas/penghubung ('dan') yang tidak berdiri sendiri."
+  },
+  {
+    id: 4,
+    word: "ذَلِكَ",
+    options: ["اسم الإِشَارَة (Isim)", "فِعْل أَمْر (Fi'il)", "حَرْف (Harf)"],
+    answer: 0,
+    explanation: "ذَلِكَ adalah Isim Penunjuk / Isim Isyarah (اسم الإشارة) yang berarti 'itu'."
+  },
+  {
+    id: 5,
+    word: "اُكْتُبْ",
+    options: ["فِعْل مَاضٍ", "فِعْل أَمْر", "إِسْم مَصْدَر"],
+    answer: 1,
+    explanation: "اُكْتُبْ adalah Fi'il Amar (فِعْل أَمْر) yaitu kata kerja perintah ('Tulislah!')."
+  }
+];
+
+function renderQowaidQuiz() {
+  const container = document.getElementById('qowaid-quiz-container');
+  if (!container) return;
+
+  container.innerHTML = qowaidQuestions.map((q, idx) => `
+    <div class="p-5 rounded-2xl bg-white border border-stone-200 shadow-sm space-y-3">
+      <div class="flex items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <span class="w-7 h-7 rounded-full bg-teal-100 text-teal-800 font-bold text-xs flex items-center justify-center">${q.id}</span>
+          <span class="text-xs text-stone-500 font-semibold">Tentukan jenis kata berikut:</span>
+        </div>
+        <button onclick="speakArabic('${q.word}')" class="p-2 text-teal-700 hover:bg-teal-50 rounded-full transition" title="Lafalkan">🔊</button>
+      </div>
+
+      <div class="py-1 text-center bg-stone-50 rounded-xl border border-stone-100">
+        <p class="font-arabic text-3xl font-bold text-teal-900 dir-rtl">${q.word}</p>
+      </div>
+
+      <div class="grid grid-cols-3 gap-2 pt-1">
+        ${q.options.map((opt, optIdx) => `
+          <button 
+            type="button" 
+            onclick="checkQowaidQuiz(${q.id}, ${optIdx}, this)" 
+            class="qowaid-btn-${q.id} py-2.5 px-3 rounded-xl border border-stone-200 hover:bg-teal-50 hover:border-teal-400 transition text-xs font-bold text-stone-700 font-arabic text-center">
+            ${opt}
+          </button>
+        `).join('')}
+      </div>
+
+      <div id="qowaid-feedback-${q.id}" class="hidden p-3 rounded-xl text-xs border mt-2"></div>
+    </div>
+  `).join('');
+}
+
+function checkQowaidQuiz(qId, choiceIdx, btnEl) {
+  const q = qowaidQuestions.find(item => item.id === qId);
+  if (!q) return;
+
+  const feedbackEl = document.getElementById(`qowaid-feedback-${qId}`);
+  if (!feedbackEl) return;
+
+  const btns = document.querySelectorAll(`.qowaid-btn-${qId}`);
+  btns.forEach(b => {
+    b.classList.remove('bg-teal-700', 'bg-rose-600', 'text-white', 'border-teal-700', 'border-rose-600');
+    b.classList.add('border-stone-200', 'text-stone-700');
+  });
+
+  feedbackEl.classList.remove('hidden', 'bg-emerald-50', 'border-emerald-200', 'text-emerald-950', 'bg-rose-50', 'border-rose-200', 'text-rose-950');
+
+  if (choiceIdx === q.answer) {
+    btnEl.classList.remove('border-stone-200', 'text-stone-700');
+    btnEl.classList.add('bg-teal-700', 'border-teal-700', 'text-white');
+    feedbackEl.classList.add('bg-emerald-50', 'border-emerald-200', 'text-emerald-950');
+    feedbackEl.innerHTML = `
+      <div class="flex items-start gap-2">
+        <span class="text-emerald-600 text-base">✅</span>
+        <div>
+          <p class="font-bold">Masya Allah, Tepat Sekali!</p>
+          <p class="text-xs text-emerald-900 mt-0.5">${q.explanation}</p>
+        </div>
+      </div>
+    `;
+  } else {
+    btnEl.classList.remove('border-stone-200', 'text-stone-700');
+    btnEl.classList.add('bg-rose-600', 'border-rose-600', 'text-white');
+    feedbackEl.classList.add('bg-rose-50', 'border-rose-200', 'text-rose-950');
+    feedbackEl.innerHTML = `
+      <div class="flex items-start gap-2">
+        <span class="text-rose-600 text-base">❤️</span>
+        <div>
+          <p class="font-bold">Hampir Tepat!</p>
+          <p class="text-xs text-rose-900 mt-0.5">${q.explanation}</p>
+        </div>
+      </div>
+    `;
+  }
 }
