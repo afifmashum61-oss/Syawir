@@ -792,7 +792,7 @@ function toggleHabit(el) {
   el.classList.toggle('border-teal-400');
 }
 
-// Data Tadrib Qowaid (Klasifikasi Kata: Isim, Fi'il, Harf)
+// Data Tadrib Qowaid (20 Soal Klasifikasi Kata: Isim, Fi'il, Harf)
 const qowaidQuestions = [
   {
     id: 1,
@@ -828,6 +828,111 @@ const qowaidQuestions = [
     options: ["فِعْل مَاضٍ", "فِعْل أَمْر", "إِسْم مَصْدَر"],
     answer: 1,
     explanation: "اُكْتُبْ adalah Fi'il Amar (فِعْل أَمْر) yaitu kata kerja perintah ('Tulislah!')."
+  },
+  {
+    id: 6,
+    word: "رَسُوْلٌ",
+    options: ["إِسْم (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
+    answer: 0,
+    explanation: "رَسُوْلٌ adalah ISIM (إِسْم) karena ditandai dengan tanwin (ـٌ) dan menunjukkan nama perantara/benda."
+  },
+  {
+    id: 7,
+    word: "تَكَلَّمَ",
+    options: ["فِعْل مَاضٍ", "فِعْل مُضَارِع", "فِعْل أَمْر"],
+    answer: 0,
+    explanation: "تَكَلَّمَ adalah FI'IL MADHI (فِعْل مَاضٍ) yang menunjukkan perbuatan berbicara di masa lampau."
+  },
+  {
+    id: 8,
+    word: "الَّذِي",
+    options: ["اسم المَوْصُوْل (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
+    answer: 0,
+    explanation: "الَّذِي adalah Isim Penghubung / Isim Maushul (اسم الموصول) yang berarti 'yang'."
+  },
+  {
+    id: 9,
+    word: "فَ",
+    options: ["إِسْم (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
+    answer: 2,
+    explanation: "فَ adalah HARF (حَرْف) yaitu kata tugas/penghubung yang berarti 'maka/lalu'."
+  },
+  {
+    id: 10,
+    word: "كَبِيْرٌ",
+    options: ["إِسْم صِفَة (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
+    answer: 0,
+    explanation: "كَبِيْرٌ adalah ISIM SIFAT (إِسْم صِفَة) yang menunjukkan sifat benda ('besar')."
+  },
+  {
+    id: 11,
+    word: "يُحْسِنُ",
+    options: ["فِعْل مَاضٍ", "فِعْل مُضَارِع", "فِعْل أَمْر"],
+    answer: 1,
+    explanation: "يُحْسِنُ adalah FI'IL MUDHARI' (فِعْل مُضَارِع) yang menunjukkan perbuatan berbuat baik pada masa sekarang/kebiasaan."
+  },
+  {
+    id: 12,
+    word: "أَنَا",
+    options: ["اسم الضَّمِيْر (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
+    answer: 0,
+    explanation: "أَنَا adalah Isim Kata Ganti Orang Pertama / Isim Dhomir (اسم الضمير) yang berarti 'saya'."
+  },
+  {
+    id: 13,
+    word: "قِرَاءَةٌ",
+    options: ["إِسْم مَصْدَر (Isim)", "فِعْل أَمْر (Fi'il)", "حَرْف (Harf)"],
+    answer: 0,
+    explanation: "قِرَاءَةٌ adalah ISIM MASDAR (إِسْم مَصْدَر) yaitu kata kerja yang dibendakan ('membaca/bacaan')."
+  },
+  {
+    id: 14,
+    word: "لِـ",
+    options: ["إِسْم (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
+    answer: 2,
+    explanation: "لِـ adalah HARF (حَرْف) yaitu kata tugas yang berarti 'untuk/bagi'."
+  },
+  {
+    id: 15,
+    word: "اُنْظُرْ",
+    options: ["فِعْل مَاضٍ", "فِعْل مُضَارِع", "فِعْل أَمْر"],
+    answer: 2,
+    explanation: "اُنْظُرْ adalah FI'IL AMAR (فِعْل أَمْر) yaitu kata kerja perintah ('Lihatlah!')."
+  },
+  {
+    id: 16,
+    word: "هَذِهِ",
+    options: ["اسم الإِشَارَة (Isim)", "اسم المَوْصُوْل (Isim)", "حَرْف (Harf)"],
+    answer: 0,
+    explanation: "هَذِهِ adalah Isim Penunjuk Dekat untuk Muannats / Isim Isyarah (اسم الإشارة) yang berarti 'ini'."
+  },
+  {
+    id: 17,
+    word: "أَحْسَنَ",
+    options: ["فِعْل مَاضٍ", "فِعْل مُضَارِع", "فِعْل أَمْر"],
+    answer: 0,
+    explanation: "أَحْسَنَ adalah FI'IL MADHI (فِعْل مَاضٍ) yang menunjukkan perbuatan berbuat baik di masa lampau."
+  },
+  {
+    id: 18,
+    word: "نَحْنُ",
+    options: ["اسم الضَّمِيْر (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
+    answer: 0,
+    explanation: "نَحْنُ adalah Isim Dhomir Munfashil (اسم الضمير) yang berarti 'kami/kita'."
+  },
+  {
+    id: 19,
+    word: "نَظَرَ",
+    options: ["فِعْل مَاضٍ", "فِعْل مُضَارِع", "فِعْل أَمْر"],
+    answer: 0,
+    explanation: "نَظَرَ adalah FI'IL MADHI (فِعْل مَاضٍ) yang berarti 'telah melihat'."
+  },
+  {
+    id: 20,
+    word: "مَنْ",
+    options: ["اسم المَوْصُوْل (Isim)", "فِعْل (Fi'il)", "حَرْف (Harf)"],
+    answer: 0,
+    explanation: "مَنْ adalah Isim Penghubung / Penanya (اسم الموصول / الاستفهام) yang berarti 'siapa / barangsiapa'."
   }
 ];
 
