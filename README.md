@@ -1,6 +1,8 @@
 # Syawir - XI Bahasa Arab Tindak Lanjut MAN 4 Aceh Besar (الصحة والرعاية الصحية)
 
-Aplikasi Web Media Pembelajaran Bahasa Arab Interaktif untuk **XI Bahasa Arab Tindak Lanjut MAN 4 Aceh Besar** pada Bab **الصحة والرعاية الصحية** (Kesehatan dan Perawatan Kesehatan) yang dikembangkan berdasarkan **Kurikulum Berbasis Cinta (Kemenag Terbaru)**.
+Aplikasi Web Media Pembelajaran Bahasa Arab Interaktif untuk **XI Bahasa Arab Tindak Lanjut MAN 4 Aceh Besar** pada Bab **الصحة والرعاية الصحية** (Kesehatan dan Perawatan Kesehatan) yang dikembangkan oleh **Erliana, S.Pd.I** berdasarkan **Kurikulum Berbasis Cinta (Kemenag Terbaru)**.
+
+**Pemilik Web & Guru Pengampu**: Erliana, S.Pd.I (MAN 4 Aceh Besar)
 
 ---
 
