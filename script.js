@@ -1,8 +1,8 @@
-// Web Media Pembelajaran Bahasa Arab Kelas 11 - Bab الصحة والرعاية الصحية
-// Kurikulum Berbasis Cinta (Kemenag)
+// Web Media Pembelajaran Bahasa Arab Kelas 11 - Bab 2 & Bab 3
+// Kurikulum Berbasis Cinta (Kemenag) • MAN 4 Aceh Besar
 
-// Data Mufrodat (Ungkapan & Kosa Kata dari Gambar)
-const mufrodatData = [
+// ==================== DATASET BAB 2: الصحة والرعاية الصحية ====================
+const bab2Mufrodat = [
   { arabic: "الغِذَاء الطَّيِّب", translation: "Makanan yang baik / sehat", category: "Ungkapan", example: "الغِذَاءُ الطَّيِّبُ يُعْطِي الجِسْمَ الطَّاقَةَ" },
   { arabic: "المَوَاد الضَّرُورِيَّة", translation: "Bahan-bahan pokok / penting", category: "Ungkapan", example: "يَحْتَوِي الطَّعَامُ عَلَى المَوَادِ الضَّرُورِيَّةِ" },
   { arabic: "حَدِيد", translation: "Besi / Zat besi", category: "Kata Benda", example: "الحَدِيدُ مُهِمٌّ لِصِحَّةِ الدَّمِ" },
@@ -22,8 +22,7 @@ const mufrodatData = [
   { arabic: "مُبَكِّرًا", translation: "Lebih awal / Pagi-pagi", category: "Keterangan", example: "أَسْتَيْقِظُ مِنَ النَّوْمِ مُبَكِّرًا" }
 ];
 
-// Data Tabel Af'al (Kata Kerja dari Gambar)
-const afalData = [
+const bab2Afal = [
   { madhi: "نَشَّطَ", mudhari: "يُنَشِّطُ", masdar: "تَنْشِيْط", meaning: "memberi semangat, merangsang" },
   { madhi: "بَعَثَ", mudhari: "يَبْعَثُ", masdar: "بَعْثًا", meaning: "membangkitkan" },
   { madhi: "مَارَسَ", mudhari: "يُمَارِسُ", masdar: "مُمَارَسَة", meaning: "membiasakan, melatih" },
@@ -34,8 +33,7 @@ const afalData = [
   { madhi: "أَنْعَمَ", mudhari: "يُنْعِمُ", masdar: "إِنْعَام", meaning: "memberi nikmat" }
 ];
 
-// Teks Istima' Materi Inti (Berdasarkan Buku Paket Kemenag Terbaru)
-const istimaMateriInti = {
+const bab2IstimaInti = {
   headerQuestion: {
     ar: "مَاذَا نَفْعَلُ لِيَكُوْنَ جِسْمُنَا صَحِيْحًا ؟",
     id: "Apa yang kita lakukan agar tubuh kita menjadi sehat?"
@@ -62,8 +60,7 @@ const istimaMateriInti = {
   ]
 };
 
-// Teks Istima' Percakapan Tambahan (Di Klinik)
-const istimaDialog = [
+const bab2IstimaDialog = [
   { speaker: "الطَّبِيْبُ", text: "أَهْلًا وَسَهْلًا يَا عُمَر، مَاذَا تَشْكُو؟", translation: "Selamat datang Umar, apa yang kamu keluhkan?" },
   { speaker: "عُمَر", text: "أَشْعُرُ بِالتَّعَبِ وَالضَّعْفِ فِي جِسْمِي يَا طَبِيْبُ.", translation: "Saya merasa lelah dan lemah di tubuh saya, wahai dokter." },
   { speaker: "الطَّبِيْبُ", text: "هَلْ تُمَارِسُ الرِّيَاضَةَ وَتَتَنَاوَلُ الغِذَاءَ الطَّيِّبَ؟", translation: "Apakah kamu melatih diri berolahraga dan mengonsumsi makanan yang sehat?" },
@@ -71,8 +68,7 @@ const istimaDialog = [
   { speaker: "الطَّبِيْبُ", text: "أَنْصَحُكَ بِالرَّاحَةِ الكَافِيَةِ، وَأَكْلِ الفِيْتَامِيْنَاتِ وَالبُرُوتِينَاتِ، وَمُمَارَسَةِ الجَرْيِ أَوْ السِّبَاحَةِ لِتَنْشِيْطِ الجِسْمِ.", translation: "Saya menasihatimu untuk istirahat yang cukup, makan vitamin dan protein, serta membiasakan lari atau berenang untuk menyegarkan tubuh." }
 ];
 
-// Teks Qiroah (Membaca dari Buku Paket Kemenag Terbaru - الحياة الصحية)
-const qiroahText = {
+const bab2QiroahText = {
   title: "الحَيَاةُ الصِّحِّيَّةُ",
   sections: [
     {
@@ -91,238 +87,330 @@ const qiroahText = {
       code: "( ج )",
       title: "Bagian C: Istirahat Cukup & Tidur Pagi (نَهْتَمَّ بِالرَّاحَةِ وَالنَّوْمِ المُبَكِّرِ)",
       ar: "وَيَنْبَغِي كَذَلِكَ أَنْ نَهْتَمَّ بِالرَّاحَةِ، فَالرَّاحَةُ ضَرُورِيَّةٌ لِلصِّحَّةِ كَالغِذَاءِ وَالشَّرَابِ. وَيَكُوْنُ النَّوْمُ أَهَمَّ رَاحَةٍ لِلْإِنْسَانِ وَمِنَ العَادَاتِ المُفِيدَةِ أَنْ يَنَامَ الإِنْسَانُ مُبَكِّرًا وَأَنْ يَسْتَيْقِظَ مُبَكِّرًا.",
+      id: "Dan hendaknya kita juga memperhatikan istirahat, maka istirahat sangat penting untuk kesehatan seperti makanan dan minuman. Dan tidur merupakan istirahat yang paling penting bagi manusia, dan termasuk kebiasaan yang bermanfaat adalah seseorang tidur lebih awal dan bangun lebih awal."
     }
   ]
 };
 
-// Data Tadrib 1 Qiroah (Benar / Salah - صَحِيْح / خَطَأ dari Buku Teks Kemenag)
-const qiroahTadrib1 = [
-  {
-    id: 1,
-    statement: "نَسْتَطِيْعُ العَمَلَ إِذَا لَمْ نَأْكُلِ الغِذَاءَ",
-    translation: "Kita dapat bekerja jika kita tidak makan makanan.",
-    answer: "khata",
-    explanation: "خَطَأ (Salah)! Pembetulan yang benar: لا نَسْتَطِيْعُ العَمَلَ بِدُوْنِ الغِذَاءِ، لِأَنَّ الغِذَاءَ مَصْدَرُ الطَّاقَةِ اللَّازِمَةِ لِلْعَمَلِ."
-  },
-  {
-    id: 2,
-    statement: "نَأْكُلُ المَوَادَّ الضَّرُورِيَّةَ لِلصِّحَّةِ مِثْلَ البُرُوتِينَاتِ وَالفِيْتَامِيْنَاتِ",
-    translation: "Kita makan bahan-bahan yang penting untuk kesehatan seperti protein dan vitamin.",
-    answer: "sahih",
-    explanation: "صَحِيْح (Benar)! Sesuai dengan paragraf ( أ ), makanan sehat mengandung bahan-bahan penting bagi tubuh."
-  },
-  {
-    id: 3,
-    statement: "تَجْعَلُ الرِّيَاضَةُ البَدَنِيَّةُ الجِسْمَ يَنْمُو وَيَعْمَلُ جَيِّدًا",
-    translation: "Olahraga fisik menjadikan tubuh tumbuh dan bekerja dengan baik/bugar.",
-    answer: "sahih",
-    explanation: "صَحِيْح (Benar)! Sesuai dengan paragraf ( ب ), olahraga membantu pertumbuhan otot dan menjaga kebugaran."
-  },
-  {
-    id: 4,
-    statement: "النَّوْمُ أَهَمُّ شَيْءٍ فِي حَيَاةِ الإِنْسَانِ",
-    translation: "Tidur adalah hal yang paling penting dalam kehidupan manusia.",
-    answer: "khata",
-    explanation: "خَطَأ (Salah)! Pembetulan yang benar: النَّوْمُ أَهَمُّ رَاحَةٍ لِلْإِنْسَانِ، وَلَكِنَّ الصِّحَّةَ هِيَ النِّعْمَةُ الأَهَمُّ."
-  },
-  {
-    id: 5,
-    statement: "الرِّيَاضَةُ لَازِمَةٌ فِي جَمِيْعِ المُنَاسَبَاتِ",
-    translation: "Olahraga dibutuhkan di semua kesempatan tanpa batas.",
-    answer: "khata",
-    explanation: "خَطَأ (Salah)! Pembetulan yang benar: يَنْصَحُ الأَطِبَّاءُ بِمُمَارَسَةِ الرِّيَاضِيَّةِ فِي أَوْقَاتٍ مُنَاسِبَةٍ."
-  },
-  {
-    id: 6,
-    statement: "قِرَاءَةُ القُرْآنِ مِنَ الرِّيَاضَةِ الرُّوْحِيَّةِ",
-    translation: "Membaca Al-Qur'an termasuk bagian dari olahraga ruh/jiwa.",
-    answer: "sahih",
-    explanation: "صَحِيْح (Benar)! Sesuai dengan paragraf ( ب ), membaca Qur'an dan dzikir merupakan olahraga jiwa (رِيَاضَةُ النَّفْسِ)."
-  },
-  {
-    id: 7,
-    statement: "الصَّلَاةُ تُسَاعِدُ كَثِيْرًا عَلَى تَنْشِيْطِ الجِسْمِ",
-    translation: "Shalat sangat membantu menyegarkan kebugaran tubuh.",
-    answer: "sahih",
-    explanation: "صَحِيْح (Benar)! Sesuai dengan paragraf ( ب ), gerakan shalat merangsang kesegaran fisik dan ketenangan jiwa."
-  }
+const bab2QiroahTadrib1 = [
+  { id: 1, statement: "نَسْتَطِيْعُ العَمَلَ إِذَا لَمْ نَأْكُلِ الغِذَاءَ", translation: "Kita dapat bekerja jika tidak makan.", answer: "khata", explanation: "خَطَأ (Salah)! Pembetulan: لا نَسْتَطِيْعُ العَمَلَ بِدُوْنِ الغِذَاءِ، لِأَنَّ الغِذَاءَ مَصْدَرُ الطَّاقَةِ." },
+  { id: 2, statement: "نَأْكُلُ المَوَادَّ الضَّرُورِيَّةَ لِلصِّحَّةِ مِثْلَ البُرُوتِينَاتِ وَالفِيْتَامِيْنَاتِ", translation: "Kita makan bahan penting seperti protein & vitamin.", answer: "sahih", explanation: "صَحِيْح (Benar)! Makanan sehat mengandung bahan-bahan penting bagi tubuh." },
+  { id: 3, statement: "تَجْعَلُ الرِّيَاضَةُ البَدَنِيَّةُ الجِسْمَ يَنْمُو وَيَعْمَلُ جَيِّدًا", translation: "Olahraga membuat tubuh bugar.", answer: "sahih", explanation: "صَحِيْح (Benar)! Olahraga membantu kebugaran tubuh." },
+  { id: 4, statement: "النَّوْمُ أَهَمُّ شَيْءٍ فِي حَيَاةِ الإِنْسَانِ", translation: "Tidur hal paling penting dalam hidup.", answer: "khata", explanation: "خَطَأ (Salah)! Tidur adalah istirahat terpenting, namun kesehatan dan ibadah adalah nikmat utama." },
+  { id: 5, statement: "الرِّيَاضَةُ لَازِمَةٌ فِي جَمِيْعِ المُنَاسَبَاتِ", translation: "Olahraga dilakukan tanpa batas.", answer: "khata", explanation: "خَطَأ (Salah)! Olahraga sebaiknya pada waktu-waktu yang sesuai." },
+  { id: 6, statement: "قِرَاءَةُ القُرْآنِ مِنَ الرِّيَاضَةِ الرُّوْحِيَّةِ", translation: "Membaca Qur'an bagian olahraga jiwa.", answer: "sahih", explanation: "صَحِيْح (Benar)! Membaca Qur'an dan dzikir merupakan olahraga jiwa." },
+  { id: 7, statement: "الصَّلَاةُ تُسَاعِدُ كَثِيْرًا عَلَى تَنْشِيْطِ الجِسْمِ", translation: "Shalat menyegarkan tubuh.", answer: "sahih", explanation: "صَحِيْح (Benar)! Gerakan shalat merangsang kesegaran fisik dan ketenangan batin." }
 ];
 
-// Data Tadrib 2 Qiroah (Tanya Jawab Pemahaman Teks Qiroah)
-const qiroahTadrib2 = [
-  {
-    id: 1,
-    question: "هَلْ نَسْتَطِيْعُ أَنْ نَعْمَلَ بِدُوْنِ الغِذَاءِ ؟",
-    answer: "لَا، لَا نَسْتَطِيْعُ أَنْ نَعْمَلَ بِدُوْنِ الغِذَاءِ، لِأَنَّ الغِذَاءَ مَصْدَرُ الطَّاقَةِ اللَّازِمَةِ لِلْعَمَلِ."
-  },
-  {
-    id: 2,
-    question: "لِمَاذَا نَحْتَاجُ إِلَى الرَّاحَةِ بَعْدَ العَمَلِ ؟",
-    answer: "لِأَنَّ الرَّاحَةَ ضَرُورِيَّةٌ لِلصِّحَّةِ كَالغِذَاءِ وَالشَّرَابِ."
-  },
-  {
-    id: 3,
-    question: "أُذْكُرْ بَعْضَ الرِّيَاضَاتِ البَدَنِيَّةِ الَّتِي تُمَارِسُهَا فِي مَدْرَسَتِكَ ؟",
-    answer: "الرِّيَاضَاتُ البَدَنِيَّةُ الَّتِي أُمَارِسُهَا فِي مَدْرَسَتِي هِيَ الجَرْيُ، وَالسِّبَاحَةُ، وَلَعْبُ الكُرَةِ."
-  },
-  {
-    id: 4,
-    question: "مَاذَا طَلَبَ الرَّسُوْلُ ﷺ مِنْ بِلَالٍ ؟",
-    answer: "طَلَبَ الرَّسُوْلُ ﷺ مِنْ بِلَالٍ أَنْ يُنَادِيَ لِلصَّلَاةِ لِيَرْتَاحَ بِهَا، فَقَالَ: (يَا بِلَالُ أَرِحْنَا بِالصَّلَاةِ)."
-  },
-  {
-    id: 5,
-    question: "مَا أَهَمُّ شَيْءٍ يَتَذَكَّرُهُ المَرْءُ عِنْدَ مَرَضِهِ ؟",
-    answer: "أَهَمُّ شَيْءٍ يَتَذَكَّرُهُ المَرْءُ عِنْدَ مَرَضِهِ هُوَ نِعْمَةُ الصِّحَّةِ وَعَافِيَةُ البَدَنِ."
-  }
+const bab2QiroahTadrib2 = [
+  { id: 1, question: "هَلْ نَسْتَطِيْعُ أَنْ نَعْمَلَ بِدُوْنِ الغِذَاءِ ؟", answer: "لَا، لَا نَسْتَطِيْعُ أَنْ نَعْمَلَ بِدُوْنِ الغِذَاءِ، لِأَنَّ الغِذَاءَ مَصْدَرُ الطَّاقَةِ اللَّازِمَةِ لِلْعَمَلِ." },
+  { id: 2, question: "لِمَاذَا نَحْتَاجُ إِلَى الرَّاحَةِ بَعْدَ العَمَلِ ؟", answer: "لِأَنَّ الرَّاحَةَ ضَرُورِيَّةٌ لِلصِّحَّةِ كَالغِذَاءِ وَالشَّرَابِ." },
+  { id: 3, question: "أُذْكُرْ بَعْضَ الرِّيَاضَاتِ البَدَنِيَّةِ الَّتِي تُمَارِسُهَا فِي مَدْرَسَتِكَ ؟", answer: "الرِّيَاضَاتُ البَدَنِيَّةُ الَّتِي أُمَارِسُهَا فِي مَدْرَسَتِي هِيَ الجَرْيُ، وَالسِّبَاحَةُ، وَلَعْبُ الكُرَةِ." },
+  { id: 4, question: "مَاذَا طَلَبَ الرَّسُوْلُ ﷺ مِنْ بِلَالٍ ؟", answer: "طَلَبَ الرَّسُوْلُ ﷺ مِنْ بِلَالٍ أَنْ يُنَادِيَ لِلصَّلَاةِ لِيَرْتَاحَ بِهَا، فَقَالَ: (يَا بِلَالُ أَرِحْنَا بِالصَّلَاةِ)." },
+  { id: 5, question: "مَا أَهَمُّ شَيْءٍ يَتَذَكَّرُهُ المَرْءُ عِنْدَ مَرَضِهِ ؟", answer: "أَهَمُّ شَيْءٍ يَتَذَكَّرُهُ المَرْءُ عِنْدَ مَرَضِهِ هُوَ نِعْمَةُ الصِّحَّةِ وَعَافِيَةُ البَدَنِ." }
 ];
 
-// Data Latihan Soal Interaktif (تدريبات على الاستماع / المفردات - إِخْتَرِ أَصَحَّ الكَلِمَاتِ الآتِيَةِ!)
-const quizQuestions = [
-  {
-    id: 1,
-    question: "الغِذَاءُ الطَّيِّبُ يَحْتَوِي عَلَى .....",
-    options: ["أ - الفِيْتَامِيْنَات", "ب - الشَّرَاب", "ج - الطَّعَام", "د - المَوَادِّ الضَّرُورِيَّةِ", "هـ - المَدَارِس"],
-    answer: 3, // د
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (د): المَوَادِّ الضَّرُورِيَّةِ."
-  },
-  {
-    id: 2,
-    question: "..... مَصْدَرُ الطَّاقَةِ اللَّازِمَةِ لِلْعَمَلِ",
-    options: ["أ - الأَكْل", "ب - الدَّرْس", "ج - الغِذَاء", "د - الرِّيَاضَة", "هـ - التَّعْلِيْم"],
-    answer: 2, // ج
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ج): الغِذَاء."
-  },
-  {
-    id: 3,
-    question: "الرَّاحَةُ الكَافِيَةُ ضَرُورِيَّةٌ. وَمِنْ أَهَمِّ الرَّاحَةِ .....",
-    options: ["أ - القِرَاءَة", "ب - النَّوْم", "ج - الأَذْكَار", "د - الدَّرْس", "هـ - الرَّسْم"],
-    answer: 1, // ب
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): النَّوْم."
-  },
-  {
-    id: 4,
-    question: "الرِّيَاضَةُ البَدَنِيَّةُ تُسَاعِدُ عَلَى نُمُوِّ .....",
-    options: ["أ - العَقْل", "ب - النَّفْس", "ج - الرَّأْس", "د - الرِّجْل", "هـ - العَضَلَات"],
-    answer: 4, // هـ
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (هـ): العَضَلَات."
-  },
-  {
-    id: 5,
-    question: "مِنْ الرِّيَاضَةِ الرُّوْحِيَّةِ .....",
-    options: ["أ - الجَرْيُ السَّرِيْع", "ب - السِّبَاحَةُ المُنْتَظَمَة", "ج - قِرَاءَةُ الأَذْكَار", "د - رَسْمُ المَنَاظِر", "هـ - لَعْبُ كُرَةِ القَدَم"],
-    answer: 2, // ج
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ج): قِرَاءَةُ الأَذْكَار."
-  },
-  {
-    id: 6,
-    question: "وَلِصِحَّةِ الجِسْمِ ..... أَنْ يَتَنَاوَلَ الإِنْسَانُ الغِذَاءَ الطَّيِّبَ.",
-    options: ["أ - يَجِبُ", "ب - يُمْكِنُ", "ج - يُحِبُّ", "د - يَكْرَهُ", "هـ - يُغْضِبُ"],
-    answer: 0, // أ
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (أ): يَجِبُ."
-  },
-  {
-    id: 7,
-    question: "الصَّلَاةُ تَسْتَطِيْعُ أَنْ ..... الرَّاحَةَ فِي نَفْسِ الإِنْسَانِ.",
-    options: ["أ - تَبْعَثَ", "ب - تَجْعَلَ", "ج - تَصُدَّ", "د - تُمَارِسَ", "هـ - تُبْعِدَ"],
-    answer: 0, // أ
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (أ): تَبْعَثَ."
-  },
-  {
-    id: 8,
-    question: "يَجِبُ عَلَى المُسْلِمِ أَنْ ..... عَلَى الصَّلَوَاتِ الخَمْسِ.",
-    options: ["أ - يُحَافِظَ", "ب - يَحْتَوِيَ", "ج - يُنْعِمَ", "د - يَتْرُكَ", "هـ - يَكْرَهَ"],
-    answer: 0, // أ
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (أ): يُحَافِظَ."
-  },
-  {
-    id: 9,
-    question: "..... الرِّيَاضَةَ إِلَى الرِّيَاضَةِ البَدَنِيَّةِ وَالرِّيَاضَةِ النَّفْسِيَّةِ.",
-    options: ["أ - تُحَافِظُ", "ب - نُفَضِّلُ", "ج - نَعْمَلُ", "د - نُقَسِّمُ", "هـ - تَجْلِسُ"],
-    answer: 3, // د
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (د): نُقَسِّمُ."
-  },
-  {
-    id: 10,
-    question: "الطَّبِيْبُ ..... المَرِيْضَ أَنْ يُمَارِسَ رِيَاضَةَ النَّفْسِ.",
-    options: ["أ - يَنْهَى", "ب - يَنْصَحُ", "ج - يَصُدُّ", "د - يَكْرَهُ", "هـ - يُغْضِبُ"],
-    answer: 1, // ب
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): يَنْصَحُ."
-  },
-  {
-    id: 11,
-    question: "تُنَشِّطُ السِّبَاحَةُ وَالجَرْيُ ..... الإِنْسَانِ.",
-    options: ["أ - عَقْلَ", "ب - جِسْمَ", "ج - كِتَابَ", "د - بَيْتَ", "هـ - مَدْرَسَةَ"],
-    answer: 1, // ب
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): جِسْمَ."
-  },
-  {
-    id: 12,
-    question: "كَلِمَةُ \"يَنْصَحُ\" فِي القَوَاعِدِ هِيَ فِعْلُ .....",
-    options: ["أ - مَاضٍ", "ب - مُضَارِعٌ", "ج - أَمْرٌ", "د - مَصْدَرٌ", "هـ - حَرْفٌ"],
-    answer: 1, // ب
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): مُضَارِعٌ."
-  },
-  {
-    id: 13,
-    question: "مِنَ العَادَاتِ المُفِيْدَةِ أَنْ يَنَامَ الإِنْسَانُ ..... وَأَنْ يَسْتَيْقِظَ مُبَكِّرًا.",
-    options: ["أ - مُتَأَخِّرًا", "ب - مُبَكِّرًا", "ج - كَثِيْرًا", "د - قَلِيْلًا", "هـ - طَوِيْلًا"],
-    answer: 1, // ب
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): مُبَكِّرًا."
-  },
-  {
-    id: 14,
-    question: "كَانَ النَّبِيُّ ﷺ يَرْتَاحُ بِـ ..... وَيَقُوْلُ: (أَرِحْنَا بِالصَّلَاةِ يَا بِلَالُ).",
-    options: ["أ - النَّوْمِ", "ب - الأَكْلِ", "ج - الصَّلَاةِ", "د - الجَرْيِ", "هـ - السَّفَرِ"],
-    answer: 2, // ج
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ج): الصَّلَاةِ."
-  },
-  {
-    id: 15,
-    question: "كَلِمَةُ \"الكُرْسِيُّ\" فِي القَوَاعِدِ تَدُلُّ عَلَى .....",
-    options: ["أ - الفِعْلِ", "ب - الإِسْمِ", "ج - الحَرْفِ", "د - الظَّرْفِ", "هـ - الأَمْرِ"],
-    answer: 1, // ب
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): الإِسْمِ."
-  },
-  {
-    id: 16,
-    question: "مِنْ أَهَمِّ أَنْوَاعِ الرِّيَاضَةِ البَدَنِيَّةِ ..... وَالسِّبَاحَةُ.",
-    options: ["أ - القِرَاءَةُ", "ب - الجَرْيُ", "ج - النَّوْمُ", "د - الأَكْلُ", "هـ - الشُّرْبُ"],
-    answer: 1, // ب
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): الجَرْيُ."
-  },
-  {
-    id: 17,
-    question: "الأَطِبَّاءُ يَصُدُّونَ الإِنْسَانَ عَنْ طُوْلِ ..... لِلْمُحَافَظَةِ عَلَى الصِّحَّةِ.",
-    options: ["أ - الرَّاحَةِ", "ب - السَّهَرِ", "ج - الرِّيَاضَةِ", "د - الصَّلَاةِ", "هـ - القِرَاءَةِ"],
-    answer: 1, // ب
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): السَّهَرِ."
-  },
-  {
-    id: 18,
-    question: "كَلِمَةُ \"هَذِهِ\" تُعْتَبَرُ مِنْ .....",
-    options: ["أ - أَفْعَالِ الأَمْرِ", "ب - أَسْمَاءِ الإِشَارَةِ", "ج - أَسْمَاءِ المَوْصُوْلِ", "د - الحُرُوْفِ", "هـ - الظُّرُوْفِ"],
-    answer: 1, // ب
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): أَسْمَاءِ الإِشَارَةِ."
-  },
-  {
-    id: 19,
-    question: "المَصْدَرُ مِنْ الفِعْلِ \"نَشَّطَ - يُنَشِّطُ\" هُوَ .....",
-    options: ["أ - نَشَاط", "ب - تَنْشِيْط", "ج - نَاشِط", "د - مَنْشُوْط", "هـ - مُنَشِّط"],
-    answer: 1, // ب
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): تَنْشِيْط."
-  },
-  {
-    id: 20,
-    question: "الصِّحَّةُ وَالعَافِيَةُ هِيَ ..... عَظِيْمَةٌ مِنْ اللهِ يَجِبُ الشُّكْرُ عَلَيْهَا.",
-    options: ["أ - نِعْمَةٌ", "ب - مَرَضٌ", "ج - تَعَبٌ", "د - ضَعْفٌ", "هـ - كَسَلٌ"],
-    answer: 0, // أ
-    explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (أ): نِعْمَةٌ."
-  }
+const bab2QowaidQuestions = [
+  { id: 1, word: "قَرَأَ الطَّالِبُ القُرْآنَ", options: ["أ - الطَّالِبُ", "ب - القُرْآنَ", "ج - قَرَأَ"], answer: 1, explanation: "القُرْآنَ adalah Objek / Maf'ul Bihi (مفعول به) ber-harakat fathah." },
+  { id: 2, word: "يَتَنَاوَلُ عُمَرُ الغِذَاءَ الطَّيِّبَ", options: ["أ - الغِذَاءَ", "ب - عُمَرُ", "ج - يَتَنَاوَلُ"], answer: 0, explanation: "الغِذَاءَ adalah Maf'ul Bihi manshub dengan tanda fathah." },
+  { id: 3, word: "نَصَحَ الطَّبِيْبُ المَرِيْضَيْنِ", options: ["أ - الطَّبِيْبُ", "ب - المَرِيْضَيْنِ", "ج - نَصَحَ"], answer: 1, explanation: "المَرِيْضَيْنِ adalah Maf'ul Bihi (Mutsanna) ber-tanda Ya (ـَيْنِ)." },
+  { id: 4, word: "يَدْعُوْ الإِسْلَامُ المُسْلِمِيْنَ إِلَى الصِّحَّةِ", options: ["أ - المُسْلِمِيْنَ", "ب - الإِسْلَامُ", "ج - الصِّحَّةِ"], answer: 0, explanation: "المُسْلِمِيْنَ adalah Maf'ul Bihi (Jama' Mudzakkar Salim) ber-tanda Ya (ـِيْنَ)." },
+  { id: 5, word: "شَرِبَ المَرِيْضُ الدَّوَاءَ", options: ["أ - المَرِيْضُ", "ب - الدَّوَاءَ", "ج - شَرِبَ"], answer: 1, explanation: "الدَّوَاءَ adalah Maf'ul Bihi (Isim Mufrad) manshub dengan fathah." },
+  { id: 6, word: "يُحِبُّ اللهُ المُحْسِنِيْنَ", options: ["أ - اللهُ", "ب - المُحْسِنِيْنَ", "ج - يُحِبُّ"], answer: 1, explanation: "المُحْسِنِيْنَ adalah Maf'ul Bihi manshub dengan Ya (ـِيْنَ)." },
+  { id: 7, word: "تَنَاوَلَتْ عَائِشَةُ الفِيْتَامِيْنَاتِ", options: ["أ - الفِيْتَامِيْنَاتِ", "ب - عَائِشَةُ", "ج - تَنَاوَلَتْ"], answer: 0, explanation: "الفِيْتَامِيْنَاتِ adalah Maf'ul Bihi manshub." },
+  { id: 8, word: "يُمَارِسُ الطُّلَّابُ الرِّيَاضَةَ", options: ["أ - الطُّلَّابُ", "ب - الرِّيَاضَةَ", "ج - يُمَارِسُ"], answer: 1, explanation: "الرِّيَاضَةَ adalah Maf'ul Bihi manshub dengan fathah." },
+  { id: 9, word: "كَتَبَ التِّلْمِيْذُ الدَّرْسَيْنِ", options: ["أ - التِّلْمِيْذُ", "ب - الدَّرْسَيْنِ", "ج - كَتَبَ"], answer: 1, explanation: "الدَّرْسَيْنِ adalah Maf'ul Bihi mutsanna ber-tanda Ya (ـَيْنِ)." },
+  { id: 10, word: "يُشَاهِدُ الأَطْفَالُ التِّلْفَازَ", options: ["أ - الأَطْفَالُ", "ب - التِّلْفَازَ", "ج - يُشَاهِدُ"], answer: 1, explanation: "التِّلْفَازَ adalah Maf'ul Bihi manshub dengan fathah." },
+  { id: 11, word: "مَا هِيَ العَلَامَةُ الأَصْلِيَّةُ لِلْمَفْعُوْلِ بِهِ فِي الإِسْمِ المُفْرَدِ ؟", options: ["أ - الفَتْحَة ( َ )", "ب - الضَّمَّة ( ُ )", "ج - الكَسْرَة ( ِ )"], answer: 0, explanation: "Tanda asli i'rab manshub untuk Isim Mufrad adalah Fathah." },
+  { id: 12, word: "تَكُوْنُ عَلَامَةُ نَصْبِ المَفْعُوْلِ بِهِ فِي المُنَثَّى هِيَ .....", options: ["أ - الأَلِف", "ب - اليَاء (ـَيْنِ)", "ج - النُّوْن"], answer: 1, explanation: "Tanda manshub untuk Isim Mutsanna/Tasniyah adalah Ya (ـَيْنِ)." },
+  { id: 13, word: "تَكُوْنُ عَلَامَةُ نَصْبِ المَفْعُوْلِ بِهِ فِي جَمْعِ المُنَذَكَّرِ السَّالِمِ هِيَ .....", options: ["أ - الوَاو", "ب - اليَاء (ـِيْنَ)", "ج - الضَّمَّة"], answer: 1, explanation: "Tanda manshub untuk Jama' Mudzakkar Salim adalah Ya (ـِيْنَ)." },
+  { id: 14, word: "فِي الجُمْلَةِ \"الطَّبِيْبُ يُعَالِجُ المَرِيْضَ\"، أَيْن المَفْعُوْلُ بِهِ ؟", options: ["أ - الطَّبِيْبُ", "ب - يُعَالِجُ", "ج - المَرِيْضَ"], answer: 2, explanation: "المَرِيْضَ adalah Maf'ul Bihi dalam susunan Jumlah Ismiyyah." },
+  { id: 15, word: "فِي الجُمْلَةِ \"اللهُ يُحِبُّ التَّوَّابِيْنَ\"، كَلِمَةُ \"التَّوَّابِيْنَ\" مَفْعُوْلٌ بِهِ مَنْصُوْبٌ بِـ .....", options: ["أ - الفَتْحَة", "ب - اليَاء", "ج - الأَلِف"], answer: 1, explanation: "التَّوَّابِيْنَ adalah Jama' Mudzakkar Salim, manshub dengan Ya." },
+  { id: 16, word: "تَرْكِيْبُ الجُمْلَةِ الفِعْلِيَّةِ الَّتِي فِيْهَا مَفْعُوْلٌ بِهِ هُوَ .....", options: ["أ - فِعْل + فَاعِل + مَفْعُوْل بِهِ", "ب - مُبْتَدَأ + خَبَر", "ج - حَرْف + إِسْم"], answer: 0, explanation: "Susunan dasar Jumlah Fi'liyyah berpola Fi'il + Fa'il + Maf'ul Bihi." },
+  { id: 17, word: "تَرْكِيْبُ الجُمْلَةِ الإِسْمِيَّةِ مَعَ المَفْعُوْلِ بِهِ هُوَ .....", options: ["أ - فِعْل + فَاعِل", "ب - مُبْتَدَأ + (فِعْل + فَاعِل + مَفْعُوْل بِهِ)", "ج - إِسْم + حَرْف"], answer: 1, explanation: "Dalam Jumlah Ismiyyah, khabar dapat berupa jumlah fi'liyyah yang memuat Maf'ul Bihi." },
+  { id: 18, word: "أَيْنَ المَفْعُوْلُ بِهِ فِي \"أَكَرَمَ الأُسْتَاذُ المَدْعُوِّيْنَ أَمَامَ الفَصْلِ\"؟", options: ["أ - الأُسْتَاذُ", "ب - المَدْعُوِّيْنَ", "ج - أَمَامَ"], answer: 1, explanation: "المَدْعُوِّيْنَ adalah Objek (Maf'ul Bihi), sedangkan أَمَامَ adalah Zharaf." },
+  { id: 19, word: "مَا هِيَ الحَرَكَةُ الصَّحِيْحَةُ لِلْمَفْعُوْلِ بِهِ فِي \"يَأْكُلُ المُرَاهِقُوْنَ الغِذَاء...\"؟", options: ["أ - الغِذَاءُ (ضَمَّة)", "ب - الغِذَاءَ (فَتْحَة)", "ج - الغِذَاءِ (كَسْرَة)"], answer: 1, explanation: "Karena merupakan Isim Mufrad, Maf'ul Bihi diberi harakat Fathah (الغِذَاءَ)." },
+  { id: 20, word: "الْفَرْقُ بَيْنَ الجُمْلَةِ الفِعْلِيَّةِ وَالجُمْلَةِ الإِسْمِيَّةِ عِنْدَ وُجُوْدِ المَفْعُوْلِ بِهِ هُوَ .....", options: ["أ - الجُمْلَةُ الفِعْلِيَّةُ تَبْدَأُ بِالفِعْلِ، وَالإِسْمِيَّةُ تَبْدَأُ بِالإِسْمِ", "ب - المَفْعُوْلُ بِهِ يَكُوْنُ مَرْفُوْعًا فِي الإِسْمِيَّةِ", "ج - لَا يُوْجَدُ مَفْعُوْلٌ بِهِ فِي الجُمْلَةِ الإِسْمِيَّةِ"], answer: 0, explanation: "Perbedaan utamanya adalah kata pembuka kalimat: Jumlah Fi'liyyah diawali Fi'il, Jumlah Ismiyyah diawali Isim." }
 ];
+
+const bab2QuizQuestions = [
+  { id: 1, question: "الغِذَاءُ الطَّيِّبُ يَحْتَوِي عَلَى .....", options: ["أ - الفِيْتَامِيْنَات", "ب - الشَّرَاب", "ج - الطَّعَام", "د - المَوَادِّ الضَّرُورِيَّةِ", "هـ - المَدَارِس"], answer: 3, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (د): المَوَادِّ الضَّرُورِيَّةِ." },
+  { id: 2, question: "..... مَصْدَرُ الطَّاقَةِ اللَّازِمَةِ لِلْعَمَلِ", options: ["أ - الأَكْل", "ب - الدَّرْس", "ج - الغِذَاء", "د - الرِّيَاضَة", "هـ - التَّعْلِيْم"], answer: 2, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ج): الغِذَاء." },
+  { id: 3, question: "الرَّاحَةُ الكَافِيَةُ ضَرُورِيَّةٌ. وَمِنْ أَهَمِّ الرَّاحَةِ .....", options: ["أ - القِرَاءَة", "ب - النَّوْم", "ج - الأَذْكَار", "د - الدَّرْس", "هـ - الرَّسْم"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): النَّوْم." },
+  { id: 4, question: "الرِّيَاضَةُ البَدَنِيَّةُ تُسَاعِدُ عَلَى نُمُوِّ .....", options: ["أ - العَقْل", "ب - النَّفْس", "ج - الرَّأْس", "د - الرِّجْل", "هـ - العَضَلَات"], answer: 4, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (هـ): العَضَلَات." },
+  { id: 5, question: "مِنْ الرِّيَاضَةِ الرُّوْحِيَّةِ .....", options: ["أ - الجَرْيُ السَّرِيْع", "ب - السِّبَاحَةُ المُنْتَظَمَة", "ج - قِرَاءَةُ الأَذْكَار", "د - رَسْمُ المَنَاظِر", "هـ - لَعْبُ كُرَةِ القَدَم"], answer: 2, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ج): قِرَاءَةُ الأَذْكَار." },
+  { id: 6, question: "وَلِصِحَّةِ الجِسْمِ ..... أَنْ يَتَنَاوَلَ الإِنْسَانُ الغِذَاءَ الطَّيِّبَ.", options: ["أ - يَجِبُ", "ب - يُمْكِنُ", "ج - يُحِبُّ", "د - يَكْرَهُ", "هـ - يُغْضِبُ"], answer: 0, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (أ): يَجِبُ." },
+  { id: 7, question: "الصَّلَاةُ تَسْتَطِيْعُ أَنْ ..... الرَّاحَةَ فِي نَفْسِ الإِنْسَانِ.", options: ["أ - تَبْعَثَ", "ب - تَجْعَلَ", "ج - تَصُدَّ", "د - تُمَارِسَ", "هـ - تُبْعِدَ"], answer: 0, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (أ): تَبْعَثَ." },
+  { id: 8, question: "يَجِبُ عَلَى المُسْلِمِ أَنْ ..... عَلَى الصَّلَوَاتِ الخَمْسِ.", options: ["أ - يُحَافِظَ", "ب - يَحْتَوِيَ", "ج - يُنْعِمَ", "د - يَتْرُكَ", "هـ - يَكْرَهَ"], answer: 0, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (أ): يُحَافِظَ." },
+  { id: 9, question: "..... الرِّيَاضَةَ إِلَى الرِّيَاضَةِ البَدَنِيَّةِ وَالرِّيَاضَةِ النَّفْسِيَّةِ.", options: ["أ - تُحَافِظُ", "ب - نُفَضِّلُ", "ج - نَعْمَلُ", "د - نُقَسِّمُ", "هـ - تَجْلِسُ"], answer: 3, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (د): نُقَسِّمُ." },
+  { id: 10, question: "الطَّبِيْبُ ..... المَرِيْضَ أَنْ يُمَارِسَ رِيَاضَةَ النَّفْسِ.", options: ["أ - يَنْهَى", "ب - يَنْصَحُ", "ج - يَصُدُّ", "د - يَكْرَهُ", "هـ - يُغْضِبُ"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): يَنْصَحُ." },
+  { id: 11, question: "تُنَشِّطُ السِّبَاحَةُ وَالجَرْيُ ..... الإِنْسَانِ.", options: ["أ - عَقْلَ", "ب - جِسْمَ", "ج - كِتَابَ", "د - بَيْتَ", "هـ - مَدْرَسَةَ"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): جِسْمَ." },
+  { id: 12, question: "كَلِمَةُ \"يَنْصَحُ\" فِي القَوَاعِدِ هِيَ فِعْلُ .....", options: ["أ - مَاضٍ", "ب - مُضَارِعٌ", "ج - أَمْرٌ", "د - مَصْدَرٌ", "هـ - حَرْفٌ"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): مُضَارِعٌ." },
+  { id: 13, question: "مِنَ العَادَاتِ المُفِيْدَةِ أَنْ يَنَامَ الإِنْسَانُ ..... وَأَنْ يَسْتَيْقِظَ مُبَكِّرًا.", options: ["أ - مُتَأَخِّرًا", "ب - مُبَكِّرًا", "ج - كَثِيْرًا", "د - قَلِيْلًا", "هـ - طَوِيْلًا"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): مُبَكِّرًا." },
+  { id: 14, question: "كَانَ النَّبِيُّ ﷺ يَرْتَاحُ بِـ ..... وَيَقُوْلُ: (أَرِحْنَا بِالصَّلَاةِ يَا بِلَالُ).", options: ["أ - النَّوْمِ", "ب - الأَكْلِ", "ج - الصَّلَاةِ", "د - الجَرْيِ", "هـ - السَّفَرِ"], answer: 2, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ج): الصَّلَاةِ." },
+  { id: 15, question: "كَلِمَةُ \"الكُرْسِيُّ\" فِي القَوَاعِدِ تَدُلُّ عَلَى .....", options: ["أ - الفِعْلِ", "ب - الإِسْمِ", "ج - الحَرْفِ", "د - الظَّرْفِ", "هـ - الأَمْرِ"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): الإِسْمِ." },
+  { id: 16, question: "مِنْ أَهَمِّ أَنْوَاعِ الرِّيَاضَةِ البَدَنِيَّةِ ..... وَالسِّبَاحَةُ.", options: ["أ - القِرَاءَةُ", "ب - الجَرْيُ", "ج - النَّوْمُ", "د - الأَكْلُ", "هـ - الشُّرْبُ"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): الجَرْيُ." },
+  { id: 17, question: "الأَطِبَّاءُ يَصُدُّونَ الإِنْسَانَ عَنْ طُوْلِ ..... لِلْمُحَافَظَةِ عَلَى الصِّحَّةِ.", options: ["أ - الرَّاحَةِ", "ب - السَّهَرِ", "ج - الرِّيَاضَةِ", "د - الصَّلَاةِ", "هـ - القِرَاءَةِ"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): السَّهَرِ." },
+  { id: 18, question: "كَلِمَةُ \"هَذِهِ\" تُعْتَبَرُ مِنْ .....", options: ["أ - أَفْعَالِ الأَمْرِ", "ب - أَسْمَاءِ الإِشَارَةِ", "ج - أَسْمَاءِ المَوْصُوْلِ", "د - الحُرُوْفِ", "هـ - الظُّرُوْفِ"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): أَسْمَاءِ الإِشَارَةِ." },
+  { id: 19, question: "المَصْدَرُ مِنْ الفِعْلِ \"نَشَّطَ - يُنَشِّطُ\" هُوَ .....", options: ["أ - نَشَاط", "ب - تَنْشِيْط", "ج - نَاشِط", "د - مَنْشُوْط", "هـ - مُنَشِّط"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): تَنْشِيْط." },
+  { id: 20, question: "الصِّحَّةُ وَالعَافِيَةُ هِيَ ..... عَظِيْمَةٌ مِنْ اللهِ يَجِبُ الشُّكْرُ عَلَيْهَا.", options: ["أ - نِعْمَةٌ", "ب - مَرَضٌ", "ج - تَعَبٌ", "د - ضَعْفٌ", "هـ - كَسَلٌ"], answer: 0, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (أ): نِعْمَةٌ." }
+];
+
+
+// ==================== DATASET BAB 3: النظافة في الإسلام ====================
+const bab3Mufrodat = [
+  { arabic: "النَّظَافَة", translation: "Kebersihan", category: "Kata Benda", example: "النَّظَافَةُ مِنَ الإِيْمَانِ وَتَحْفَظُ الصِّحَّةَ" },
+  { arabic: "الطَّهَارَة", translation: "Bersuci / Kesucian", category: "Kata Benda", example: "الطَّهَارَةُ شَطْرُ الإِيْمَانِ وَشَرْطُ الصَّلَاةِ" },
+  { arabic: "الوَضُوْء", translation: "Wudhu", category: "Ibadah", example: "الوَضُوْءُ مِفْتَاحُ الصَّلَاةِ وَطَهَارَةُ الجِسْمِ" },
+  { arabic: "الغُسْل", translation: "Mandi bersuci", category: "Ibadah", example: "الغُسْلُ مُسْتَحَبٌّ لِيَوْمِ الجُمُعَةِ" },
+  { arabic: "البِيْئَة", translation: "Lingkungan hidup", category: "Kata Benda", example: "نَحْمِي البِيْئَةَ مِنَ التَّلَوُّثِ وَالأَقْذَارِ" },
+  { arabic: "القُمَامَة", translation: "Sampah / Kotoran", category: "Kata Benda", example: "نَرْمِي القُمَامَةَ فِي سَلَّةِ المُهْمَلَاتِ" },
+  { arabic: "إِزَالَةُ الأَذَى", translation: "Menyingkirkan gangguan/sampah", category: "Ungkapan", example: "إِزَالَةُ الأَذَى عَنِ الطَّرِيْقِ صَدَقَةٌ" },
+  { arabic: "المَاءُ الطَّهُوْر", translation: "Air yang suci menyucikan", category: "Ungkapan", example: "نَتَوَضَّأُ بِالمَاءِ الطَّهُوْرِ لِلصَّلَاةِ" },
+  { arabic: "الصَّابُوْن", translation: "Sabun pembersih", category: "Kata Benda", example: "نَغْسِلُ الأَيْدِيَ بِالصَّابُوْنِ وَالمَاءِ" },
+  { arabic: "الفِنَاء", translation: "Halaman rumah / madrasah", category: "Kata Benda", example: "نُنَظِّفُ فِنَاءَ المَدْرَسَةِ كُلَّ صَبَاحٍ" },
+  { arabic: "النَّجَاسَة", translation: "Najis / Kotoran berhalang", category: "Kata Benda", example: "نُطَهِّرُ الثَّوْبَ وَالمَكَانَ مِنَ النَّجَاسَةِ" },
+  { arabic: "السِّوَاك", translation: "Bersiwak / Sikat gigi", category: "Sunnah", example: "السِّوَاكُ مَطْهَرَةٌ لِلْفَمِ مَرْضَاةٌ لِلرَّبِّ" },
+  { arabic: "صِحَّةُ الأَبْدَان", translation: "Kesehatan tubuh / badan", category: "Ungkapan", example: "النَّظَافَةُ تَحْفَظُ صِحَّةَ الأَبْدَانِ مِنَ الأَمْرَاضِ" },
+  { arabic: "سُنَنُ الفِطْرَة", translation: "Sunnah-sunnah fitrah", category: "Ungkapan", example: "قَصُّ الأَظْفَارِ وَالسِّوَاكُ مِنْ سُنَنِ الفِطْرَةِ" },
+  { arabic: "التَّيَمُّم", translation: "Tayammum (Bersuci debu)", category: "Ibadah", example: "التَّيَمُّمُ رُخْصَةٌ عِنْدَ فَقْدِ المَاءِ" },
+  { arabic: "المَكَانُ الطَّاهِر", translation: "Tempat yang suci", category: "Ungkapan", example: "نُصَلِّي فِي المَكَانِ الطَّاهِرِ النَّظِيْفِ" },
+  { arabic: "مَكَارِمُ الأَخْلَاق", translation: "Kemuliaan akhlak", category: "Ungkapan", example: "الإِسْلَامُ يَدْعُوْ إِلَى مَكَارِمِ الأَخْلَاقِ وَالنَّظَافَةِ" }
+];
+
+const bab3Afal = [
+  { madhi: "نَظَّفَ", mudhari: "يُنَظِّفُ", masdar: "تَنْظِيْف", meaning: "membersihkan" },
+  { madhi: "تَوَضَّأَ", mudhari: "يَتَوَضَّأُ", masdar: "تَوَضُّؤ", meaning: "berwudhu" },
+  { madhi: "اِغْتَسَلَ", mudhari: "يَغْتَسِلُ", masdar: "اِغْتِسَال", meaning: "mandi bersuci" },
+  { madhi: "أَزَالَ", mudhari: "يُزِيْلُ", masdar: "إِزَالَة", meaning: "menyingkirkan, membuang" },
+  { madhi: "حَافَظَ", mudhari: "يُحَافِظُ", masdar: "مُحَافَظَة", meaning: "merawat, menjaga" },
+  { madhi: "طَهَّرَ", mudhari: "يُطَهِّرُ", masdar: "تَطْهِيْر", meaning: "mensucikan" },
+  { madhi: "غَسَلَ", mudhari: "يَغْسِلُ", masdar: "غَسْل", meaning: "mencuci" },
+  { madhi: "قَصَّ", mudhari: "يَقُصُّ", masdar: "قَصّ", meaning: "memotong (kuku)" }
+];
+
+const bab3IstimaInti = {
+  headerQuestion: {
+    ar: "مَاذَا تَعْنِي النَّظَافَةُ فِي الإِسْلَامِ ؟",
+    id: "Apa makna kebersihan dan bersuci dalam ajaran Islam?"
+  },
+  points: [
+    {
+      num: "أَوَّلًا",
+      title: "Poin 1: Kebersihan Diri & Bersuci (نَظَافَةُ البَدَنِ وَالطَّهَارَةُ)",
+      ar: "أَوَّلًا - نَظَافَةُ البَدَنِ وَالطَّهَارَةُ. الإِسْلَامُ يَأْمُرُنَا بِالطَّهَارَةِ فِي كُلِّ يَوْمٍ، مِثْلِ الوُضُوءِ لِلصَّلَاةِ وَالغُسْلِ.",
+      id: "Pertama - Kebersihan badan & bersuci. Islam memerintahkan kita bersuci setiap hari, seperti berwudhu untuk shalat dan mandi."
+    },
+    {
+      num: "ثَانِيًا",
+      title: "Poin 2: Kebersihan Pakaian & Tempat (نَظَافَةُ الثِّيَابِ وَالمَكَانِ)",
+      ar: "ثَانِيًا - نَظَافَةُ الثِّيَابِ وَالمَكَانِ. نُطَهِّرُ مَلَابِسَنَا وَمَسَاجِدَنَا وَبُيُوْتَنَا مِنَ النَّجَاسَةِ وَالأَقْذَارِ.",
+      id: "Kedua - Kebersihan pakaian & tempat. Kita mensucikan pakaian, masjid, dan rumah kita dari najis dan kotoran."
+    },
+    {
+      num: "ثَالِثًا",
+      title: "Poin 3: Kebersihan Lingkungan & Menyingkirkan Sampah (نَظَافَةُ البِيْئَةِ)",
+      ar: "ثَالِثًا - نَظَافَةُ البِيْئَةِ وَإِزَالَةُ الأَذَى. نَحْفَظُ بِيْئَتَنَا، وَنَرْمِي القُمَامَةَ فِي سَلَّةِ المُهْمَلَاتِ، وَنُزِيْلُ الأَذَى عَنِ الطَّرِيْقِ.",
+      id: "Kedua - Kebersihan lingkungan & menyingkirkan kotoran/sampah. Kita merawat lingkungan, membuang sampah pada tempatnya, dan menyingkirkan kotoran dari jalan."
+    }
+  ]
+};
+
+const bab3IstimaDialog = [
+  { speaker: "الأُسْتَاذُ", text: "أَهْلًا يَا طُلَّابِي، كَيْفَ نَحْفَظُ نَظَافَةَ المَدْرَسَةِ؟", translation: "Selamat datang murid-muridku, bagaimana kita menjaga kebersihan sekolah?" },
+  { speaker: "أَحْمَدُ", text: "نُنَظِّفُ الفَصْلَ وَنَرْمِي القُمَامَةَ فِي مَكَانِهَا يَا أُسْتَاذُ.", translation: "Kita membersihkan kelas dan membuang sampah pada tempatnya wahai Ustadz." },
+  { speaker: "الأُسْتَاذُ", text: "أَحْسَنْتَ يَا أَحْمَدُ ! وَمَاذَا نَفْعَلُ قَبْلَ الصَّلَاةِ؟", translation: "Bagus sekali Ahmad! Dan apa yang kita lakukan sebelum shalat?" },
+  { speaker: "فَاطِمَةُ", text: "نَتَوَضَّأُ بِالمَاءِ الطَّهُوْرِ وَنُنَظِّفُ أَيْدِيَنَا وَوُجُوْهَنَا.", translation: "Kita berwudhu dengan air yang suci dan membersihkan tangan serta wajah kita." },
+  { speaker: "الأُسْتَاذُ", text: "بَارَكَ اللهُ فِيْكُمَا ! قَالَ النَّبِيُّ ﷺ: (الطَّهَارَةُ شَطْرُ الإِيْمَانِ).", translation: "Semoga Allah memberkahi kalian berdua! Nabi ﷺ bersabda: \"Bersuci itu adalah separuh dari iman\"." }
+];
+
+const bab3QiroahText = {
+  title: "النَّظَافَةُ فِي الإِسْلَامِ",
+  sections: [
+    {
+      code: "( أ )",
+      title: "Bagian A: Kebersihan Bagian Dari Iman (النَّظَافَةُ مِنَ الإِيْمَانِ)",
+      ar: "الإِسْلَامُ دِيْنُ النَّظَافَةِ وَالطَّهَارَةِ. وَقَدْ جَعَلَ الإِسْلَامُ الطَّهَارَةَ شَرْطًا أَسَاسِيًّا لِصِحَّةِ الصَّلَاةِ. قَالَ اللهُ تَعَالَى: ﴿إِنَّ اللهَ يُحِبُّ التَّوَّابِيْنَ وَيُحِبُّ المُتَطَهِّرِيْنَ﴾. فَيَجِبُ عَلَى المُسْلِمِ أَنْ يَتَوَضَّأَ قَبْلَ كُلِّ صَلَاةٍ، وَأَنْ يَغْتَسِلَ لِيَكُوْنَ بَدَنُهُ طَاهِرًا وَنَظِيْفًا.",
+      id: "Islam adalah agama kebersihan dan kesucian. Islam menjadikan bersuci sebagai syarat utama sahnya shalat. Allah Ta'ala berfirman: \"Sesungguhnya Allah menyukai orang-orang yang bertaubat dan menyukai orang-orang yang mensucikan diri\". Maka wajib bagi seorang muslim untuk berwudhu sebelum setiap shalat, dan mandi agar badannya suci dan bersih."
+    },
+    {
+      code: "( ب )",
+      title: "Bagian B: Kebersihan Lingkungan & Sekolah (نَظَافَةُ البِيْئَةِ وَالمَدْرَسَةِ)",
+      ar: "لَا تَكْتَفِي النَّظَافَةُ بِالبَدَنِ فَقَطْ، بَلْ تَشْمَلُ ثِيَابَ الإِنْسَانِ وَمَكَانَهُ وَبِيْئَتَهُ. فَالطَّالِبُ المُمَتَازُ يُحَافِظُ عَلَى نَظَافَةِ فَصْلِهِ وَفِنَاءِ مَدْرَسَتِهِ. وَيَرْمِي القُمَامَةَ فِي سَلَّةِ المُهْمَلَاتِ، وَيُزِيْلُ الأَذَى عَنِ الطَّرِيْقِ. قَالَ النَّبِيُّ ﷺ: (وَيُمِيْطُ الأَذَى عَنِ الطَّرِيْقِ صَدَقَةٌ).",
+      id: "Kebersihan tidak terbatas pada badan saja, tetapi mencakup pakaian manusia, tempatnya, dan lingkungannya. Siswa yang berprestasi menjaga kebersihan kelas dan halaman sekolahnya. Ia membuang sampah di tempat sampah, dan menyingkirkan gangguan dari jalan. Nabi ﷺ bersabda: \"Dan menyingkirkan gangguan dari jalan adalah sedekah\"."
+    },
+    {
+      code: "( ج )",
+      title: "Bagian C: Sunnah Fitrah & Bersiwak (سُنَنُ الفِطْرَةِ وَالسِّوَاكُ)",
+      ar: "وَمِنْ مَظَاهِرِ النَّظَافَةِ فِي الإِسْلَامِ مُمَارَسَةُ سُنَنِ الفِطْرَةِ، كَقَصِّ الأَظْفَارِ، وَتَنْظِيْفِ الأَسْنَانِ بِالسِّوَاكِ أَوْ الفُرْشَاةِ. فَقَدْ حَثَّ النَّبِيُّ ﷺ عَلَى السِّوَاكِ فَقَالَ: (السِّوَاكُ مَطْهَرَةٌ لِلْفَمِ مَرْضَاةٌ لِلرَّبِّ). فَالنَّظَافَةُ تَحْمِي المُجْتَمَعَ مِنَ الأَمْرَاضِ وَتَجْعَلُ الحَيَاةَ طَيِّبَةً.",
+      id: "Dan di antara bentuk kebersihan dalam Islam adalah menjalankan sunnah-sunnah fitrah, seperti memotong kuku, dan membersihkan gigi dengan siwak atau sikat gigi. Nabi ﷺ sangat menganjurkan bersiwak seraya bersabda: \"Siwak itu mensucikan mulut dan mendatangkan keridhaan Rabb\". Maka kebersihan menjaga masyarakat dari penyakit dan menjadikan hidup tenteram."
+    }
+  ]
+};
+
+const bab3QiroahTadrib1 = [
+  { id: 1, statement: "الإِسْلَامُ لا يَهْتَمُّ بِالنَّظَافَةِ وَالطَّهَارَةِ", translation: "Islam tidak memperhatikan kebersihan.", answer: "khata", explanation: "خَطَأ (Salah)! Pembetulan: الإِسْلَامُ دِيْنُ النَّظَافَةِ وَالطَّهَارَةِ." },
+  { id: 2, statement: "الطَّهَارَةُ شَرْطٌ أَسَاسِيٌّ لِصِحَّةِ الصَّلَاةِ", translation: "Bersuci syarat utama sah shalat.", answer: "sahih", explanation: "صَحِيْح (Benar)! Sebagaimana dalam paragraf ( أ ), berwudhu/bersuci adalah syarat sah shalat." },
+  { id: 3, statement: "إِزَالَةُ الأَذَى عَنِ الطَّرِيْقِ مِنَ الصَّدَقَةِ", translation: "Menyingkirkan kotoran di jalan adalah sedekah.", answer: "sahih", explanation: "صَحِيْح (Benar)! Sesuai hadits Nabi ﷺ dalam paragraf ( ب )." },
+  { id: 4, statement: "نَرْمِي القُمَامَةَ فِي فِنَاءِ المَدْرَسَةِ", translation: "Kita membuang sampah di halaman sekolah.", answer: "khata", explanation: "خَطَأ (Salah)! Pembetulan: نَرْمِي القُمَامَةَ فِي سَلَّةِ المُهْمَلَاتِ." },
+  { id: 5, statement: "السِّوَاكُ مَطْهَرَةٌ لِلْفَمِ وَمَرْضَاةٌ لِلرَّبِّ", translation: "Siwak mensucikan mulut dan meredhai Rabb.", answer: "sahih", explanation: "صَحِيْح (Benar)! Sesuai hadits shahih pada paragraf ( ج )." },
+  { id: 6, statement: "قَصُّ الأَظْفَارِ لَيْسَ مِنْ سُنَنِ الفِطْرَةِ", translation: "Memotong kuku bukan sunnah fitrah.", answer: "khata", explanation: "خَطَأ (Salah)! Pembetulan: قَصُّ الأَظْفَارِ مِنْ سُنَنِ الفِطْرَةِ." },
+  { id: 7, statement: "النَّظَافَةُ تَحْمِي المُجْتَمَعَ مِنَ الأَمْرَاضِ", translation: "Kebersihan menjaga masyarakat dari penyakit.", answer: "sahih", explanation: "صَحِيْح (Benar)! Kebersihan dan kehigienisan mencegah penularan penyakit." }
+];
+
+const bab3QiroahTadrib2 = [
+  { id: 1, question: "مَا هُوَ شَرْطُ صِحَّةِ الصَّلَاةِ فِي الإِسْلَامِ ؟", answer: "شَرْطُ صِحَّةِ الصَّلَاةِ فِي الإِسْلَامِ هُوَ الطَّهَارَةُ وَالوَضُوْءُ." },
+  { id: 2, question: "أَيْنَ يَرْمِي الطَّالِبُ المُمَتَازُ القُمَامَةَ ؟", answer: "يَرْمِي الطَّالِبُ المُمَتَازُ القُمَامَةَ فِي سَلَّةِ المُهْمَلَاتِ." },
+  { id: 3, question: "مَاذَا قَالَ النَّبِيُّ ﷺ عَنْ إِزَالَةِ الأَذَى عَنِ الطَّرِيْقِ ؟", answer: "قَالَ النَّبِيُّ ﷺ: (وَيُمِيْطُ الأَذَى عَنِ الطَّرِيْقِ صَدَقَةٌ)." },
+  { id: 4, question: "أُذْكُرْ فِعْلَيْنِ مِنْ سُنَنِ الفِطْرَةِ ؟", answer: "فِعْلَانِ مِنْ سُنَنِ الفِطْرَةِ هُمَا: قَصُّ الأَظْفَارِ، وَاسْتِعْمَالُ السِّوَاكِ." },
+  { id: 5, question: "مَا فَائِدَةُ النَّظَافَةِ لِلْمُجْتَمَعِ ؟", answer: "فَائِدَةُ النَّظَافَةِ أَنَّهَا تَحْمِي المُجْتَمَعَ مِنَ الأَمْرَاضِ وَتَجْعَلُ الحَيَاةَ طَيِّبَةً." }
+];
+
+const bab3QowaidQuestions = [
+  { id: 1, word: "نَظَّفَ الطَّالِبُ الفَصْلَ", options: ["أ - الطَّالِبُ", "ب - الفَصْلَ", "ج - نَظَّفَ"], answer: 1, explanation: "الفَصْلَ adalah Objek / Maf'ul Bihi (مفعول به) ber-harakat fathah." },
+  { id: 2, word: "يَغْسِلُ الوَلَدُ اليَدَيْنِ بِالصَّابُوْنِ", options: ["أ - اليَدَيْنِ", "ب - الوَلَدُ", "ج - الصَّابُوْنِ"], answer: 0, explanation: "اليَدَيْنِ adalah Maf'ul Bihi (Mutsanna) manshub dengan tanda Ya (ـَيْنِ)." },
+  { id: 3, word: "يُحِبُّ اللهُ المُتَطَهِّرِيْنَ", options: ["أ - اللهُ", "ب - المُتَطَهِّرِيْنَ", "ج - يُحِبُّ"], answer: 1, explanation: "المُتَطَهِّرِيْنَ adalah Maf'ul Bihi (Jama' Mudzakkar Salim) manshub dengan Ya (ـِيْنَ)." },
+  { id: 4, word: "يُرْمِي المُسْلِمُ القُمَامَةَ فِي السَّلَّةِ", options: ["أ - القُمَامَةَ", "ب - المُسْلِمُ", "ج - السَّلَّةِ"], answer: 0, explanation: "القُمَامَةَ adalah Maf'ul Bihi manshub dengan tanda fathah." },
+  { id: 5, word: "طَهَّرَتْ الأُمُّ المَلَابِسَ", options: ["أ - الأُمُّ", "ب - المَلَابِسَ", "ج - طَهَّرَتْ"], answer: 1, explanation: "المَلَابِسَ adalah Maf'ul Bihi manshub dengan fathah." },
+  { id: 6, word: "يَسْتَعْمِلُ الطَّالِبَانِ السِّوَاكَيْنِ", options: ["أ - الطَّالِبَانِ", "ب - السِّوَاكَيْنِ", "ج - يَسْتَعْمِلُ"], answer: 1, explanation: "السِّوَاكَيْنِ adalah Maf'ul Bihi (Mutsanna) manshub dengan Ya (ـَيْنِ)." },
+  { id: 7, word: "يُكْرِمُ الإِسْلَامُ المُنَظِّفِيْنَ", options: ["أ - الإِسْلَامُ", "ب - المُنَظِّفِيْنَ", "ج - يُكْرِمُ"], answer: 1, explanation: "المُنَظِّفِيْنَ adalah Maf'ul Bihi (Jama' Mudzakkar Salim) manshub dengan Ya (ـِيْنَ)." },
+  { id: 8, word: "يُزِيْلُ الرَّجُلُ الأَذَى عَنِ الطَّرِيْقِ", options: ["أ - الرَّجُلُ", "ب - الأَذَى", "ج - الطَّرِيْقِ"], answer: 1, explanation: "الأَذَى adalah Maf'ul Bihi manshub." },
+  { id: 9, word: "قَصَّ الوَلَدُ الأَظْفَارَ", options: ["أ - الوَلَدُ", "ب - الأَظْفَارَ", "ج - قَصَّ"], answer: 1, explanation: "الأَظْفَارَ adalah Maf'ul Bihi manshub dengan fathah." },
+  { id: 10, word: "يَنَادِي الأُسْتَاذُ التَّلَامِيْذَ لِلتَّنْظِيْفِ", options: ["أ - الأُسْتَاذُ", "ب - التَّلَامِيْذَ", "ج - التَّنْظِيْفِ"], answer: 1, explanation: "التَّلَامِيْذَ adalah Maf'ul Bihi manshub." },
+  { id: 11, word: "مَا هِيَ العَلَامَةُ الصَّحِيْحَةُ لِلْمَفْعُوْلِ بِهِ فِي \"نَظَّفَ المُسْلِمُ البِيْئَةَ\"؟", options: ["أ - الفَتْحَة ( َ )", "ب - الضَّمَّة ( ُ )", "ج - الكَسْرَة ( ِ )"], answer: 0, explanation: "البِيْئَةَ adalah Isim Mufrad, maka Maf'ul Bihi ber-tanda Fathah." },
+  { id: 12, word: "تَكُوْنُ عَلَامَةُ نَصْبِ المَفْعُوْلِ بِهِ فِي \"غَسَلَ ثَوْبَيْنِ\" هِيَ .....", options: ["أ - الأَلِف", "ب - اليَاء (ـَيْنِ)", "ج - النُّوْن"], answer: 1, explanation: "Tanda nashaib untuk Isim Mutsanna (ثَوْبَيْنِ) adalah Ya (ـَيْنِ)." },
+  { id: 13, word: "تَكُوْنُ عَلَامَةُ نَصْبِ المَفْعُوْلِ بِهِ فِي \"يُحِبُّ اللهُ المُتَطَهِّرِيْنَ\" هِيَ .....", options: ["أ - الوَاو", "ب - اليَاء (ـِيْنَ)", "ج - الضَّمَّة"], answer: 1, explanation: "Tanda nashaib Jama' Mudzakkar Salim adalah Ya (ـِيْنَ)." },
+  { id: 14, word: "فِي \"المُسْلِمُ يُطَهِّرُ قَلْبَهُ\"، أَيْنَ الفِعْلُ وَالمَفْعُوْلُ بِهِ ؟", options: ["أ - المُسْلِمُ", "ب - يُطَهِّرُ (فِعْل) / قَلْبَهُ (مَفْعُوْل)", "ج - لَا يُوْجَدُ مَفْعُوْل"], answer: 1, explanation: "يُطَهِّرُ adalah fi'il dan قَلْبَهُ adalah Maf'ul Bihi." },
+  { id: 15, word: "فِي الجُمْلَةِ \"إِنَّ اللهَ يُحِبُّ المُتَطَهِّرِيْنَ\"، كَلِمَةُ \"المُتَطَهِّرِيْنَ\" مَفْعُوْلٌ بِهِ مَنْصُوْبٌ بِـ .....", options: ["أ - الفَتْحَة", "ب - اليَاء", "ج - الأَلِف"], answer: 1, explanation: "المُتَطَهِّرِيْنَ adalah Jama' Mudzakkar Salim, manshub dengan Ya." },
+  { id: 16, word: "تَرْكِيْبُ الجُمْلَةِ الفِعْلِيَّةِ فِي \"يُمِيْطُ المُسْلِمُ الأَذَى\" هُوَ .....", options: ["أ - فِعْل + فَاعِل + مَفْعُوْل بِهِ", "ب - مُبْتَدَأ + خَبَر", "ج - حَرْف + إِسْم"], answer: 0, explanation: "Susunan Jumlah Fi'liyyah: Fi'il (يُمِيْطُ) + Fa'il (المُسْلِمُ) + Maf'ul Bihi (الأَذَى)." },
+  { id: 17, word: "الْأَمْرُ مِنْ الفِعْلِ \"نَظَّفَ - يُنَظِّفُ\" هُوَ .....", options: ["أ - نَظِّفْ", "ب - تَنْظِيْف", "ج - نَاظِف", "د - يَتَنَظَّفُ"], answer: 0, explanation: "Fi'il Amar dari نَظَّفَ adalah نَظِّفْ (Clean!)." },
+  { id: 18, word: "الْأَمْرُ مِنْ الفِعْلِ \"تَوَضَّأَ - يَتَوَضَّأُ\" هُوَ .....", options: ["أ - تَوَضَّأْ", "ب - وَضُوْء", "ج - مُتَوَضِّئ", "د - يَتَوَضَّأُ"], answer: 0, explanation: "Fi'il Amar dari تَوَضَّأَ adalah تَوَضَّأْ (Wudhu-lah!)." },
+  { id: 19, word: "الْأَمْرُ مِنْ الفِعْلِ \"اِغْتَسَلَ - يَغْتَسِلُ\" هُوَ .....", options: ["أ - اِغْتَسِلْ", "ب - غُسْل", "ج - يَغْتَسِلُ", "د - مَغْسَلَة"], answer: 0, explanation: "Fi'il Amar dari اِغْتَسَلَ adalah اِغْتَسِلْ (Mandi-lah!)." },
+  { id: 20, word: "كَلِمَةُ \"النَّظَافَةُ\" فِي \"النَّظَافَةُ مِنَ الإِيْمَانِ\" تُمَثِّلُ .....", options: ["أ - مُبْتَدَأً مَرْفُوْعًا", "ب - مَفْعُوْلًا بِهِ", "ج - فِعْلًا مَاضِيًا"], answer: 0, explanation: "النَّظَافَةُ di awal kalimat berfungsi sebagai Mubtada' marfu' dengan dhammad." }
+];
+
+const bab3QuizQuestions = [
+  { id: 1, question: "النَّظَافَةُ ..... الإِيْمَانِ", options: ["أ - مِنَ", "ب - فِي", "ج - عَلَى", "د - إِلَى", "هـ - عَنْ"], answer: 0, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (أ): مِنَ." },
+  { id: 2, question: "طَلَبَ الإِسْلَامُ مِنَ المُسْلِمِ أَنْ يَتَوَضَّأَ قَبْلَ كُلِّ .....", options: ["أ - نَوْمٍ", "ب - صَلَاةٍ", "ج - أَكْلٍ", "د - لَعِبٍ", "هـ - سَفَرٍ"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): صَلَاةٍ." },
+  { id: 3, question: "إِزَالَةُ الأَذَى عَنِ الطَّرِيْقِ .....", options: ["أ - صَدَقَةٌ", "ب - وَاجِبَةٌ", "ج - حَرَامٌ", "د - مَكْرُوْهٌ", "هـ - بَاطِلٌ"], answer: 0, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (أ): صَدَقَةٌ." },
+  { id: 4, question: "نَرْمِي القُمَامَةَ فِي .....", options: ["أ - الفَصْلِ", "ب - الشَّارِعِ", "ج - سَلَّةِ المُهْمَلَاتِ", "د - المَسْجِدِ", "هـ - المَاءِ"], answer: 2, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ج): سَلَّةِ المُهْمَلَاتِ." },
+  { id: 5, question: "السِّوَاكُ مَطْهَرَةٌ لِلْفَمِ وَمَرْضَاةٌ لِلـ.....", options: ["أ - نَّاسِ", "ب - رَّبِّ", "ج - طَّبِيْبِ", "د - أُسْتَاذِ", "هـ - صَدِيْقِ"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): رَّبِّ." },
+  { id: 6, question: "نَغْسِلُ الأَيْدِيَ بِالصَّابُوْنِ وَالمَاءِ لِتَنْظِيْفِ .....", options: ["أ - الأَبْدَانِ", "ب - المَلَابِسِ", "ج - الأَيْدِي", "د - الأَسْنَانِ", "هـ - الأَقْدَامِ"], answer: 2, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ج): الأَيْدِي." },
+  { id: 7, question: "مِنْ سُنَنِ الفِطْرَةِ ..... الأَظْفَارِ", options: ["أ - قَصُّ", "ب - غَسْلُ", "ج - كَسْرُ", "د - تَرْكُ", "هـ - لَبْسُ"], answer: 0, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (أ): قَصُّ." },
+  { id: 8, question: "المَاءُ الَّذِي نَتَوَضَّأُ بِهِ هُوَ المَاءُ .....", options: ["أ - النَّجِسُ", "ب - الطَّهُوْرُ", "ج - الحَارُّ", "د - المَالِحُ", "هـ - الكَدِرُ"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): الطَّهُوْرُ." },
+  { id: 9, question: "التَّيَمُّمُ يَكُوْنُ بِـ ..... عِنْدَ فَقْدِ المَاءِ", options: ["أ - الصَّابُوْنِ", "ب - الـتُّرَابِ", "ج - الـزَّيْتِ", "د - الـثَّلْجِ", "هـ - الـشَّجَرِ"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): الـتُّرَابِ." },
+  { id: 10, question: "الفِعْلُ \"نَظَّفَ\" فِي المُضَارِعِ هُوَ .....", options: ["أ - يَتَنَظَّفُ", "ب - يُنَظِّفُ", "ج - تَنْظِيْفٌ", "د - اِنْتَظَفَ", "هـ - نَظِيْفٌ"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): يُنَظِّفُ." },
+  { id: 11, question: "الفِعْلُ \"تَوَضَّأَ\" فِي المُضَارِعِ هُوَ .....", options: ["أ - يَتَوَضَّأُ", "ب - يُوَضِّئُ", "ج - وَضُوْءٌ", "د - تَوَضَّأْ", "هـ - مَوَاضِئُ"], answer: 0, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (أ): يَتَوَضَّأُ." },
+  { id: 12, question: "مَا هُوَ المَصْدَرُ مِنْ الفِعْلِ \"اِغْتَسَلَ\" ؟", options: ["أ - غُسْلٌ", "ب - اِغْتِسَالٌ", "ج - يَغْتَسِلُ", "د - مَغْسَلَةٌ", "هـ - غَسَّالَةٌ"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): اِغْتِسَالٌ." },
+  { id: 13, question: "طَهَارَةُ البَدَنِ وَالثِّيَابِ تَمْنَعُ انْتِشَارَ .....", options: ["أ - الصِّحَّةِ", "ب - الأَمْرَاضِ", "ج - النِّعْمَةِ", "د - الرَّاحَةِ", "هـ - العَفْوِ"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): الأَمْرَاضِ." },
+  { id: 14, question: "﴿إِنَّ اللهَ يُحِبُّ التَّوَّابِيْنَ وَيُحِبُّ .....﴾", options: ["أ - المُتَطَهِّرِيْنَ", "ب - الكَاذِبِيْنَ", "ج - الغَافِلِيْنَ", "د - الظَّالِمِيْنَ", "هـ - المَرِضِيْنَ"], answer: 0, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (أ): المُتَطَهِّرِيْنَ." },
+  { id: 15, question: "النَّظَافَةُ تَجْعَلُ بِيْئَةَ المَدْرَسَةِ ..... وَجَمِيْلَةً", options: ["أ - قَذِرَةً", "ب - نَظِيْفَةً", "ج - حَارَّةً", "د - صَعْبَةً", "هـ - مُظْلِمَةً"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): نَظِيْفَةً." },
+  { id: 16, question: "كَلِمَةُ \"النَّظَافَةُ\" فِي كَلَامِ \"النَّظَافَةُ مِنَ الإِيْمَانِ\" تُمَثِّلُ .....", options: ["أ - فِعْلًا", "ب - إِسْمًا", "ج - حَرْفًا", "د - ظَرْفًا", "هـ - شَرْطًا"], answer: 1, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (ب): إِسْمًا." },
+  { id: 17, question: "غَسْلُ الوَجْهِ وَاليَدَيْنِ فِي الوُضُوْءِ مِنْ ..... الصَّلَاةِ", options: ["أ - فَرَائِضِ", "ب - مَكْرُوْهَاتِ", "ج - مُبْطِلَاتِ", "د - مَنَاهِي", "هـ - عُيُوْبِ"], answer: 0, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (أ): فَرَائِضِ." },
+  { id: 18, question: "نُطَهِّرُ الثَّوْبَ إِذَا أَصَابَتْهُ .....", options: ["أ - النَّجَاسَةُ", "ب - العَافِيَةُ", "ج - البَرَكَةُ", "د - الصِّحَّةُ", "هـ - الرَّاحَةُ"], answer: 0, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (أ): النَّجَاسَةُ." },
+  { id: 19, question: "يَنْبَغِي لِلطَّالِبِ أَنْ يُحَافِظَ عَلَى نَظَافَةِ ..... وَفِنَاءِ المَدْرَسَةِ", options: ["أ - الفَصْلِ", "ب - الشَّارِعِ", "ج - السُّوْقِ", "د - المَحَطَّةِ", "هـ - المُسْتَشْفَى"], answer: 0, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (أ): الفَصْلِ." },
+  { id: 20, question: "حَثَّ النَّبِيُّ ﷺ عَلَى اسْتِعْمَالِ ..... لِتَنْظِيْفِ الأَسْنَانِ", options: ["أ - السِّوَاكِ", "ب - الصَّابُوْنِ", "ج - المَاءِ المَالِحِ", "د - الـمَنَادِيْلِ", "هـ - الـحَجَرِ"], answer: 0, explanation: "الِاخْتِيَارُ الصَّحِيْحُ هُوَ (أ): السِّوَاكِ." }
+];
+
+// ==================== STATE MANAGEMENT & ACTIVE DATA ====================
+let currentChapter = 'bab2';
+
+let activeMufrodatData = bab2Mufrodat;
+let activeAfalData = bab2Afal;
+let activeIstimaMateriInti = bab2IstimaInti;
+let activeIstimaDialog = bab2IstimaDialog;
+let activeQiroahText = bab2QiroahText;
+let activeQiroahTadrib1 = bab2QiroahTadrib1;
+let activeQiroahTadrib2 = bab2QiroahTadrib2;
+let activeQowaidQuestions = bab2QowaidQuestions;
+let activeQuizQuestions = bab2QuizQuestions;
+
+// Hamburger Drawer Helper Functions
+function toggleHamburgerMenu() {
+  const drawer = document.getElementById('hamburger-drawer');
+  if (drawer) {
+    drawer.classList.toggle('hidden');
+  }
+}
+
+function drawerNavigate(targetId) {
+  toggleHamburgerMenu();
+  switchTab(targetId);
+}
+
+function switchChapter(chapterId) {
+  if (currentChapter === chapterId) {
+    toggleHamburgerMenu();
+    return;
+  }
+
+  currentChapter = chapterId;
+
+  const btn2 = document.getElementById('btn-chapter-bab2');
+  const btn3 = document.getElementById('btn-chapter-bab3');
+  const badge2 = document.getElementById('badge-chapter-bab2');
+  const badge3 = document.getElementById('badge-chapter-bab3');
+  const topBadge = document.getElementById('top-bar-chapter-badge');
+
+  if (chapterId === 'bab2') {
+    if (btn2) btn2.className = 'w-full text-left p-4 rounded-2xl border-2 transition flex items-center justify-between gap-3 border-teal-600 bg-teal-50 shadow-sm';
+    if (badge2) {
+      badge2.textContent = 'Aktif ✓';
+      badge2.className = 'text-xs font-bold text-teal-700 bg-teal-200 px-2.5 py-1 rounded-full';
+    }
+    if (btn3) btn3.className = 'w-full text-left p-4 rounded-2xl border-2 transition flex items-center justify-between gap-3 border-stone-200 bg-white hover:border-teal-400';
+    if (badge3) {
+      badge3.textContent = 'Pilih';
+      badge3.className = 'text-xs font-bold text-stone-400 bg-stone-100 px-2.5 py-1 rounded-full';
+    }
+    if (topBadge) topBadge.textContent = 'Bab 2: الصحة والرعاية الصحية';
+
+    activeMufrodatData = bab2Mufrodat;
+    activeAfalData = bab2Afal;
+    activeIstimaMateriInti = bab2IstimaInti;
+    activeIstimaDialog = bab2IstimaDialog;
+    activeQiroahText = bab2QiroahText;
+    activeQiroahTadrib1 = bab2QiroahTadrib1;
+    activeQiroahTadrib2 = bab2QiroahTadrib2;
+    activeQowaidQuestions = bab2QowaidQuestions;
+    activeQuizQuestions = bab2QuizQuestions;
+
+  } else if (chapterId === 'bab3') {
+    if (btn3) btn3.className = 'w-full text-left p-4 rounded-2xl border-2 transition flex items-center justify-between gap-3 border-teal-600 bg-teal-50 shadow-sm';
+    if (badge3) {
+      badge3.textContent = 'Aktif ✓';
+      badge3.className = 'text-xs font-bold text-teal-700 bg-teal-200 px-2.5 py-1 rounded-full';
+    }
+    if (btn2) btn2.className = 'w-full text-left p-4 rounded-2xl border-2 transition flex items-center justify-between gap-3 border-stone-200 bg-white hover:border-teal-400';
+    if (badge2) {
+      badge2.textContent = 'Pilih';
+      badge2.className = 'text-xs font-bold text-stone-400 bg-stone-100 px-2.5 py-1 rounded-full';
+    }
+    if (topBadge) topBadge.textContent = 'Bab 3: النظافة في الإسلام';
+
+    activeMufrodatData = bab3Mufrodat;
+    activeAfalData = bab3Afal;
+    activeIstimaMateriInti = bab3IstimaInti;
+    activeIstimaDialog = bab3IstimaDialog;
+    activeQiroahText = bab3QiroahText;
+    activeQiroahTadrib1 = bab3QiroahTadrib1;
+    activeQiroahTadrib2 = bab3QiroahTadrib2;
+    activeQowaidQuestions = bab3QowaidQuestions;
+    activeQuizQuestions = bab3QuizQuestions;
+  }
+
+  userAnswers = {};
+  renderMufrodatCards();
+  renderAfalTable();
+  renderIstimaSection();
+  renderQiroahSection();
+  renderQowaidQuiz();
+  renderQuizSection();
+
+  toggleHamburgerMenu();
+}
 
 // Sound Synth Helper (Web Speech API)
-let currentUtterance = null;
 let playbackRate = 1.0;
 
 function speakArabic(text, btnElement = null) {
@@ -331,12 +419,7 @@ function speakArabic(text, btnElement = null) {
     return;
   }
 
-  window.speechSynthesis.cancel(); // Stop current playing sound
-
-  const cleanText = text.replace(/[\u0610-\u061A\u064C-\u0652]/g, function(char) {
-    // Keep harakat for smooth TTS if supported
-    return char;
-  });
+  window.speechSynthesis.cancel();
 
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = 'ar-SA';
@@ -354,24 +437,20 @@ function speakArabic(text, btnElement = null) {
 
 // Global Tab Switching Function
 function switchTab(targetId, btnElement = null) {
-  // Hide all sections
   const sections = document.querySelectorAll('.content-section');
   sections.forEach(s => s.classList.add('hidden'));
 
-  // Show target section
   const targetSection = document.getElementById(targetId);
   if (targetSection) {
     targetSection.classList.remove('hidden');
   }
 
-  // Reset tab button states
   const tabs = document.querySelectorAll('.tab-btn');
   tabs.forEach(tab => {
     tab.classList.remove('active', 'bg-teal-700', 'text-white', 'shadow-md');
     tab.classList.add('text-stone-600', 'hover:bg-stone-100');
   });
 
-  // Highlight active button
   const activeBtn = btnElement || document.querySelector(`.tab-btn[data-target="${targetId}"]`);
   if (activeBtn) {
     activeBtn.classList.add('active', 'bg-teal-700', 'text-white', 'shadow-md');
@@ -390,7 +469,6 @@ document.addEventListener('DOMContentLoaded', () => {
   renderQiroahSection();
   renderQuizSection();
 
-  // Attach event listener fallback for tabs
   const tabs = document.querySelectorAll('.tab-btn');
   tabs.forEach(tab => {
     tab.addEventListener('click', function(e) {
@@ -401,7 +479,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Search Filter for Mufrodat
   const searchInput = document.getElementById('search-mufrodat');
   if (searchInput) {
     searchInput.addEventListener('input', (e) => {
@@ -416,7 +493,7 @@ function renderMufrodatCards(filter = '') {
   const container = document.getElementById('mufrodat-cards-container');
   if (!container) return;
 
-  const filtered = mufrodatData.filter(item => 
+  const filtered = activeMufrodatData.filter(item => 
     item.arabic.includes(filter) || 
     item.translation.toLowerCase().includes(filter) ||
     item.category.toLowerCase().includes(filter)
@@ -441,7 +518,6 @@ function renderMufrodatCards(filter = '') {
             </button>
           </div>
           
-          <!-- Arabic Word & Indonesian Translation -->
           <div class="my-auto text-center space-y-1">
             <h3 class="font-arabic text-3xl font-bold text-teal-900 dir-rtl">${item.arabic}</h3>
             <p class="text-sm font-semibold text-rose-700 bg-rose-50/80 px-3 py-1 rounded-xl border border-rose-100 inline-block">${item.translation}</p>
@@ -451,7 +527,7 @@ function renderMufrodatCards(filter = '') {
             <span>Klik untuk balik kartu (Contoh Kalimat)</span> ➔
           </p>
         </div>
-        <!-- Back (Pure Arabic Example & Translation) -->
+        <!-- Back -->
         <div class="flip-card-back shadow-md">
           <span class="text-xs font-bold text-teal-800 uppercase tracking-wider mb-2">مِثَالٌ فِي جُمْلَةٍ (Contoh Kalimat)</span>
           <p class="text-xl text-teal-900 font-arabic text-center dir-rtl leading-[2.6] bg-white/80 p-3 rounded-xl border border-teal-100 my-auto w-full font-bold">
@@ -473,7 +549,7 @@ function renderAfalTable() {
   const tableBody = document.getElementById('afal-table-body');
   if (!tableBody) return;
 
-  tableBody.innerHTML = afalData.map((row, idx) => `
+  tableBody.innerHTML = activeAfalData.map((row, idx) => `
     <tr class="hover:bg-teal-50/50 transition border-b border-stone-100">
       <td class="px-4 py-3.5 text-center font-semibold text-stone-500">${idx + 1}</td>
       <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-900 text-center dir-rtl">
@@ -495,32 +571,29 @@ function renderAfalTable() {
   `).join('');
 }
 
-// Render Istima Section (Pure Arabic)
+// Render Istima Section
 function renderIstimaSection() {
   const materiContainer = document.getElementById('istima-materi-container');
   const dialogContainer = document.getElementById('istima-dialog-container');
 
-  // Render Materi Inti (Buku Paket)
   if (materiContainer) {
     materiContainer.innerHTML = `
-      <!-- Question Card -->
       <div class="p-6 rounded-2xl bg-gradient-to-r from-teal-900 to-teal-800 text-white shadow-md mb-6">
         <div class="flex justify-between items-start gap-4">
           <div>
             <span class="px-3 py-1 rounded-full bg-rose-500 text-white font-bold text-xs">سُؤَالُ الِاسْتِمَاع</span>
             <h3 class="font-arabic text-3xl md:text-4xl font-bold my-3 dir-rtl text-yellow-300 leading-relaxed">
-              ${istimaMateriInti.headerQuestion.ar}
+              ${activeIstimaMateriInti.headerQuestion.ar}
             </h3>
           </div>
-          <button onclick="speakArabic('${istimaMateriInti.headerQuestion.ar}', this)" class="p-3 rounded-full bg-white/20 hover:bg-white/30 text-white transition flex-shrink-0" title="Dengarkan Pertanyaan">
+          <button onclick="speakArabic('${activeIstimaMateriInti.headerQuestion.ar}', this)" class="p-3 rounded-full bg-white/20 hover:bg-white/30 text-white transition flex-shrink-0" title="Dengarkan Pertanyaan">
             🔊
           </button>
         </div>
       </div>
 
-      <!-- 3 Key Points Cards -->
       <div class="space-y-4">
-        ${istimaMateriInti.points.map((pt, idx) => `
+        ${activeIstimaMateriInti.points.map((pt, idx) => `
           <div class="p-5 rounded-2xl bg-white border border-teal-100 shadow-sm hover:shadow-md transition">
             <div class="flex justify-between items-center mb-3">
               <span class="px-3 py-1 rounded-lg bg-teal-50 text-teal-800 font-bold text-xs border border-teal-200">${pt.num}</span>
@@ -535,9 +608,8 @@ function renderIstimaSection() {
     `;
   }
 
-  // Render Dialog Percakapan Tambahan (Pure Arabic)
   if (dialogContainer) {
-    dialogContainer.innerHTML = istimaDialog.map((item, index) => `
+    dialogContainer.innerHTML = activeIstimaDialog.map((item, index) => `
       <div class="p-5 rounded-2xl ${index % 2 === 0 ? 'bg-teal-50/70 border-l-4 border-teal-600' : 'bg-rose-50/70 border-l-4 border-rose-500'} transition space-y-3">
         <div class="flex justify-between items-center mb-1">
           <span class="font-bold text-sm ${index % 2 === 0 ? 'text-teal-800' : 'text-rose-800'}">${item.speaker}</span>
@@ -558,16 +630,15 @@ function setAudioRate(rate) {
 }
 
 function playAllMateriInti() {
-  const fullText = istimaMateriInti.headerQuestion.ar + " " + istimaMateriInti.points.map(p => p.ar).join(" ");
+  const fullText = activeIstimaMateriInti.headerQuestion.ar + " " + activeIstimaMateriInti.points.map(p => p.ar).join(" ");
   speakArabic(fullText, document.getElementById('btn-play-materi-inti'));
 }
 
 function playAllIstima() {
-  const fullText = istimaDialog.map(d => d.speaker + ". " + d.text).join(" ");
+  const fullText = activeIstimaDialog.map(d => d.speaker + ". " + d.text).join(" ");
   speakArabic(fullText, document.getElementById('btn-play-all-istima'));
 }
 
-// Helper format teks Arab agar spasi antarbaris & harakat sangat lega dan rapi
 function formatArabicParagraph(text) {
   if (!text) return '';
   const blocks = text.split('\n\n');
@@ -576,7 +647,6 @@ function formatArabicParagraph(text) {
     const formattedLines = lines.map(line => {
       const trimmed = line.trim();
       if (!trimmed) return '';
-      // Formatting untuk poin bernomor 1-, 2-, 3-
       if (trimmed.match(/^[١٢٣123]-/)) {
         return `<div class="bg-teal-50/70 border-r-4 border-teal-600 pr-5 py-2.5 my-3 rounded-l-2xl text-teal-950 font-bold leading-[2.8] text-right dir-rtl shadow-xs">${trimmed}</div>`;
       }
@@ -586,15 +656,13 @@ function formatArabicParagraph(text) {
   }).join('');
 }
 
-// Function check Tadrib 1 (Sahih / Khata)
 function checkTadrib1(qId, choice, btnEl) {
-  const q = qiroahTadrib1.find(item => item.id === qId);
+  const q = activeQiroahTadrib1.find(item => item.id === qId);
   if (!q) return;
 
   const feedbackEl = document.getElementById(`tadrib1-feedback-${qId}`);
   if (!feedbackEl) return;
 
-  // Reset button styling for this question
   const btns = document.querySelectorAll(`.tadrib1-btn-${qId}`);
   btns.forEach(b => {
     b.classList.remove('bg-emerald-600', 'bg-rose-600', 'text-white');
@@ -636,15 +704,14 @@ function checkTadrib1(qId, choice, btnEl) {
   }
 }
 
-// Render Qiroah Section (Pure Arabic)
+// Render Qiroah Section
 function renderQiroahSection() {
   const container = document.getElementById('qiroah-paragraphs');
   const tadrib1Container = document.getElementById('qiroah-tadrib1-container');
   const tadrib2Container = document.getElementById('qiroah-tadrib2-container');
 
-  // 1. Render Teks Qiroah (الحَيَاةُ الصِّحِّيَّةُ)
   if (container) {
-    container.innerHTML = qiroahText.sections.map((sec, idx) => `
+    container.innerHTML = activeQiroahText.sections.map((sec, idx) => `
       <div class="mb-8 p-6 md:p-8 rounded-3xl bg-white border border-teal-100 shadow-sm hover:shadow-md transition space-y-6">
         <div class="flex justify-between items-center pb-4 border-b border-stone-100">
           <div class="flex items-center gap-3">
@@ -656,7 +723,6 @@ function renderQiroahSection() {
           </button>
         </div>
         
-        <!-- Styled Paragraphs with spacious line height & clear list items -->
         <div class="font-arabic text-2xl md:text-3xl text-stone-900 leading-[2.8] text-right dir-rtl py-2">
           ${formatArabicParagraph(sec.ar)}
         </div>
@@ -664,9 +730,8 @@ function renderQiroahSection() {
     `).join('');
   }
 
-  // 2. Render Tadrib 1 (Soal Benar / Salah - صَحِيْح أَوْ خَطَأ - Pure Arabic)
   if (tadrib1Container) {
-    tadrib1Container.innerHTML = qiroahTadrib1.map((item, idx) => `
+    tadrib1Container.innerHTML = activeQiroahTadrib1.map((item, idx) => `
       <div class="p-5 md:p-6 rounded-2xl bg-white border border-stone-200 shadow-sm space-y-4">
         <div class="flex items-start justify-between gap-3">
           <span class="w-8 h-8 rounded-full bg-rose-100 text-rose-700 font-bold text-xs flex items-center justify-center flex-shrink-0 mt-1">${idx + 1}</span>
@@ -692,9 +757,8 @@ function renderQiroahSection() {
     `).join('');
   }
 
-  // 3. Render Tadrib 2 (Soal Tanya Jawab)
   if (tadrib2Container) {
-    tadrib2Container.innerHTML = qiroahTadrib2.map((item, idx) => `
+    tadrib2Container.innerHTML = activeQiroahTadrib2.map((item, idx) => `
       <div class="p-5 rounded-2xl bg-white border border-stone-200 shadow-sm space-y-3">
         <div class="flex items-center justify-between gap-3">
           <div class="flex items-center gap-2">
@@ -750,282 +814,91 @@ function renderQuizSection() {
   const container = document.getElementById('quiz-container');
   if (!container) return;
 
-  container.innerHTML = quizQuestions.map((q, idx) => `
-    <div class="p-6 rounded-2xl bg-white border border-stone-200 shadow-sm mb-6 space-y-4">
+  container.innerHTML = activeQuizQuestions.map((q, idx) => `
+    <div class="p-6 rounded-2xl bg-white border border-stone-200 shadow-sm space-y-4">
       <div class="flex items-start justify-between gap-3 border-b border-stone-100 pb-3">
         <div class="flex items-center gap-3">
-          <span class="w-9 h-9 rounded-2xl bg-rose-600 text-white font-bold text-sm flex items-center justify-center flex-shrink-0 shadow-xs">${q.id}</span>
-          <span class="text-xs font-bold px-3 py-1 rounded-full bg-teal-50 text-teal-700 border border-teal-200">إِخْتَرِ أَصَحَّ الكَلِمَاتِ</span>
+          <span class="w-8 h-8 rounded-full bg-teal-700 text-white font-bold text-xs flex items-center justify-center">${q.id}</span>
+          <span class="text-xs text-stone-500 font-semibold">Pilihan Ganda Interaktif:</span>
         </div>
-        <button onclick="speakArabic('${q.question}', this)" class="p-2 rounded-full bg-teal-50 hover:bg-teal-700 hover:text-white text-teal-700 transition flex-shrink-0" title="Dengarkan Soal">
-          🔊
-        </button>
+        <button onclick="speakArabic('${q.question}')" class="p-2 text-teal-700 hover:bg-teal-50 rounded-full transition" title="Dengarkan Soal">🔊</button>
       </div>
 
-      <div class="py-2">
-        <p class="font-arabic text-2xl md:text-3xl font-bold text-teal-950 text-right dir-rtl leading-[2.8]">${q.question}</p>
-      </div>
+      <p class="font-arabic text-2xl md:text-3xl font-bold text-teal-950 dir-rtl text-right leading-[2.6] py-1">${q.question}</p>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5 pt-1">
         ${q.options.map((opt, optIdx) => `
           <button 
-            type="button"
-            onclick="selectOption(${q.id}, ${optIdx}, this)" 
-            class="quiz-opt-btn-${q.id} p-4 rounded-2xl border border-stone-200 hover:border-teal-600 hover:bg-teal-50/70 transition text-right dir-rtl font-arabic text-xl md:text-2xl font-bold text-stone-800 leading-[2.6] flex items-center justify-between gap-3 shadow-xs">
+            type="button" 
+            onclick="selectQuizAnswer(${q.id}, ${optIdx}, this)" 
+            class="quiz-btn-${q.id} p-3.5 rounded-xl border border-stone-200 hover:bg-teal-50 hover:border-teal-400 transition text-sm font-bold text-stone-800 font-arabic text-right dir-rtl flex items-center justify-between">
             <span>${opt}</span>
-            <span class="w-7 h-7 rounded-full border border-stone-300 flex items-center justify-center text-xs font-bold text-stone-500 option-indicator flex-shrink-0">⚪</span>
+            <span class="text-xs font-sans text-stone-400 font-normal">Pilih</span>
           </button>
         `).join('')}
       </div>
-
-      <div id="quiz-feedback-${q.id}" class="hidden mt-3 p-4 rounded-xl text-sm border"></div>
     </div>
   `).join('');
 }
 
-function selectOption(qId, optIdx, btnEl) {
-  userAnswers[qId] = optIdx;
+function selectQuizAnswer(qId, choiceIdx, btnEl) {
+  userAnswers[qId] = choiceIdx;
 
-  const buttons = document.querySelectorAll(`.quiz-opt-btn-${qId}`);
-  buttons.forEach(b => {
-    b.classList.remove('bg-teal-700', 'border-teal-700', 'text-white');
+  const btns = document.querySelectorAll(`.quiz-btn-${qId}`);
+  btns.forEach(b => {
+    b.classList.remove('bg-teal-700', 'text-white', 'border-teal-700');
     b.classList.add('border-stone-200', 'text-stone-800');
-    const indicator = b.querySelector('.option-indicator');
-    if (indicator) {
-      indicator.textContent = '⚪';
-      indicator.className = 'w-7 h-7 rounded-full border border-stone-300 flex items-center justify-center text-xs font-bold text-stone-500 option-indicator flex-shrink-0';
-    }
   });
 
   btnEl.classList.remove('border-stone-200', 'text-stone-800');
-  btnEl.classList.add('bg-teal-700', 'border-teal-700', 'text-white');
-  const activeIndicator = btnEl.querySelector('.option-indicator');
-  if (activeIndicator) {
-    activeIndicator.textContent = '✓';
-    activeIndicator.className = 'w-7 h-7 rounded-full bg-white text-teal-700 flex items-center justify-center text-xs font-bold option-indicator flex-shrink-0';
-  }
+  btnEl.classList.add('bg-teal-700', 'text-white', 'border-teal-700');
 }
 
-function submitQuiz() {
+function calculateQuizResult() {
+  const resultContainer = document.getElementById('quiz-result');
+  if (!resultContainer) return;
+
   let score = 0;
-  const total = quizQuestions.length;
+  let total = activeQuizQuestions.length;
 
-  quizQuestions.forEach(q => {
-    const feedbackEl = document.getElementById(`quiz-feedback-${q.id}`);
-    const selected = userAnswers[q.id];
-
-    feedbackEl.classList.remove('hidden', 'bg-emerald-50', 'border-emerald-200', 'text-emerald-900', 'bg-rose-50', 'border-rose-200', 'text-rose-900');
-
-    if (selected === q.answer) {
-      score += Math.round(100 / total);
-      feedbackEl.classList.add('bg-emerald-50', 'border-emerald-200', 'text-emerald-900');
-      feedbackEl.innerHTML = `
-        <div class="flex items-start gap-2">
-          <span class="text-emerald-600 text-lg">✅</span>
-          <div>
-            <p class="font-bold">Masya Allah, Jawaban Benar!</p>
-            <p class="text-xs text-emerald-800 mt-1">${q.explanation}</p>
-          </div>
-        </div>
-      `;
-    } else {
-      feedbackEl.classList.add('bg-rose-50', 'border-rose-200', 'text-rose-900');
-      feedbackEl.innerHTML = `
-        <div class="flex items-start gap-2">
-          <span class="text-rose-600 text-lg">❤️</span>
-          <div>
-            <p class="font-bold">Hampir Tepat! Tetap Semangat!</p>
-            <p class="text-xs text-rose-800 mt-1">Jawaban yang tepat adalah: <strong>${q.options[q.answer]}</strong></p>
-            <p class="text-xs text-stone-600 mt-1">${q.explanation}</p>
-          </div>
-        </div>
-      `;
+  activeQuizQuestions.forEach(q => {
+    if (userAnswers[q.id] === q.answer) {
+      score += 5;
     }
   });
 
-  // Display Score & Love-based Appreciation Card
-  const resultCard = document.getElementById('quiz-result-card');
-  const scoreEl = document.getElementById('final-score');
-  const titleEl = document.getElementById('score-title');
-  const messageEl = document.getElementById('score-message');
+  resultContainer.classList.remove('hidden');
+  resultContainer.scrollIntoView({ behavior: 'smooth' });
 
-  scoreEl.textContent = score;
-  resultCard.classList.remove('hidden');
+  const scoreEl = document.getElementById('quiz-score');
+  const badgeEl = document.getElementById('quiz-badge');
+  const noteEl = document.getElementById('quiz-note');
 
-  if (score === 100) {
-    titleEl.textContent = "🌟 MUMTAZ! (Super Luar Biasa)";
-    messageEl.textContent = "Masya Allah, prestasi yang sungguh membanggakan! Cintamu pada ilmu Bahasa Arab dan rasa syukur atas nikmat kesehatan dipancar dengan sangat indah. Pertahankan ya nak!";
-  } else if (score >= 70) {
-    titleEl.textContent = "👍 JAYYID JIDDAN! (Sangat Baik)";
-    messageEl.textContent = "Alhamdulillah, hasil yang luar biasa! Kamu sudah memahami konsep kesehatan dalam Bahasa Arab dengan baik. Teruskan semangat belajarmu dengan penuh kasih sayang!";
+  if (scoreEl) scoreEl.textContent = score;
+
+  if (score >= 80) {
+    if (badgeEl) badgeEl.textContent = "🌟 Mumtaz! (ممتاز)";
+    if (noteEl) noteEl.textContent = "Masya Allah! Pemahamanmu sangat luar biasa!";
+  } else if (score >= 60) {
+    if (badgeEl) badgeEl.textContent = "👍 Jayyid Jiddan (جيد جداً)";
+    if (noteEl) noteEl.textContent = "Alhamdulillah! Pertahankan semangat belajarmu!";
   } else {
-    titleEl.textContent = "💪 LA TAHZAN! (Tetap Semangat & Penuh Cinta)";
-    messageEl.textContent = "Jangan berkecil hati ya! Setiap langkah dan usaha belajarmu bernilai pahala dan kebaikan di sisi Allah. Yuk pelajari kembali Mufrodat & Istima' lalu coba kuis ini lagi!";
+    if (badgeEl) badgeEl.textContent = "🌸 La Tahzan (لا تحزن)";
+    if (noteEl) noteEl.textContent = "Tetap semangat! Cobalah membaca kembali materi mufrodat & qiroah.";
   }
-
-  resultCard.scrollIntoView({ behavior: 'smooth' });
 }
 
-// Habit / Refleksi Tracker
-function toggleHabit(el) {
-  el.classList.toggle('bg-teal-50');
-  el.classList.toggle('border-teal-400');
-}
-
-// Data Tadrib Qowaid (20 Soal Interaktif tentang المَفْعُوْلُ بِهِ)
-const qowaidQuestions = [
-  {
-    id: 1,
-    word: "فِي جُمْلَةِ \"يَقْرَأُ الطَّالِبُ القُرْآنَ\"، المَفْعُوْلُ بِهِ هُوَ .....",
-    options: ["أ - يَقْرَأُ", "ب - الطَّالِبُ", "ج - القُرْآنَ"],
-    answer: 2,
-    explanation: "المَفْعُوْلُ بِهِ هُوَ \"القُرْآنَ\" (Objek penderita yang dibaca oleh siswa)."
-  },
-  {
-    id: 2,
-    word: "عَلَامَةُ إِعْرَابِ (نَصْبِ) المَفْعُوْلِ بِهِ فِي الإِسْمِ المُفْرَدِ هِيَ .....",
-    options: ["أ - الضَّمَّةُ", "ب - الفَتْحَةُ", "ج - الكَسْرَةُ"],
-    answer: 1,
-    explanation: "المَفْعُوْلُ بِهِ فِي الإِسْمِ المُفْرَدِ يُنْصَبُ بِالفَتْحَةِ (Tanda harakat objek tunggal adalah Fathah)."
-  },
-  {
-    id: 3,
-    word: "فِي جُمْلَةِ \"بَعَثَ اللهُ مُحَمَّدًا\"، كَلِمَةُ \"مُحَمَّدًا\" تُعْرَبُ .....",
-    options: ["أ - فَاعِلًا", "ب - مَفْعُوْلًا بِهِ", "ج - خَبَرًا"],
-    answer: 1,
-    explanation: "كَلِمَةُ \"مُحَمَّدًا\" هِيَ مَفْعُوْلٌ بِهِ مَنْصُوْبٌ (Objek yang diutus oleh Allah)."
-  },
-  {
-    id: 4,
-    word: "فِي جُمْلَةِ \"لَا يَهْدِي اللهُ الظَّالِمِيْنَ\"، المَفْعُوْلُ بِهِ \"الظَّالِمِيْنَ\" مَنْصُوْبٌ بِـ .....",
-    options: ["أ - الفَتْحَةِ", "ب - اليَاءِ (ـِيْنَ)", "ج - الوَاوِ (ـُوْنَ)"],
-    answer: 1,
-    explanation: "الظَّالِمِيْنَ adalah Jama' Mudzakkar As-Salim, tanda manshub-nya adalah Ya (ـِيْنَ) bukan Wau."
-  },
-  {
-    id: 5,
-    word: "تُعْتَبَرُ الجُمْلَةُ \"الطَّالِبُ يَقْرَأُ القُرْآنَ\" جُمْلَةً .....",
-    options: ["أ - فِعْلِيَّةً", "ب - إِسْمِيَّةً", "ج - حَرْفِيَّةً"],
-    answer: 1,
-    explanation: "جُمْلَةٌ إِسْمِيَّةٌ karena diawali oleh isim (مُبْتَدَأٌ: الطَّالِبُ)."
-  },
-  {
-    id: 6,
-    word: "فِي جُمْلَةِ \"تُصَلِّي الطَّالِبَةُ الظُّهْرَ\"، كَلِمَةُ \"الظُّهْرَ\" تُعْرَبُ .....",
-    options: ["أ - فَاعِلًا", "ب - مَفْعُوْلًا بِهِ", "ج - مُبْتَدَأً"],
-    answer: 1,
-    explanation: "كَلِمَةُ \"الظُّهْرَ\" هِيَ مَفْعُوْلٌ بِهِ (Objek shalat yang dikerjakan oleh siswi)."
-  },
-  {
-    id: 7,
-    word: "عَلَامَةُ نَصْبِ المَفْعُوْلِ بِهِ فِي جَمْعِ المُذَكَّرِ السَّالِمِ هِيَ .....",
-    options: ["أ - الوَاوُ (ـُوْنَ)", "ب - اليَاءُ (ـِيْنَ)", "ج - الضَّمَّةُ"],
-    answer: 1,
-    explanation: "Jama' Mudzakkar Salim ketika menjadi Maf'ul Bihi ditandai dengan Ya (ـِيْنَ) bukan Wau."
-  },
-  {
-    id: 8,
-    word: "فِي جُمْلَةِ \"يَأْكُلُ المُرَاهِقُوْنَ الغِذَاءَ الطَّيِّبَ\"، المَفْعُوْلُ بِهِ هُوَ .....",
-    options: ["أ - يَأْكُلُ", "ب - المُرَاهِقُوْنَ", "ج - الغِذَاءَ"],
-    answer: 2,
-    explanation: "المَفْعُوْلُ بِهِ هُوَ \"الغِذَاءَ\" (Makanan yang dimakan oleh para remaja)."
-  },
-  {
-    id: 9,
-    word: "فِي جُمْلَةِ \"بَلَغْتُمْ مَرْحَلَةَ المُرَاهَقَةِ\"، المَفْعُوْلُ بِهِ هُوَ .....",
-    options: ["أ - بَلَغْتُمْ", "ب - مَرْحَلَةَ", "ج - المُرَاهَقَةِ"],
-    answer: 1,
-    explanation: "المَفْعُوْلُ بِهِ هُوَ \"مَرْحَلَةَ\" berharakat fathah."
-  },
-  {
-    id: 10,
-    word: "تُعْتَبَرُ الجُمْلَةُ \"تَسْتَقْبِلُ الطَّالِبَاتُ المَدْعُوِّيْنَ\" جُمْلَةً .....",
-    options: ["أ - فِعْلِيَّةً", "ب - إِسْمِيَّةً", "ج - حَرْفِيَّةً"],
-    answer: 0,
-    explanation: "جُمْلَةٌ فِعْلِيَّةٌ karena diawali oleh fi'il (تَسْتَقْبِلُ)."
-  },
-  {
-    id: 11,
-    word: "فِي جُمْلَةِ \"تَسْتَقْبِلُ الطَّالِبَاتُ المَدْعُوِّيْنَ\"، المَفْعُوْلُ بِهِ \"المَدْعُوِّيْنَ\" مَنْصُوْبٌ بِـ .....",
-    options: ["أ - الفَتْحَةِ", "ب - اليَاءِ (ـِيْنَ)", "ج - الكَسْرَةِ"],
-    answer: 1,
-    explanation: "المَدْعُوِّيْنَ adalah Jama' Mudzakkar Salim, tanda manshub-nya adalah Ya (ـِيْنَ)."
-  },
-  {
-    id: 12,
-    word: "فِي جُمْلَةِ \"المُرَاهِقُوْنَ يَأْكُلُوْنَ الغِذَاءَ\"، كَلِمَةُ \"المُرَاهِقُوْنَ\" تُعْرَبُ .....",
-    options: ["أ - مُبْتَدَأً", "ب - مَفْعُوْلًا بِهِ", "ج - فِعْلًا"],
-    answer: 0,
-    explanation: "المُرَاهِقُوْنَ adalah Mubtada' (di awal kalimat Ismiyyah), sedangkan Maf'ul Bihi-nya adalah الغِذَاءَ."
-  },
-  {
-    id: 13,
-    word: "عَلَامَةُ نَصْبِ المَفْعُوْلِ بِهِ فِي التَّثْنِيَةِ (المُثَنَّى) هِيَ .....",
-    options: ["أ - (ـَانِ)", "ب - (ـَيْنِ)", "ج - (ـُوْنَ)"],
-    answer: 1,
-    explanation: "Mutsanna (dua) ketika menjadi Maf'ul Bihi ditandai dengan (ـَيْنِ)."
-  },
-  {
-    id: 14,
-    word: "فِي جُمْلَةِ \"اللهُ بَعَثَ مُحَمَّدًا نَبِيًّا\"، كَلِمَةُ \"نَبِيًّا\" تُعْرَبُ .....",
-    options: ["أ - مَفْعُوْلًا بِهِ", "ب - فَضْلَةً (تَمْيِيْزًا/حَالًا)", "ج - مُبْتَدَأً"],
-    answer: 1,
-    explanation: "كَلِمَةُ \"نَبِيًّا\" هِيَ فَضْلَة (Pelengkap kalimat), sedangkan Maf'ul Bihi utamanya adalah مُحَمَّدًا."
-  },
-  {
-    id: 15,
-    word: "المَفْعُوْلُ بِهِ (الكَلاَمُ الَّذِي يَقَعُ عَلَيْهِ فِعْلُ الفَاعِلِ) يَكُوْنُ حُكْمُهُ دَائِمًا .....",
-    options: ["أ - مَرْفُوْعًا", "ب - مَنْصُوْبًا", "ج - مَجْرُوْرًا"],
-    answer: 1,
-    explanation: "المَفْعُوْلُ بِهِ hukumnya selalu MANSHUB (مَنْصُوْب)."
-  },
-  {
-    id: 16,
-    word: "أَيُّ الجُمَلِ الآتِيَةِ تَحْتَوِي عَلَى مَفْعُوْلٍ بِهِ فِي صِيْغَةِ جَمْعِ المُذَكَّرِ السَّالِمِ؟",
-    options: ["أ - يَقْرَأُ الطَّالِبُ القُرْآنَ", "ب - لَا يَهْدِي اللهُ الظَّالِمِيْنَ", "ج - تُصَلِّي الطَّالِبَةُ الظُّهْرَ"],
-    answer: 1,
-    explanation: "الظَّالِمِيْنَ adalah Maf'ul Bihi bertipe Jama' Mudzakkar Salim."
-  },
-  {
-    id: 17,
-    word: "فِي جُمْلَةِ \"أَنْتُمْ بَلَغْتُمْ مَرْحَلَةَ المُرَاهَقَةِ\"، الفَاعِلُ هُوَ .....",
-    options: ["أ - أَنْتُمْ / التَّاءُ فِي بَلَغْتُمْ", "ب - مَرْحَلَةَ", "ج - المُرَاهَقَةِ"],
-    answer: 0,
-    explanation: "Fa'il-nya adalah Dhomir (Taa' / Antum), sedangkan Maf'ul Bihi-nya adalah مَرْحَلَةَ."
-  },
-  {
-    id: 18,
-    word: "فِي جُمْلَةِ \"تَسْتَقْبِلُ الطَّالِبَاتُ المَدْعُوِّيْنَ أَمَامَ البَابِ\"، كَلِمَةُ \"أَمَامَ\" تُعْرَبُ .....",
-    options: ["أ - مَفْعُوْلًا بِهِ", "ب - ظَرْفَ مَكَانٍ (فَضْلَة)", "ج - فَاعِلًا"],
-    answer: 1,
-    explanation: "أَمَامَ adalah Zharaf Makan / Pelengkap (فضلة), sedangkan Maf'ul Bihi-nya adalah المَدْعُوِّيْنَ."
-  },
-  {
-    id: 19,
-    word: "مَا هِيَ الحَرَكَةُ الصَّحِيْحَةُ لِلْمَفْعُوْلِ بِهِ فِي \"يَأْكُلُ المُرَاهِقُوْنَ الغِذَاء...\"؟",
-    options: ["أ - الغِذَاءُ (ضَمَّة)", "ب - الغِذَاءَ (فَتْحَة)", "ج - الغِذَاءِ (كَسْرَة)"],
-    answer: 1,
-    explanation: "Karena merupakan Isim Mufrad, Maf'ul Bihi diberi harakat Fathah (الغِذَاءَ)."
-  },
-  {
-    id: 20,
-    word: "الْفَرْقُ بَيْنَ الجُمْلَةِ الفِعْلِيَّةِ وَالجُمْلَةِ الإِسْمِيَّةِ عِنْدَ وُجُوْدِ المَفْعُوْلِ بِهِ هُوَ .....",
-    options: ["أ - الجُمْلَةُ الفِعْلِيَّةُ تَبْدَأُ بِالفِعْلِ، وَالإِسْمِيَّةُ تَبْدَأُ بِالإِسْمِ", "ب - المَفْعُوْلُ بِهِ يَكُوْنُ مَرْفُوْعًا فِي الإِسْمِيَّةِ", "ج - لَا يُوْجَدُ مَفْعُوْلٌ بِهِ فِي الجُمْلَةِ الإِسْمِيَّةِ"],
-    answer: 0,
-    explanation: "Perbedaan utamanya adalah pembuka kalimat: Jumlah Fi'liyyah diawali Fi'il, sedangkan Jumlah Ismiyyah diawali Isim (Mubtada'). Objek (Maf'ul Bihi) tetap sama-sama manshub."
-  }
-];
-
+// Render Qowaid Quiz Section
 function renderQowaidQuiz() {
   const container = document.getElementById('qowaid-quiz-container');
   if (!container) return;
 
-  container.innerHTML = qowaidQuestions.map((q, idx) => `
+  container.innerHTML = activeQowaidQuestions.map((q, idx) => `
     <div class="p-5 rounded-2xl bg-white border border-stone-200 shadow-sm space-y-3">
       <div class="flex items-center justify-between gap-3 border-b border-stone-100 pb-2">
         <div class="flex items-center gap-3">
           <span class="w-7 h-7 rounded-full bg-teal-100 text-teal-800 font-bold text-xs flex items-center justify-center">${q.id}</span>
-          <span class="text-xs text-stone-500 font-semibold">Analisislah Maf'ul Bihi (المَفْعُوْلُ بِهِ):</span>
+          <span class="text-xs text-stone-500 font-semibold">Analisislah Kedudukan & Kaidah Tata Bahasa:</span>
         </div>
         <button onclick="speakArabic('${q.word}')" class="p-2 text-teal-700 hover:bg-teal-50 rounded-full transition" title="Lafalkan">🔊</button>
       </div>
@@ -1051,7 +924,7 @@ function renderQowaidQuiz() {
 }
 
 function checkQowaidQuiz(qId, choiceIdx, btnEl) {
-  const q = qowaidQuestions.find(item => item.id === qId);
+  const q = activeQowaidQuestions.find(item => item.id === qId);
   if (!q) return;
 
   const feedbackEl = document.getElementById(`qowaid-feedback-${qId}`);

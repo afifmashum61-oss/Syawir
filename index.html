@@ -37,15 +37,21 @@
     <span>•</span>
     <span>✨ Kurikulum Berbasis Cinta (Kemenag Terbaru)</span>
     <span class="hidden md:inline">•</span>
-    <span class="hidden md:inline">XI Bahasa Arab Tindak Lanjut: Bab الصحة والرعاية الصحية</span>
+    <span id="top-bar-chapter-badge" class="font-bold bg-white/20 px-2.5 py-0.5 rounded-full">Bab 2: الصحة والرعاية الصحية</span>
   </div>
 
   <!-- Main Header & Navigation -->
   <header class="sticky top-0 z-50 glass-card bg-white/90 border-b border-stone-200/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-3">
       
-      <!-- Brand Logo & Title -->
+      <!-- Brand Logo & Hamburger Button -->
       <div class="flex items-center gap-3">
+        <!-- Hamburger Button -->
+        <button onclick="toggleHamburgerMenu()" class="p-2 md:p-2.5 rounded-xl bg-teal-50 border border-teal-200 text-teal-800 hover:bg-teal-100 transition flex items-center gap-2 font-bold text-sm shadow-sm" title="Daftar Bab & Navigasi">
+          <span class="text-xl leading-none">☰</span>
+          <span class="hidden sm:inline">Pilih Bab</span>
+        </button>
+
         <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-700 to-teal-500 text-white flex items-center justify-center font-bold text-xl shadow-md">
           ❤️
         </div>
@@ -82,6 +88,111 @@
 
     </div>
   </header>
+
+  <!-- Slide-Over Hamburger Drawer Menu -->
+  <div id="hamburger-drawer" class="fixed inset-0 z-50 hidden">
+    <!-- Backdrop overlay -->
+    <div onclick="toggleHamburgerMenu()" class="absolute inset-0 bg-stone-900/60 backdrop-blur-sm"></div>
+
+    <!-- Drawer Panel -->
+    <div class="absolute right-0 top-0 bottom-0 w-full max-w-sm bg-white shadow-2xl flex flex-col justify-between overflow-y-auto z-10">
+      <!-- Header Drawer -->
+      <div class="p-5 bg-gradient-to-r from-teal-900 to-teal-800 text-white flex items-center justify-between border-b border-teal-700">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-rose-600 text-white flex items-center justify-center font-bold text-lg">
+            📖
+          </div>
+          <div>
+            <h3 class="font-bold text-base leading-tight">Daftar Bab & Navigasi</h3>
+            <p class="text-xs text-teal-200">MAN 4 Aceh Besar</p>
+          </div>
+        </div>
+        <button onclick="toggleHamburgerMenu()" class="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 text-white font-bold flex items-center justify-center text-lg transition">
+          ✕
+        </button>
+      </div>
+
+      <!-- Body Drawer: Chapter List & Module List -->
+      <div class="p-5 space-y-6 flex-grow">
+        <!-- Chapter Selector Section -->
+        <div class="space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-extrabold text-teal-800 uppercase tracking-wider">Pilih Bab Pembelajaran</span>
+            <span class="text-[10px] bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full font-bold">2 Bab Tersedia</span>
+          </div>
+
+          <!-- Bab 2 Card Button -->
+          <button onclick="switchChapter('bab2')" id="btn-chapter-bab2" class="w-full text-left p-4 rounded-2xl border-2 transition flex items-center justify-between gap-3 border-teal-600 bg-teal-50 shadow-sm">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-teal-700 text-white flex items-center justify-center font-bold text-sm">
+                2
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="font-arabic font-bold text-teal-950 text-base">الصحة والرعاية الصحية</span>
+                </div>
+                <p class="text-xs text-stone-600">Bab 2: Kesehatan & Perawatan Kesehatan</p>
+              </div>
+            </div>
+            <span id="badge-chapter-bab2" class="text-xs font-bold text-teal-700 bg-teal-200 px-2.5 py-1 rounded-full">Aktif ✓</span>
+          </button>
+
+          <!-- Bab 3 Card Button -->
+          <button onclick="switchChapter('bab3')" id="btn-chapter-bab3" class="w-full text-left p-4 rounded-2xl border-2 transition flex items-center justify-between gap-3 border-stone-200 bg-white hover:border-teal-400">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-rose-600 text-white flex items-center justify-center font-bold text-sm">
+                3
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="font-arabic font-bold text-stone-900 text-base">النَّظَافَةُ فِي الإِسْلَامِ</span>
+                  <span class="text-[10px] bg-rose-500 text-white font-bold px-1.5 py-0.5 rounded">Baru ✨</span>
+                </div>
+                <p class="text-xs text-stone-600">Bab 3: Kebersihan dalam Islam</p>
+              </div>
+            </div>
+            <span id="badge-chapter-bab3" class="text-xs font-bold text-stone-400 bg-stone-100 px-2.5 py-1 rounded-full">Pilih</span>
+          </button>
+        </div>
+
+        <hr class="border-stone-200">
+
+        <!-- Navigation Modules List -->
+        <div class="space-y-2">
+          <span class="text-xs font-extrabold text-stone-400 uppercase tracking-wider">Modul Pembelajaran</span>
+          <div class="grid grid-cols-1 gap-1.5 text-sm font-semibold">
+            <button onclick="drawerNavigate('sec-beranda')" class="w-full p-2.5 rounded-xl hover:bg-stone-100 text-stone-700 flex items-center gap-3 text-left">
+              <span>🏠</span> Beranda
+            </button>
+            <button onclick="drawerNavigate('sec-mufrodat')" class="w-full p-2.5 rounded-xl hover:bg-stone-100 text-stone-700 flex items-center gap-3 text-left">
+              <span>📚</span> Mufrodat & Af'al
+            </button>
+            <button onclick="drawerNavigate('sec-qowaid')" class="w-full p-2.5 rounded-xl hover:bg-stone-100 text-stone-700 flex items-center gap-3 text-left">
+              <span>📐</span> Qowa'id (Tata Bahasa)
+            </button>
+            <button onclick="drawerNavigate('sec-istima')" class="w-full p-2.5 rounded-xl hover:bg-stone-100 text-stone-700 flex items-center gap-3 text-left">
+              <span>🎧</span> Maharah Istima'
+            </button>
+            <button onclick="drawerNavigate('sec-qiroah')" class="w-full p-2.5 rounded-xl hover:bg-stone-100 text-stone-700 flex items-center gap-3 text-left">
+              <span>📜</span> Maharah Qiroah
+            </button>
+            <button onclick="drawerNavigate('sec-quiz')" class="w-full p-2.5 rounded-xl hover:bg-stone-100 text-stone-700 flex items-center gap-3 text-left">
+              <span>✍️</span> Latihan Soal Interaktif
+            </button>
+            <button onclick="drawerNavigate('sec-refleksi')" class="w-full p-2.5 rounded-xl hover:bg-stone-100 text-stone-700 flex items-center gap-3 text-left">
+              <span>💚</span> Refleksi Cinta
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Drawer -->
+      <div class="p-4 bg-stone-50 border-t border-stone-200 text-center space-y-1">
+        <p class="text-xs font-bold text-stone-700">XI Bahasa Arab Tindak Lanjut MAN 4 Aceh Besar</p>
+        <p class="text-[11px] text-stone-500">Guru Pengampu: Erliana, S.Pd.I</p>
+      </div>
+    </div>
+  </div>
 
   <!-- Main Content Container -->
   <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
