@@ -304,26 +304,26 @@ const bab3QiroahTadrib2 = [
 ];
 
 const bab3QowaidQuestions = [
-  { id: 1, word: "نَظَّفَ الطَّالِبُ الفَصْلَ", options: ["أ - الطَّالِبُ", "ب - الفَصْلَ", "ج - نَظَّفَ"], answer: 1, explanation: "الفَصْلَ adalah Objek / Maf'ul Bihi (مفعول به) ber-harakat fathah." },
-  { id: 2, word: "يَغْسِلُ الوَلَدُ اليَدَيْنِ بِالصَّابُوْنِ", options: ["أ - اليَدَيْنِ", "ب - الوَلَدُ", "ج - الصَّابُوْنِ"], answer: 0, explanation: "اليَدَيْنِ adalah Maf'ul Bihi (Mutsanna) manshub dengan tanda Ya (ـَيْنِ)." },
-  { id: 3, word: "يُحِبُّ اللهُ المُتَطَهِّرِيْنَ", options: ["أ - اللهُ", "ب - المُتَطَهِّرِيْنَ", "ج - يُحِبُّ"], answer: 1, explanation: "المُتَطَهِّرِيْنَ adalah Maf'ul Bihi (Jama' Mudzakkar Salim) manshub dengan Ya (ـِيْنَ)." },
-  { id: 4, word: "يُرْمِي المُسْلِمُ القُمَامَةَ فِي السَّلَّةِ", options: ["أ - القُمَامَةَ", "ب - المُسْلِمُ", "ج - السَّلَّةِ"], answer: 0, explanation: "القُمَامَةَ adalah Maf'ul Bihi manshub dengan tanda fathah." },
-  { id: 5, word: "طَهَّرَتْ الأُمُّ المَلَابِسَ", options: ["أ - الأُمُّ", "ب - المَلَابِسَ", "ج - طَهَّرَتْ"], answer: 1, explanation: "المَلَابِسَ adalah Maf'ul Bihi manshub dengan fathah." },
-  { id: 6, word: "يَسْتَعْمِلُ الطَّالِبَانِ السِّوَاكَيْنِ", options: ["أ - الطَّالِبَانِ", "ب - السِّوَاكَيْنِ", "ج - يَسْتَعْمِلُ"], answer: 1, explanation: "السِّوَاكَيْنِ adalah Maf'ul Bihi (Mutsanna) manshub dengan Ya (ـَيْنِ)." },
-  { id: 7, word: "يُكْرِمُ الإِسْلَامُ المُنَظِّفِيْنَ", options: ["أ - الإِسْلَامُ", "ب - المُنَظِّفِيْنَ", "ج - يُكْرِمُ"], answer: 1, explanation: "المُنَظِّفِيْنَ adalah Maf'ul Bihi (Jama' Mudzakkar Salim) manshub dengan Ya (ـِيْنَ)." },
-  { id: 8, word: "يُزِيْلُ الرَّجُلُ الأَذَى عَنِ الطَّرِيْقِ", options: ["أ - الرَّجُلُ", "ب - الأَذَى", "ج - الطَّرِيْقِ"], answer: 1, explanation: "الأَذَى adalah Maf'ul Bihi manshub." },
-  { id: 9, word: "قَصَّ الوَلَدُ الأَظْفَارَ", options: ["أ - الوَلَدُ", "ب - الأَظْفَارَ", "ج - قَصَّ"], answer: 1, explanation: "الأَظْفَارَ adalah Maf'ul Bihi manshub dengan fathah." },
-  { id: 10, word: "يَنَادِي الأُسْتَاذُ التَّلَامِيْذَ لِلتَّنْظِيْفِ", options: ["أ - الأُسْتَاذُ", "ب - التَّلَامِيْذَ", "ج - التَّنْظِيْفِ"], answer: 1, explanation: "التَّلَامِيْذَ adalah Maf'ul Bihi manshub." },
-  { id: 11, word: "مَا هِيَ العَلَامَةُ الصَّحِيْحَةُ لِلْمَفْعُوْلِ بِهِ فِي \"نَظَّفَ المُسْلِمُ البِيْئَةَ\"؟", options: ["أ - الفَتْحَة ( َ )", "ب - الضَّمَّة ( ُ )", "ج - الكَسْرَة ( ِ )"], answer: 0, explanation: "البِيْئَةَ adalah Isim Mufrad, maka Maf'ul Bihi ber-tanda Fathah." },
-  { id: 12, word: "تَكُوْنُ عَلَامَةُ نَصْبِ المَفْعُوْلِ بِهِ فِي \"غَسَلَ ثَوْبَيْنِ\" هِيَ .....", options: ["أ - الأَلِف", "ب - اليَاء (ـَيْنِ)", "ج - النُّوْن"], answer: 1, explanation: "Tanda nashaib untuk Isim Mutsanna (ثَوْبَيْنِ) adalah Ya (ـَيْنِ)." },
-  { id: 13, word: "تَكُوْنُ عَلَامَةُ نَصْبِ المَفْعُوْلِ بِهِ فِي \"يُحِبُّ اللهُ المُتَطَهِّرِيْنَ\" هِيَ .....", options: ["أ - الوَاو", "ب - اليَاء (ـِيْنَ)", "ج - الضَّمَّة"], answer: 1, explanation: "Tanda nashaib Jama' Mudzakkar Salim adalah Ya (ـِيْنَ)." },
-  { id: 14, word: "فِي \"المُسْلِمُ يُطَهِّرُ قَلْبَهُ\"، أَيْنَ الفِعْلُ وَالمَفْعُوْلُ بِهِ ؟", options: ["أ - المُسْلِمُ", "ب - يُطَهِّرُ (فِعْل) / قَلْبَهُ (مَفْعُوْل)", "ج - لَا يُوْجَدُ مَفْعُوْل"], answer: 1, explanation: "يُطَهِّرُ adalah fi'il dan قَلْبَهُ adalah Maf'ul Bihi." },
-  { id: 15, word: "فِي الجُمْلَةِ \"إِنَّ اللهَ يُحِبُّ المُتَطَهِّرِيْنَ\"، كَلِمَةُ \"المُتَطَهِّرِيْنَ\" مَفْعُوْلٌ بِهِ مَنْصُوْبٌ بِـ .....", options: ["أ - الفَتْحَة", "ب - اليَاء", "ج - الأَلِف"], answer: 1, explanation: "المُتَطَهِّرِيْنَ adalah Jama' Mudzakkar Salim, manshub dengan Ya." },
-  { id: 16, word: "تَرْكِيْبُ الجُمْلَةِ الفِعْلِيَّةِ فِي \"يُمِيْطُ المُسْلِمُ الأَذَى\" هُوَ .....", options: ["أ - فِعْل + فَاعِل + مَفْعُوْل بِهِ", "ب - مُبْتَدَأ + خَبَر", "ج - حَرْف + إِسْم"], answer: 0, explanation: "Susunan Jumlah Fi'liyyah: Fi'il (يُمِيْطُ) + Fa'il (المُسْلِمُ) + Maf'ul Bihi (الأَذَى)." },
-  { id: 17, word: "الْأَمْرُ مِنْ الفِعْلِ \"نَظَّفَ - يُنَظِّفُ\" هُوَ .....", options: ["أ - نَظِّفْ", "ب - تَنْظِيْف", "ج - نَاظِف", "د - يَتَنَظَّفُ"], answer: 0, explanation: "Fi'il Amar dari نَظَّفَ adalah نَظِّفْ (Clean!)." },
-  { id: 18, word: "الْأَمْرُ مِنْ الفِعْلِ \"تَوَضَّأَ - يَتَوَضَّأُ\" هُوَ .....", options: ["أ - تَوَضَّأْ", "ب - وَضُوْء", "ج - مُتَوَضِّئ", "د - يَتَوَضَّأُ"], answer: 0, explanation: "Fi'il Amar dari تَوَضَّأَ adalah تَوَضَّأْ (Wudhu-lah!)." },
-  { id: 19, word: "الْأَمْرُ مِنْ الفِعْلِ \"اِغْتَسَلَ - يَغْتَسِلُ\" هُوَ .....", options: ["أ - اِغْتَسِلْ", "ب - غُسْل", "ج - يَغْتَسِلُ", "د - مَغْسَلَة"], answer: 0, explanation: "Fi'il Amar dari اِغْتَسَلَ adalah اِغْتَسِلْ (Mandi-lah!)." },
-  { id: 20, word: "كَلِمَةُ \"النَّظَافَةُ\" فِي \"النَّظَافَةُ مِنَ الإِيْمَانِ\" تُمَثِّلُ .....", options: ["أ - مُبْتَدَأً مَرْفُوْعًا", "ب - مَفْعُوْلًا بِهِ", "ج - فِعْلًا مَاضِيًا"], answer: 0, explanation: "النَّظَافَةُ di awal kalimat berfungsi sebagai Mubtada' marfu' dengan dhammad." }
+  { id: 1, word: "فَحَصَ الطَّبِيْبُ أَسْنَانَ عُثْمَانَ", options: ["أ - الطَّبِيْبُ", "ب - أَسْنَانَ (مُضَاف)", "ج - عُثْمَانَ"], answer: 1, explanation: "أَسْنَانَ adalah Mudhaf (مضاف) manshub dengan fathah." },
+  { id: 2, word: "ذَهَبَ عُثْمَانُ إِلَى طَبِيْبِ الأَسْنَانِ", options: ["أ - عُثْمَانُ", "ب - طَبِيْبِ", "ج - الأَسْنَانِ (مُضَاف إِلَيْهِ)"], answer: 2, explanation: "الأَسْنَانِ adalah Mudhaf Ilaihi (مضاف إليه) majrur dengan kasrah." },
+  { id: 3, word: "الْإِضَافَةُ تَتَكَّوَنُ مِنْ ..... وَ .....", options: ["أ - فِعْل + فَاعِل", "ب - مُضَاف + مُضَاف إِلَيْهِ", "ج - مُبْتَدَأ + خَبَر"], answer: 1, explanation: "Idhafah (الإضافة) terdiri dari Mudhaf dan Mudhaf Ilaihi." },
+  { id: 4, word: "تَكْوِيْنُ الإِضَافَةِ مِنْ (شَجَرَةُ + النَّارَجِيْلُ) هُوَ .....", options: ["أ - الشَّجَرَةُ النَّارَجِيْلِ", "ب - شَجَرَةُ النَّارَجِيْلِ", "ج - شَجَرَةٌ النَّارَجِيْلُ"], answer: 1, explanation: "Mudhaf (شَجَرَةُ) harus dibuang 'ال'-nya saat di-idhafah-kan menjadi شَجَرَةُ النَّارَجِيْلِ." },
+  { id: 5, word: "حُكْمُ المُنَافِ إِلَيْهِ فِي الإِعْرَابِ دَائِمًا .....", options: ["أ - مَرْفُوْعٌ", "ب - مَنْصُوْبٌ", "ج - مَجْرُوْرٌ أَبَدًا"], answer: 2, explanation: "Mudhaf Ilaihi selamanya berkedudukan Majrur (مجرور أبداً)." },
+  { id: 6, word: "المُضَافُ يُعْرَبُ بِحَسَبِ ..... فِي الْجُمْلَةِ", options: ["أ - مَوْقِعِهِ فِي الجُمْلَةِ", "ب - الكَسْرَةِ دَائِمًا", "ج - التَّنْوِيْنِ"], answer: 0, explanation: "I'rab Mudhaf disesuaikan dengan kedudukannya dalam kalimat (bisa marfu', manshub, atau majrur)." },
+  { id: 7, word: "تَكْوِيْنُ الإِضَافَةِ مِنْ (غُرْفَةٌ + أَوْلَادٌ) هُوَ .....", options: ["أ - غُرْفَةُ أَوْلَادٍ", "ب - غُرْفَةٌ أَوْلَادٌ", "ج - الغُرْفَةُ أَوْلَادٍ"], answer: 0, explanation: "Mudhaf dibuang tanwinnya, sehingga menjadi غُرْفَةُ أَوْلَادٍ." },
+  { id: 8, word: "عِنْدَ الإِضَافَةِ، المُنَافُ يُحْذَفُ مِنْهُ .....", options: ["أ - \"الْـ\" (التَّعْرِيْف) وَالتَّنْوِيْن", "ب - الحُرُوْفُ الأَصْلِيَّة", "ج - السُّكُوْن"], answer: 0, explanation: "Apabila suatu isim di-idhafah-kan, maka Al-Lam (ال) dan Tanwin-nya wajib dibuang." },
+  { id: 9, word: "فِي \"سَنَةُ دِرَاسَةٍ\"، كَلِمَةُ \"دِرَاسَةٍ\" تُعْرَبُ .....", options: ["أ - مُضَافًا", "ب - مُضَافًا إِلَيْهِ مَجْرُوْرًا", "ج - فَاعِلًا"], answer: 1, explanation: "دِرَاسَةٍ adalah Mudhaf Ilaihi yang majrur dengan tanda kasrah." },
+  { id: 10, word: "فِي \"نَصَحَ الطَّبِيْبُ عُثْمَانَ بِتَنَاوُلِ الدَّوَاءِ\"، المُنَافُ هُوَ .....", options: ["أ - الطَّبِيْبُ", "ب - تَنَاوُلِ", "ج - الدَّوَاءِ"], answer: 1, explanation: "تَنَاوُلِ adalah Mudhaf yang majrur karena huruf jar (بِـ)." },
+  { id: 11, word: "تَكْوِيْنُ الإِضَافَةِ مِنْ (حَافِظٌ + القُرْآنُ) هُوَ .....", options: ["أ - حَافِظُ القُرْآنِ", "ب - حَافِظٌ القُرْآنَ", "ج - الحَافِظُ القُرْآنِ"], answer: 0, explanation: "Tanwin dibuang dari حَافِظٌ dan القُرْآنُ di-kasrah-kan menjadi حَافِظُ القُرْآنِ." },
+  { id: 12, word: "فِي \"صِحَّةُ البَدَنِ\"، المُنَافُ فِي هَذِهِ الإِضَافَةِ هُوَ .....", options: ["أ - صِحَّةُ", "ب - البَدَنِ", "ج - صِحَّةُ البَدَنِ"], answer: 0, explanation: "صِحَّةُ adalah kata pertama yang disandarkan (Mudhaf)." },
+  { id: 13, word: "فِي \"طَابِعُ البَرِيْدِ\"، كَلِمَةُ \"طَابِعُ\" يُعْرَبُ مُضَافًا وَعَلَامَةُ إِعْرَابِهِ .....", options: ["أ - بِحَسَبِ مَوْقِعِهِ فِي الجُمْلَةِ", "ب - الكَسْرَةُ دَائِمًا", "ج - الفَتْحَةُ دَائِمًا"], answer: 0, explanation: "Kedudukan i'rab Mudhaf bebas sesuai fungsi kalimatnya." },
+  { id: 14, word: "فِي \"ثَمَرَةُ الفُؤَادِ\"، المُنَافُ إِلَيْهِ هُوَ .....", options: ["أ - ثَمَرَةُ", "ب - الفُؤَادِ", "ج - ثَمَرَةُ الفُؤَادِ"], answer: 1, explanation: "الفُؤَادِ adalah kata kedua yang berfungsi sebagai Mudhaf Ilaihi." },
+  { id: 15, word: "تَكْوِيْنُ الإِضَافَةِ مِنْ (بَابٌ + فَصْلٌ) هُوَ .....", options: ["أ - بَابُ فَصْلٍ", "ب - البَابُ فَصْلٍ", "ج - بَابٌ فَصْلٌ"], answer: 0, explanation: "Tanwin dibuang dari بَابٌ menjadi بَابُ فَصْلٍ." },
+  { id: 16, word: "فِي \"رَأْسُ مَالٍ\"، كَلِمَةُ \"مَالٍ\" مَجْرُوْرَةٌ بِـ .....", options: ["أ - الكَسْرَةِ", "ب - الفَتْحَةِ", "ج - الضَّمَّةِ"], answer: 0, explanation: "مَالٍ adalah Mudhaf Ilaihi majrur dengan kasrah." },
+  { id: 17, word: "فِي \"مَرْحَلَةُ الشُّيُوْخِ\"، المُنَافُ إِلَيْهِ هُوَ .....", options: ["أ - مَرْحَلَةُ", "ب - الشُّيُوْخِ", "ج - الشُّيُوْخُ"], answer: 1, explanation: "الشُّيُوْخِ adalah Mudhaf Ilaihi majrur dengan kasrah." },
+  { id: 18, word: "هَلْ يَجُوْزُ دُخُوْلُ \"الْـ\" (التَّعْرِيْف) عَلَى المُنَافِ ؟", options: ["أ - نَعَمْ، يَجُوْزُ دَائِمًا", "ب - لَا يَجُوْزُ، بَلْ تُحْذَفُ \"الْـ\" عِنْدَ الإِضَافَةِ", "ج - يَجُوْزُ فِي الأَفْعَالِ"], answer: 1, explanation: "Mudhaf tidak boleh menggunakan Al-Lam (ال) saat di-idhafah-kan." },
+  { id: 19, word: "هَلْ يَجُوْزُ التَّنْوِيْنُ عَلَى المُنَافِ ؟", options: ["أ - نَعَمْ، يَبْقَى التَّنْوِيْنُ", "ب - لَا، يُحْذَفُ التَّنْوِيْنُ عِنْدَ الإِضَافَةِ", "ج - يَجُوْزُ إِذَا كَانَ الإِسْمُ كَبِيْرًا"], answer: 1, explanation: "Mudhaf tidak boleh bertanwin (tanwin dibuang saat idhafah)." },
+  { id: 20, word: "فِي \"ذَهَبَ الطَّالِبُ إِلَى مَدْرَسَةِ القَرِيَةِ\"، كَلِمَةُ \"مَدْرَسَةِ\" مَجْرُوْرَةٌ بِالكَسْرَةِ لِأَنَّهَا .....", options: ["أ - مُضَافٌ سَبَقَهُ حَرْفُ جَرٍّ (إِلَى)", "ب - مُضَافٌ إِلَيْهِ", "ج - فَاعِلٌ"], answer: 0, explanation: "مَدْرَسَةِ adalah Mudhaf yang majrur karena didahului huruf jar (إِلَى)." }
 ];
 
 const bab3QuizQuestions = [
@@ -441,7 +441,7 @@ function switchChapter(chapterId) {
   renderAfalTable();
   renderIstimaSection();
   renderQiroahSection();
-  renderQowaidQuiz();
+  renderQowaidSection();
   renderQuizSection();
 
   toggleHamburgerMenu();
@@ -497,11 +497,414 @@ function switchTab(targetId, btnElement = null) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+// Dynamic Qowaid Section Renderer
+function renderQowaidSection() {
+  const container = document.getElementById('qowaid-section-container');
+  if (!container) return;
+
+  if (currentChapter === 'bab2') {
+    container.innerHTML = `
+      <div class="bg-gradient-to-br from-teal-900 via-teal-800 to-rose-900 text-white p-6 md:p-8 rounded-3xl shadow-lg space-y-4">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <span class="px-3 py-1 rounded-full bg-rose-500/30 text-rose-200 font-bold text-xs border border-rose-400/30">دُرُوْسُ القَوَاعِدِ • Tata Bahasa Arab Kelas 11 • Bab 2</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold font-arabic mt-2 text-yellow-300">المَفْعُوْلُ بِهِ (Maf'ul Bihi)</h2>
+            <p class="text-xs md:text-sm text-stone-200 mt-1 leading-relaxed">
+              Memahami konsep <span class="font-arabic text-lg font-bold text-yellow-200">المَفْعُوْلُ بِهِ</span> (Objek Penderita) dalam Kalimat Fi'liyyah (<span class="font-arabic text-yellow-100">جُمْلَةٌ فِعْلِيَّةٌ</span>) dan Kalimat Ismiyyah (<span class="font-arabic text-yellow-100">جُمْلَةٌ إِسْمِيَّةٌ</span>) beserta tanda-tanda i'rabnya.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 md:p-8 rounded-3xl bg-amber-50/90 border-2 border-amber-200/90 shadow-sm space-y-4 text-stone-900">
+        <div class="flex items-center gap-3 border-b border-amber-200 pb-3">
+          <span class="w-10 h-10 rounded-2xl bg-amber-600 text-white font-arabic text-2xl font-bold flex items-center justify-center shadow-md">💡</span>
+          <div>
+            <h3 class="font-arabic text-3xl font-bold text-amber-950 dir-rtl">مُلَاحَظَةٌ (Catatan & Kaidah Penting)</h3>
+            <p class="text-xs text-amber-800 font-semibold">Pengertian Maf'ul Bihi dan Tanda Harakat / I'rabnya</p>
+          </div>
+        </div>
+
+        <div class="space-y-3 text-sm md:text-base leading-relaxed">
+          <div class="p-4 rounded-2xl bg-white border border-amber-200/80 space-y-1">
+            <p class="font-bold text-teal-900 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center text-xs font-bold">1</span>
+              <span>Pengertian Maf'ul Bihi (المَفْعُوْلُ بِهِ):</span>
+            </p>
+            <p class="text-stone-700 text-xs md:text-sm pl-8">
+              <span class="font-arabic text-xl font-bold text-teal-950">المَفْعُوْلُ بِهِ</span> adalah kata yang berfungsi sebagai <strong>'objek'</strong> penderita, baik dalam kalimat Fi'liyyah (<span class="font-arabic text-base font-bold text-teal-800">جُمْلَةٌ فِعْلِيَّةٌ</span>) maupun dalam kalimat Ismiyyah (<span class="font-arabic text-base font-bold text-teal-800">جُمْلَةٌ إِسْمِيَّةٌ</span>).
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-white border border-amber-200/80 space-y-2">
+            <p class="font-bold text-rose-900 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-rose-100 text-rose-800 flex items-center justify-center text-xs font-bold">2</span>
+              <span>Tanda I'rab / Harakat Maf'ul Bihi (المَفْعُوْلُ بِهِ):</span>
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-xs md:text-sm text-stone-700 pl-4 font-medium">
+              <li>Jika berupa <strong>Isim Mufrad</strong> (kata tunggal), diberi harakat <strong>Fathah</strong> (<span class="font-arabic text-base font-bold text-rose-800">فَتْحَة</span>). Contoh: <span class="font-arabic text-lg font-bold text-teal-900 dir-rtl">القُرْآنَ</span>, <span class="font-arabic text-lg font-bold text-teal-900 dir-rtl">مُحَمَّدًا</span>.</li>
+              <li>Jika berupa <strong>Tasniyah / Mutsanna</strong>, diberi tanda <span class="font-arabic text-lg font-bold text-teal-900 dir-rtl">ـَيْنِ</span>.</li>
+              <li>Jika berupa <strong>Jama' Mudzakkar As-Salim</strong>, diberi tanda <span class="font-arabic text-lg font-bold text-teal-900 dir-rtl">ـِيْنَ</span>. Contoh: <span class="font-arabic text-lg font-bold text-teal-900 dir-rtl">الظَّالِمِيْنَ</span>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 md:p-8 rounded-3xl bg-white border border-stone-200 shadow-sm space-y-6">
+        <div class="flex items-center justify-between border-b border-stone-100 pb-4">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 rounded-2xl bg-teal-700 text-white font-arabic text-2xl font-bold flex items-center justify-center shadow-md">أ</span>
+            <div>
+              <h3 class="font-arabic text-2xl md:text-3xl font-bold text-teal-900 dir-rtl">أ - المَفْعُوْلُ بِهِ فِي الجُمْلَةِ الفِعْلِيَّةِ</h3>
+              <p class="text-xs text-stone-500 mt-0.5">Perhatikan pola Objek (مَفْعُوْلٌ بِهِ) dalam Kalimat Fi'liyyah</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 rounded-full bg-teal-50 text-teal-700 font-bold text-xs border border-teal-200">جُمْلَة فِعْلِيَّة</span>
+        </div>
+
+        <div class="overflow-x-auto rounded-2xl border border-stone-200 shadow-xs">
+          <table class="w-full text-center border-collapse">
+            <thead>
+              <tr class="bg-teal-900 text-white text-sm font-semibold">
+                <th class="px-4 py-3.5 font-arabic text-xl w-1/3">فِعْل + فَاعِل</th>
+                <th class="px-4 py-3.5 font-arabic text-xl bg-teal-800 w-1/3">مَفْعُوْل بِهِ (Objek)</th>
+                <th class="px-4 py-3.5 font-arabic text-xl w-1/3">فَضْلَة (Pelengkap)</th>
+                <th class="px-3 py-3 text-xs font-sans">Audio</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-stone-100 bg-white">
+              <tr class="hover:bg-teal-50/50 transition">
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">يَقْرَأُ الطَّالِبُ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-rose-700 bg-rose-50/50 dir-rtl">القُرْآنَ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-800 dir-rtl">الكَرِيْمَ</td>
+                <td class="px-3 py-3.5"><button onclick="speakArabic('يَقْرَأُ الطَّالِبُ القُرْآنَ الكَرِيْمَ')" class="p-2 rounded-full bg-stone-100 hover:bg-teal-700 hover:text-white text-teal-700 text-xs transition">🔊</button></td>
+              </tr>
+              <tr class="hover:bg-teal-50/50 transition">
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">بَعَثَ اللهُ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-rose-700 bg-rose-50/50 dir-rtl">مُحَمَّدًا</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-800 dir-rtl">نَبِيًّا وَرَسُوْلاً</td>
+                <td class="px-3 py-3.5"><button onclick="speakArabic('بَعَثَ اللهُ مُحَمَّدًا نَبِيًّا وَرَسُوْلاً')" class="p-2 rounded-full bg-stone-100 hover:bg-teal-700 hover:text-white text-teal-700 text-xs transition">🔊</button></td>
+              </tr>
+              <tr class="hover:bg-teal-50/50 transition">
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">يَأْكُلُ المُرَاهِقُوْنَ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-rose-700 bg-rose-50/50 dir-rtl">الغِذَاءَ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-800 dir-rtl">الطَّيِّبَ</td>
+                <td class="px-3 py-3.5"><button onclick="speakArabic('يَأْكُلُ المُرَاهِقُوْنَ الغِذَاءَ الطَّيِّبَ')" class="p-2 rounded-full bg-stone-100 hover:bg-teal-700 hover:text-white text-teal-700 text-xs transition">🔊</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="p-6 md:p-8 rounded-3xl bg-gradient-to-r from-teal-900 to-rose-900 text-white shadow-lg space-y-6 max-w-4xl mx-auto">
+        <div>
+          <span class="px-3 py-1 rounded-full bg-yellow-400/20 text-yellow-300 font-bold text-xs border border-yellow-400/30">اختبار سريع • 20 Soal Bab 2</span>
+          <h3 class="text-2xl md:text-3xl font-bold font-arabic text-yellow-300 mt-2">تَدْرِيْبُ المَفْعُوْلِ بِهِ (Kuis Interaktif Maf'ul Bihi)</h3>
+          <p class="text-xs text-stone-200 mt-1">Uji pemahamanmu dalam mengidentifikasi Objek (المَفْعُوْلُ بِهِ) dan tanda i'rabnya:</p>
+        </div>
+        <div id="qowaid-quiz-container" class="space-y-4 text-stone-900"></div>
+      </div>
+    `;
+  } else if (currentChapter === 'bab3') {
+    container.innerHTML = `
+      <div class="bg-gradient-to-br from-teal-900 via-teal-800 to-rose-900 text-white p-6 md:p-8 rounded-3xl shadow-lg space-y-4">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <span class="px-3 py-1 rounded-full bg-rose-500/30 text-rose-200 font-bold text-xs border border-rose-400/30">دُرُوْسُ القَوَاعِدِ • Tata Bahasa Arab Kelas 11 • Bab 3</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold font-arabic mt-2 text-yellow-300">الْإِضَافَةُ (Al-Idhafah: Mudhaf & Mudhaf Ilaihi)</h2>
+            <p class="text-xs md:text-sm text-stone-200 mt-1 leading-relaxed">
+              Memahami konsep penyandaran dua kata benda (<span class="font-arabic text-yellow-200 font-bold">المُضَافُ وَالمُضَافُ إِلَيْهِ</span>) dalam Bahasa Arab beserta rumus, hukum harakat, dan contoh penerapannya.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 md:p-8 rounded-3xl bg-white border border-teal-200 shadow-md space-y-6">
+        <div class="text-center space-y-2 border-b border-stone-100 pb-4">
+          <span class="px-3 py-1 rounded-full bg-teal-100 text-teal-800 font-bold text-xs uppercase tracking-wider">Formula Dasar Tata Bahasa</span>
+          <h3 class="font-arabic text-3xl md:text-4xl font-extrabold text-teal-950 dir-rtl">كِتَابٌ + الْمُدَرِّسُ ➔ كِتَابُ الْمُدَرِّسِ</h3>
+          <p class="text-xs md:text-sm text-stone-600 font-medium">Bermakna Kepemilikan/Penyandaran: <em>"Kitabnya Guru / Kitab Guru"</em></p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
+          <div class="p-5 rounded-2xl bg-teal-50 border border-teal-200 space-y-2">
+            <span class="px-3 py-1 rounded-full bg-teal-700 text-white font-bold text-xs">Isim Pertama (Kata Depan)</span>
+            <h4 class="font-arabic text-3xl font-bold text-teal-900 dir-rtl">مُضَافٌ (Mudhaf)</h4>
+            <p class="text-xs text-stone-700 leading-relaxed font-medium">
+              Isim yang disandarkan kepada isim sesudahnya. 
+              <br><strong class="text-rose-700">Syarat:</strong> Dibuang <span class="font-arabic font-bold text-sm">الْـ</span> (Alif-Lam) & dibuang <strong>Tanwin</strong>nya. I'rabnya sesuai kedudukan kalimat.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-rose-50 border border-rose-200 space-y-2">
+            <span class="px-3 py-1 rounded-full bg-rose-700 text-white font-bold text-xs">Isim Kedua (Kata Belakang)</span>
+            <h4 class="font-arabic text-3xl font-bold text-rose-950 dir-rtl">مُضَافٌ إِلَيْهِ (Mudhaf Ilaihi)</h4>
+            <p class="text-xs text-stone-700 leading-relaxed font-medium">
+              Isim yang terletak setelah Mudhaf. 
+              <br><strong class="text-rose-700">Hukum I'rab:</strong> Selamanya <span class="font-bold text-rose-800">Majrur</span> (Harakat akhir Kasrah / Ya).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 md:p-8 rounded-3xl bg-white border border-stone-200 shadow-sm space-y-6">
+        <div class="flex items-center justify-between border-b border-stone-100 pb-4">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 rounded-2xl bg-teal-700 text-white font-arabic text-2xl font-bold flex items-center justify-center shadow-md">أ</span>
+            <div>
+              <h3 class="font-arabic text-2xl md:text-3xl font-bold text-teal-900 dir-rtl">أ - الأَمْثِلَةُ فِي الجُمَلِ (Contoh dalam Kalimat)</h3>
+              <p class="text-xs text-stone-500 mt-0.5">Analisis kedudukan Mudhaf & Mudhaf Ilaihi berdasarkan buku paket Kemenag</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 rounded-full bg-teal-50 text-teal-700 font-bold text-xs border border-teal-200">الْإِضَافَةُ</span>
+        </div>
+
+        <div class="overflow-x-auto rounded-2xl border border-stone-200">
+          <table class="w-full text-right border-collapse">
+            <thead>
+              <tr class="bg-teal-900 text-white text-sm font-semibold">
+                <th class="px-4 py-3.5 text-center w-12">No</th>
+                <th class="px-4 py-3.5 font-arabic text-xl text-center">الْجُمْلَةُ (Kalimat Bahasa Arab)</th>
+                <th class="px-4 py-3.5 text-center">Terjemahan Indonesia</th>
+                <th class="px-4 py-3.5 text-center">Analisis Idafah</th>
+                <th class="px-3 py-3 text-center">Audio</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-stone-100 bg-white text-sm">
+              <tr class="hover:bg-teal-50/50 transition">
+                <td class="px-4 py-3.5 text-center font-bold text-stone-500">1</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-950 dir-rtl text-right">فَحَصَ الطَّبِيْبُ <span class="text-rose-600 underline decoration-rose-300 underline-offset-4">أَسْنَانَ عُثْمَانَ</span></td>
+                <td class="px-4 py-3.5 text-stone-700 font-semibold text-center">Dokter memeriksa gigi Usman.</td>
+                <td class="px-4 py-3.5 text-center text-xs font-semibold">
+                  <span class="inline-block px-2 py-0.5 bg-teal-100 text-teal-800 rounded font-arabic text-base">أَسْنَانَ</span> (Mudhaf) <br>
+                  <span class="inline-block px-2 py-0.5 bg-rose-100 text-rose-800 rounded font-arabic text-base mt-1">عُثْمَانَ</span> (Mudhaf Ilaihi)
+                </td>
+                <td class="px-3 py-3.5 text-center">
+                  <button onclick="speakArabic('فَحَصَ الطَّبِيْبُ أَسْنَانَ عُثْمَانَ')" class="p-2 rounded-full bg-stone-100 hover:bg-teal-700 hover:text-white text-teal-700 text-xs transition">🔊</button>
+                </td>
+              </tr>
+              <tr class="hover:bg-teal-50/50 transition">
+                <td class="px-4 py-3.5 text-center font-bold text-stone-500">2</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-950 dir-rtl text-right">نَصَحَ الطَّبِيْبُ عُثْمَانَ بِالرَّاحَةِ وَ<span class="text-rose-600 underline decoration-rose-300 underline-offset-4">تَنَاوُلِ الدَّوَاءِ</span></td>
+                <td class="px-4 py-3.5 text-stone-700 font-semibold text-center">Usman dinasihati dokter agar beristirahat dan minum obat.</td>
+                <td class="px-4 py-3.5 text-center text-xs font-semibold">
+                  <span class="inline-block px-2 py-0.5 bg-teal-100 text-teal-800 rounded font-arabic text-base">تَنَاوُلِ</span> (Mudhaf) <br>
+                  <span class="inline-block px-2 py-0.5 bg-rose-100 text-rose-800 rounded font-arabic text-base mt-1">الدَّوَاءِ</span> (Mudhaf Ilaihi)
+                </td>
+                <td class="px-3 py-3.5 text-center">
+                  <button onclick="speakArabic('نَصَحَ الطَّبِيْبُ عُثْمَانَ بِالرَّاحَةِ وَتَنَاوُلِ الدَّوَاءِ')" class="p-2 rounded-full bg-stone-100 hover:bg-teal-700 hover:text-white text-teal-700 text-xs transition">🔊</button>
+                </td>
+              </tr>
+              <tr class="hover:bg-teal-50/50 transition">
+                <td class="px-4 py-3.5 text-center font-bold text-stone-500">3</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-950 dir-rtl text-right">وَ<span class="text-rose-600 underline">سَبَبُ ذَلِكَ</span> <span class="text-rose-600 underline">زِيَادَةُ الْوَزْنِ</span></td>
+                <td class="px-4 py-3.5 text-stone-700 font-semibold text-center">Hal itu disebabkan bertambahnya berat badan.</td>
+                <td class="px-4 py-3.5 text-center text-xs font-semibold">
+                  Mudhaf 1: <span class="font-arabic text-base">سَبَبُ</span>, Ilaihi: <span class="font-arabic text-base">ذَلِكَ</span> <br>
+                  Mudhaf 2: <span class="font-arabic text-base">زِيَادَةُ</span>, Ilaihi: <span class="font-arabic text-base">الْوَزْنِ</span>
+                </td>
+                <td class="px-3 py-3.5 text-center">
+                  <button onclick="speakArabic('وَسَبَبُ ذَلِكَ زِيَادَةُ الْوَزْنِ')" class="p-2 rounded-full bg-stone-100 hover:bg-teal-700 hover:text-white text-teal-700 text-xs transition">🔊</button>
+                </td>
+              </tr>
+              <tr class="hover:bg-teal-50/50 transition">
+                <td class="px-4 py-3.5 text-center font-bold text-stone-500">4</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-950 dir-rtl text-right">ذَهَبَ عُثْمَانُ إِلَى <span class="text-rose-600 underline decoration-rose-300 underline-offset-4">طَبِيْبِ الْأَسْنَانِ</span></td>
+                <td class="px-4 py-3.5 text-stone-700 font-semibold text-center">Usman pergi ke dokter gigi.</td>
+                <td class="px-4 py-3.5 text-center text-xs font-semibold">
+                  <span class="inline-block px-2 py-0.5 bg-teal-100 text-teal-800 rounded font-arabic text-base">طَبِيْبِ</span> (Mudhaf) <br>
+                  <span class="inline-block px-2 py-0.5 bg-rose-100 text-rose-800 rounded font-arabic text-base mt-1">الْأَسْنَانِ</span> (Mudhaf Ilaihi)
+                </td>
+                <td class="px-3 py-3.5 text-center">
+                  <button onclick="speakArabic('ذَهَبَ عُثْمَانُ إِلَى طَبِيْبِ الْأَسْنَانِ')" class="p-2 rounded-full bg-stone-100 hover:bg-teal-700 hover:text-white text-teal-700 text-xs transition">🔊</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="p-6 md:p-8 rounded-3xl bg-amber-50/90 border-2 border-amber-200/90 shadow-sm space-y-4 text-stone-900">
+        <div class="flex items-center gap-3 border-b border-amber-200 pb-3">
+          <span class="w-10 h-10 rounded-2xl bg-amber-600 text-white font-arabic text-2xl font-bold flex items-center justify-center shadow-md">💡</span>
+          <div>
+            <h3 class="font-arabic text-3xl font-bold text-amber-950 dir-rtl">مُلَاحَظَةٌ (Catatan & Kaidah Penting Idhafah)</h3>
+            <p class="text-xs text-amber-800 font-semibold">Ringkasan 4 Hukum Utama Idhafah Sesuai Buku Paket Kemenag</p>
+          </div>
+        </div>
+
+        <div class="space-y-3 text-sm md:text-base leading-relaxed">
+          <div class="p-4 rounded-2xl bg-white border border-amber-200/80 space-y-1">
+            <p class="font-bold text-teal-900 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center text-xs font-bold">1</span>
+              <span class="font-arabic text-xl font-bold text-teal-950 dir-rtl">أَلْإِضَافَةُ تَتَكَّوَنُ مِنَ الْمُضَافِ وَالْمُضَافِ إِلَيْهِ</span>
+            </p>
+            <p class="text-stone-700 text-xs md:text-sm pl-8">
+              <em>Idâfah</em> terdiri atas <strong>mudhâf</strong> (kata benda pertama) dan <strong>mudhâf ilaihi</strong> (kata benda kedua).
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-white border border-amber-200/80 space-y-1">
+            <p class="font-bold text-teal-900 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-teal-100 text-teal-800 flex items-center justify-center text-xs font-bold">2</span>
+              <span class="font-arabic text-xl font-bold text-teal-950 dir-rtl">الْمُضَافُ إِسْمٌ نُسِبَ إِلَى إِسْمٍ بَعْدَهُ، الْمُضَافُ إِلَيْهِ يَأْتِي بَعْدَ الْمُضَافِ</span>
+            </p>
+            <p class="text-stone-700 text-xs md:text-sm pl-8">
+              Mudhâf adalah isim yang disandarkan kepada isim sesudahnya. Mudhâf ilaihi adalah isim yang datang (terletak) tepat sesudah mudhâf.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-white border border-amber-200/80 space-y-1">
+            <p class="font-bold text-rose-900 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-rose-100 text-rose-800 flex items-center justify-center text-xs font-bold">3</span>
+              <span class="font-arabic text-xl font-bold text-rose-950 dir-rtl">الْمُضَافُ تُحْذَفُ مِنْهُ أَلِفٌ وَاللَّامُ عِنْدَ الإِضَافَةِ ، وَيُحْذَفُ تَنْوِيْنُهُ</span>
+            </p>
+            <p class="text-stone-700 text-xs md:text-sm pl-8">
+              Jika mudhâf sebelumnya memuat Al (الـ), Al-nya <strong>wajib dibuang</strong> saat di-idâfah-kan. Dan jika mudhâf memiliki tanwin, tanwinnya juga <strong>wajib dibuang</strong> (hanya harakat tunggal <span class="font-arabic font-bold text-rose-800"> ُ /  َ /  ِ </span>).
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-white border border-amber-200/80 space-y-1">
+            <p class="font-bold text-rose-900 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-rose-100 text-rose-800 flex items-center justify-center text-xs font-bold">4</span>
+              <span class="font-arabic text-xl font-bold text-rose-950 dir-rtl">الْمُضَافُ يُعْرَبُ بِحَسَبِ مَوْقِعِهِ فِي الْجُمْلَةِ. الْمُضَافُ إِلَيْهِ مَجْرُوْرٌ أَبَدًا</span>
+            </p>
+            <p class="text-stone-700 text-xs md:text-sm pl-8">
+              Mudhâf mendapat i'râb sesuai kedudukannya dalam kalimat (bisa marfu', manshub, atau majrur). Sedangkan Mudhâf Ilaihi <strong>selamanya Majrûr</strong> (ber-harakat akhir Kasrah).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 md:p-8 rounded-3xl bg-white border border-stone-200 shadow-sm space-y-6">
+        <div class="flex items-center justify-between border-b border-stone-100 pb-4">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 rounded-2xl bg-rose-600 text-white font-arabic text-2xl font-bold flex items-center justify-center shadow-md">ب</span>
+            <div>
+              <h3 class="font-arabic text-2xl md:text-3xl font-bold text-rose-900 dir-rtl">ب - جَدْوَلُ تَكْوِيْنِ الإِضَافَةِ (Tabel Pembentukan Idhafah)</h3>
+              <p class="text-xs text-stone-500 mt-0.5">Gabungan Dua Isim Menjadi Susunan Idhafah (Buku Paket Bab 3)</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 rounded-full bg-rose-50 text-rose-700 font-bold text-xs border border-rose-200">10 Baris Latihan</span>
+        </div>
+
+        <div class="overflow-x-auto rounded-2xl border border-stone-200 shadow-xs">
+          <table class="w-full text-center border-collapse">
+            <thead>
+              <tr class="bg-rose-900 text-white text-sm font-semibold">
+                <th class="px-3 py-3 text-center w-12">No</th>
+                <th class="px-4 py-3.5 font-arabic text-xl">الْكَلِمَاتُ (Isim 1)</th>
+                <th class="px-4 py-3.5 font-arabic text-xl">الْكَلِمَاتُ (Isim 2)</th>
+                <th class="px-4 py-3.5 font-arabic text-2xl bg-rose-800">الْإِضَافَةُ (Hasil Idhafah)</th>
+                <th class="px-4 py-3.5 text-center text-xs font-sans">Arti / Makna</th>
+                <th class="px-3 py-3 text-xs font-sans">Audio</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-stone-100 bg-white">
+              <tr class="hover:bg-rose-50/50 transition">
+                <td class="px-3 py-3.5 text-stone-500 font-bold">1</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">غُرْفَةٌ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">أَوْلَادٌ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-800 bg-teal-50/70 dir-rtl">غُرْفَةُ أَوْلَادٍ</td>
+                <td class="px-4 py-3.5 text-xs md:text-sm font-semibold text-stone-700">Kamar anak-anak</td>
+                <td class="px-3 py-3.5"><button onclick="speakArabic('غُرْفَةُ أَوْلَادٍ')" class="p-2 rounded-full bg-stone-100 hover:bg-rose-600 hover:text-white text-rose-600 text-xs transition">🔊</button></td>
+              </tr>
+              <tr class="hover:bg-rose-50/50 transition">
+                <td class="px-3 py-3.5 text-stone-500 font-bold">2</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">طَابِعٌ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">الْبَرِيْدُ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-800 bg-teal-50/70 dir-rtl">طَابِعُ الْبَرِيْدِ</td>
+                <td class="px-4 py-3.5 text-xs md:text-sm font-semibold text-stone-700">Prangko pos</td>
+                <td class="px-3 py-3.5"><button onclick="speakArabic('طَابِعُ الْبَرِيْدِ')" class="p-2 rounded-full bg-stone-100 hover:bg-rose-600 hover:text-white text-rose-600 text-xs transition">🔊</button></td>
+              </tr>
+              <tr class="hover:bg-rose-50/50 transition">
+                <td class="px-3 py-3.5 text-stone-500 font-bold">3</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">الشَّجَرَةُ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">النَّارَجِيْلُ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-800 bg-teal-50/70 dir-rtl">شَجَرَةُ النَّارَجِيْلِ</td>
+                <td class="px-4 py-3.5 text-xs md:text-sm font-semibold text-stone-700">Pohon kelapa</td>
+                <td class="px-3 py-3.5"><button onclick="speakArabic('شَجَرَةُ النَّارَجِيْلِ')" class="p-2 rounded-full bg-stone-100 hover:bg-rose-600 hover:text-white text-rose-600 text-xs transition">🔊</button></td>
+              </tr>
+              <tr class="hover:bg-rose-50/50 transition">
+                <td class="px-3 py-3.5 text-stone-500 font-bold">4</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">حَافِظٌ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">الْقُرْآنُ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-800 bg-teal-50/70 dir-rtl">حَافِظُ الْقُرْآنِ</td>
+                <td class="px-4 py-3.5 text-xs md:text-sm font-semibold text-stone-700">Penghafal Al-Qur'an</td>
+                <td class="px-3 py-3.5"><button onclick="speakArabic('حَافِظُ الْقُرْآنِ')" class="p-2 rounded-full bg-stone-100 hover:bg-rose-600 hover:text-white text-rose-600 text-xs transition">🔊</button></td>
+              </tr>
+              <tr class="hover:bg-rose-50/50 transition">
+                <td class="px-3 py-3.5 text-stone-500 font-bold">5</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">بَابٌ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">فَصْلٌ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-800 bg-teal-50/70 dir-rtl">بَابُ فَصْلٍ</td>
+                <td class="px-4 py-3.5 text-xs md:text-sm font-semibold text-stone-700">Pintu kelas</td>
+                <td class="px-3 py-3.5"><button onclick="speakArabic('بَابُ فَصْلٍ')" class="p-2 rounded-full bg-stone-100 hover:bg-rose-600 hover:text-white text-rose-600 text-xs transition">🔊</button></td>
+              </tr>
+              <tr class="hover:bg-rose-50/50 transition">
+                <td class="px-3 py-3.5 text-stone-500 font-bold">6</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">مَرْحَلَةٌ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">الشُّيُوْخُ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-800 bg-teal-50/70 dir-rtl">مَرْحَلَةُ الشُّيُوْخِ</td>
+                <td class="px-4 py-3.5 text-xs md:text-sm font-semibold text-stone-700">Fase usia lanjut</td>
+                <td class="px-3 py-3.5"><button onclick="speakArabic('مَرْحَلَةُ الشُّيُوْخِ')" class="p-2 rounded-full bg-stone-100 hover:bg-rose-600 hover:text-white text-rose-600 text-xs transition">🔊</button></td>
+              </tr>
+              <tr class="hover:bg-rose-50/50 transition">
+                <td class="px-3 py-3.5 text-stone-500 font-bold">7</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">رَأْسٌ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">مَالٌ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-800 bg-teal-50/70 dir-rtl">رَأْسُ مَالٍ</td>
+                <td class="px-4 py-3.5 text-xs md:text-sm font-semibold text-stone-700">Modal usaha / Kapital</td>
+                <td class="px-3 py-3.5"><button onclick="speakArabic('رَأْسُ مَالٍ')" class="p-2 rounded-full bg-stone-100 hover:bg-rose-600 hover:text-white text-rose-600 text-xs transition">🔊</button></td>
+              </tr>
+              <tr class="hover:bg-rose-50/50 transition">
+                <td class="px-3 py-3.5 text-stone-500 font-bold">8</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">سَنَةٌ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">دِرَاسَةٌ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-800 bg-teal-50/70 dir-rtl">سَنَةُ دِرَاسَةٍ</td>
+                <td class="px-4 py-3.5 text-xs md:text-sm font-semibold text-stone-700">Tahun ajaran / sekolah</td>
+                <td class="px-3 py-3.5"><button onclick="speakArabic('سَنَةُ دِرَاسَةٍ')" class="p-2 rounded-full bg-stone-100 hover:bg-rose-600 hover:text-white text-rose-600 text-xs transition">🔊</button></td>
+              </tr>
+              <tr class="hover:bg-rose-50/50 transition">
+                <td class="px-3 py-3.5 text-stone-500 font-bold">9</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">صِحَّةٌ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">الْبَدَنُ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-800 bg-teal-50/70 dir-rtl">صِحَّةُ الْبَدَنِ</td>
+                <td class="px-4 py-3.5 text-xs md:text-sm font-semibold text-stone-700">Kesehatan badan</td>
+                <td class="px-3 py-3.5"><button onclick="speakArabic('صِحَّةُ الْبَدَنِ')" class="p-2 rounded-full bg-stone-100 hover:bg-rose-600 hover:text-white text-rose-600 text-xs transition">🔊</button></td>
+              </tr>
+              <tr class="hover:bg-rose-50/50 transition">
+                <td class="px-3 py-3.5 text-stone-500 font-bold">10</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">ثَمَرَةٌ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-stone-900 dir-rtl">الْفُؤَادُ</td>
+                <td class="px-4 py-3.5 font-arabic text-2xl font-bold text-teal-800 bg-teal-50/70 dir-rtl">ثَمَرَةُ الْفُؤَادِ</td>
+                <td class="px-4 py-3.5 text-xs md:text-sm font-semibold text-stone-700">Buah hati</td>
+                <td class="px-3 py-3.5"><button onclick="speakArabic('ثَمَرَةُ الْفُؤَادِ')" class="p-2 rounded-full bg-stone-100 hover:bg-rose-600 hover:text-white text-rose-600 text-xs transition">🔊</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="p-6 md:p-8 rounded-3xl bg-gradient-to-r from-teal-900 to-rose-900 text-white shadow-lg space-y-6 max-w-4xl mx-auto">
+        <div>
+          <span class="px-3 py-1 rounded-full bg-yellow-400/20 text-yellow-300 font-bold text-xs border border-yellow-400/30">اختبار سريع • 20 Soal Bab 3</span>
+          <h3 class="text-2xl md:text-3xl font-bold font-arabic text-yellow-300 mt-2">تَدْرِيْبُ الإِضَافَةِ (Kuis Interaktif Al-Idhafah)</h3>
+          <p class="text-xs text-stone-200 mt-1">Uji pemahamanmu dalam mengidentifikasi Mudhaf, Mudhaf Ilaihi, dan hukum i'rabnya:</p>
+        </div>
+        <div id="qowaid-quiz-container" class="space-y-4 text-stone-900"></div>
+      </div>
+    `;
+  }
+
+  renderQowaidQuiz();
+}
+
 // Initializing Web Application Logic
 document.addEventListener('DOMContentLoaded', () => {
   renderMufrodatCards();
   renderAfalTable();
-  renderQowaidQuiz();
+  renderQowaidSection();
   renderIstimaSection();
   renderQiroahSection();
   renderQuizSection();
