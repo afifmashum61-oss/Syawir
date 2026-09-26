@@ -194,27 +194,33 @@ const bab3Afal = [
 
 const bab3IstimaInti = {
   headerQuestion: {
-    ar: "مَاذَا تَعْنِي النَّظَافَةُ فِي الإِسْلَامِ ؟",
-    id: "Apa makna kebersihan dan bersuci dalam ajaran Islam?"
+    ar: "الإِسْلَامُ دِيْنٌ يَهْتَمُّ بِالنَّظَافَةِ إِهْتِمَامًا عَظِيْمًا، فَهُنَاكَ أَحَادِيْثُ نَبَوِيَّةٌ تَدُلُّ عَلَى هَذَا الإِهْتِمَامِ الكَبِيْرِ :",
+    id: "Islam adalah agama yang sangat memperhatikan kebersihan. Terdapat hadits-hadits Nabawi yang menunjukkan perhatian besar ini:"
   },
   points: [
     {
-      num: "أَوَّلًا",
-      title: "Poin 1: Kebersihan Diri & Bersuci (نَظَافَةُ البَدَنِ وَالطَّهَارَةُ)",
-      ar: "أَوَّلًا - نَظَافَةُ البَدَنِ وَالطَّهَارَةُ. الإِسْلَامُ يَأْمُرُنَا بِالطَّهَارَةِ فِي كُلِّ يَوْمٍ، مِثْلِ الوُضُوءِ لِلصَّلَاةِ وَالغُسْلِ.",
-      id: "Pertama - Kebersihan badan & bersuci. Islam memerintahkan kita bersuci setiap hari, seperti berwudhu untuk shalat dan mandi."
+      num: "١",
+      title: "Hadits 1: Kebersihan Mulut & Gigi (السِّوَاكُ مَطْهَرَةٌ)",
+      ar: "١- السِّوَاكُ مَطْهَرَةٌ لِلْفَمِ مَرْضَاةٌ لِلرَّبِّ.",
+      id: "1. Siwak itu mensucikan mulut dan mendatangkan keridhaan Rabb."
     },
     {
-      num: "ثَانِيًا",
-      title: "Poin 2: Kebersihan Pakaian & Tempat (نَظَافَةُ الثِّيَابِ وَالمَكَانِ)",
-      ar: "ثَانِيًا - نَظَافَةُ الثِّيَابِ وَالمَكَانِ. نُطَهِّرُ مَلَابِسَنَا وَمَسَاجِدَنَا وَبُيُوْتَنَا مِنَ النَّجَاسَةِ وَالأَقْذَارِ.",
-      id: "Kedua - Kebersihan pakaian & tempat. Kita mensucikan pakaian, masjid, dan rumah kita dari najis dan kotoran."
+      num: "٢",
+      title: "Hadits 2: Menutup Wadah Makanan & Minuman (تَغْطِيَةُ الأَوْعِيَةِ)",
+      ar: "٢- أَوْكُؤُوا قِرَبَكُمْ وَاذْكُرُوا اللهَ.",
+      id: "2. Tutuplah/ikatlah tempat air kalian rapat-rapat dan sebutlah nama Allah."
     },
     {
-      num: "ثَالِثًا",
-      title: "Poin 3: Kebersihan Lingkungan & Menyingkirkan Sampah (نَظَافَةُ البِيْئَةِ)",
-      ar: "ثَالِثًا - نَظَافَةُ البِيْئَةِ وَإِزَالَةُ الأَذَى. نَحْفَظُ بِيْئَتَنَا، وَنَرْمِي القُمَامَةَ فِي سَلَّةِ المُهْمَلَاتِ، وَنُزِيْلُ الأَذَى عَنِ الطَّرِيْقِ.",
-      id: "Kedua - Kebersihan lingkungan & menyingkirkan kotoran/sampah. Kita merawat lingkungan, membuang sampah pada tempatnya, dan menyingkirkan kotoran dari jalan."
+      num: "٣",
+      title: "Hadits 3: Larangan Kencing di Air Tenang (النَّهْيُ عَنِ التَّبَوُّلِ فِي المَاءِ الدَّائِمِ)",
+      ar: "٣- لَا يَبُوْلَنَّ أَحَدُكُمْ فِي المَاءِ الدَّائِمِ، ثُمَّ يَتَوَضَّأُ فِيْهِ.",
+      id: "3. Janganlah salah seorang dari kalian kencing di air tenang (tergenang), kemudian berwudhu di dalamnya."
+    },
+    {
+      num: "٤",
+      title: "Hadits 4: Kebersihan Halaman & Tempat Tinggal (نَظَافَةُ الأَفْنِيَةِ وَالدُّوْرِ)",
+      ar: "٤- إِنَّ اللهَ طَيِّبٌ يُحِبُّ الطَّيِّبَ، نَظِيْفٌ يُحِبُّ النَّظَافَةَ، فَنَظِّفُوْا أَفْنِيَتَكُمْ وَدُوْرَكُمْ..",
+      id: "4. Sesungguhnya Allah Mahabaik menyukai kebaikan, Mahabersih menyukai kebersihan, maka bersihkanlah halaman dan rumah-rumah kalian.."
     }
   ]
 };
