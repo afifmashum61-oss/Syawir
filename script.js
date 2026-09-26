@@ -220,11 +220,45 @@ const bab3IstimaInti = {
 };
 
 const bab3IstimaDialog = [
-  { speaker: "الأُسْتَاذُ", text: "أَهْلًا يَا طُلَّابِي، كَيْفَ نَحْفَظُ نَظَافَةَ المَدْرَسَةِ؟", translation: "Selamat datang murid-muridku, bagaimana kita menjaga kebersihan sekolah?" },
-  { speaker: "أَحْمَدُ", text: "نُنَظِّفُ الفَصْلَ وَنَرْمِي القُمَامَةَ فِي مَكَانِهَا يَا أُسْتَاذُ.", translation: "Kita membersihkan kelas dan membuang sampah pada tempatnya wahai Ustadz." },
-  { speaker: "الأُسْتَاذُ", text: "أَحْسَنْتَ يَا أَحْمَدُ ! وَمَاذَا نَفْعَلُ قَبْلَ الصَّلَاةِ؟", translation: "Bagus sekali Ahmad! Dan apa yang kita lakukan sebelum shalat?" },
-  { speaker: "فَاطِمَةُ", text: "نَتَوَضَّأُ بِالمَاءِ الطَّهُوْرِ وَنُنَظِّفُ أَيْدِيَنَا وَوُجُوْهَنَا.", translation: "Kita berwudhu dengan air yang suci dan membersihkan tangan serta wajah kita." },
-  { speaker: "الأُسْتَاذُ", text: "بَارَكَ اللهُ فِيْكُمَا ! قَالَ النَّبِيُّ ﷺ: (الطَّهَارَةُ شَطْرُ الإِيْمَانِ).", translation: "Semoga Allah memberkahi kalian berdua! Nabi ﷺ bersabda: \"Bersuci itu adalah separuh dari iman\"." }
+  {
+    title: "أ - عِنْدَ الطَّبِيْبَةِ (Di Dokter Wanita)",
+    lines: [
+      { speaker: "الطَّبِيْبَةُ", text: "مِمَّ تَشْكِيْنَ ؟", translation: "Apa yang kamu keluhkan?" },
+      { speaker: "فَرِيْدَةُ", text: "عِنْدِي أَلَمٌ خَفِيْفٌ فِي الرَّأْسِ.", translation: "Saya merasakan sakit ringan di kepala (sakit kepala)." },
+      { speaker: "الطَّبِيْبَةُ", text: "مَتَى شَعَرْتِ بِهَذَا الأَلَمِ ؟", translation: "Kapan kamu merasakan rasa sakit ini?" },
+      { speaker: "فَرِيْدَةُ", text: "شَعَرْتُ بِهِ مُنْذُ أَرْبَعَةِ أَيَّامٍ.", translation: "Saya merasakannya sejak 4 hari yang lalu." },
+      { speaker: "الطَّبِيْبَةُ", text: "هَلْ تَنَاوَلْتِ شَيْئًا ؟", translation: "Apakah kamu sudah meminum obat?" },
+      { speaker: "فَرِيْدَةُ", text: "تَنَاوَلْتُ بَعْضَ الحَبَّاتِ، وَلَمْ تَنْفَعْ.", translation: "Saya meminum beberapa obat pil, tapi belum berkhasiat." },
+      { speaker: "الطَّبِيْبَةُ", text: "تَفَضَّلِي ! وَتَسْتَلْقِيْنَ عَلَى السَّرِيْرِ لِلْفَحْصِ.", translation: "Silakan! Silakan berbaring di tempat tidur untuk pemeriksaan." }
+    ],
+    note: "بَعْدَ الفَحْصِ وَصَفَتِ الطَّبِيْبَةُ الدَّوَاءَ ثُمَّ قَالَتْ: (عِنْدَكِ إِنْفُلُوَيْنْزَا وَزُكَامٌ وَصُدَاعٌ وَالْتِهَابٌ فِي مَعِدَتِكِ وَهَذِهِ هِيَ الأَدْوِيَةُ لَكِ، إِنْ شَاءَ اللهُ سَيَزُوْلُ أَلَمُكِ بَعْدَ أَنْ تَتَنَاوَلِي الأَدْوِيَةَ.)"
+  },
+  {
+    title: "ب - عِنْدَ الطَّبِيْبِ (Di Dokter Laki-laki / Dengan Ibu)",
+    lines: [
+      { speaker: "الأُمُّ", text: "مَاذَا بِكَ يَا سُلَيْمَانُ ؟", translation: "Ada apa denganmu wahai Sulaiman?" },
+      { speaker: "سُلَيْمَانُ", text: "عِنْدِي أَلَمٌ شَدِيْدٌ فِي عَيْنِي اليُمْنَى.", translation: "Saya merasakan sakit yang hebat di mata kanan saya." },
+      { speaker: "الأُمُّ", text: "مَاذَا حَدَثَ ؟", translation: "Apa yang terjadi?" },
+      { speaker: "سُلَيْمَانُ", text: "كُنْتُ أَلْعَبُ كُرَةَ القَدَمِ مَعَ أَصْدِقَائِي، وَقَدْ أَصَابَتْنِي الكُرَةُ فِي عَيْنِي اليُمْنَى.", translation: "Tadi saya sedang bermain sepak bola dengan teman-teman, dan bola mengenai mata kanan saya." },
+      { speaker: "الأُمُّ", text: "هَلْ ذَهَبْتَ إِلَى الطَّبِيْبِ ؟", translation: "Apakah kamu sudah pergi ke dokter?" },
+      { speaker: "سُلَيْمَانُ", text: "نَعَمْ، ذَهَبْتُ إِلَيْهِ وَقَدْ فَحَصَنِي الطَّبِيْبُ وَوَصَفَ الدَّوَاءَ، وَطَلَبَ مِنِّي أَنْ أَشْتَرِيَهُ فِي الصَّيْدَلِيَّةِ.", translation: "Ya, saya sudah pergi ke dokter. Dokter telah memeriksa saya dan meresepkan obat, serta meminta saya membelinya di apotek." },
+      { speaker: "الأُمُّ", text: "وَهَلْ تَشْعُرُ بِأَلَمٍ الآنَ ؟", translation: "Dan apakah kamu merasakan sakit sekarang?" },
+      { speaker: "سُلَيْمَانُ", text: "الحَمْدُ للهِ لَا أَشْعُرُ بِأَيِّ أَلَمٍ، وَلَكِنْ عَيْنِي اليُسْرَى تَدْمَعُ قَلِيْلًا.", translation: "Alhamdulillah saya tidak merasa sakit lagi, tetapi mata kiri saya sedikit berair." },
+      { speaker: "الأُمُّ", text: "شَفَاكَ اللهُ.", translation: "Semoga Allah menyembuhkanmu." }
+    ]
+  },
+  {
+    title: "ج - عِيَادَةُ المَرِيْضِ (Menjenguk Orang Sakit)",
+    lines: [
+      { speaker: "فَرِيْدُ", text: "عَبْدُ العَزِيْزِ فِي المُسْتَشْفَى اليَوْمَ.", translation: "Abdul Aziz ada di rumah sakit hari ini." },
+      { speaker: "عُثْمَانُ", text: "لِمَاذَا ؟", translation: "Mengapa?" },
+      { speaker: "فَرِيْدُ", text: "صَدَمَتْهُ الجَوَّالَةُ أَمْسِ مَسَاءً عِنْدَ مَا يُرِيْدُ الذَّهَابَ إِلَى البَيْتِ مِنَ الإِدَارَةِ.", translation: "Sepeda motor menabraknya kemarin sore saat ia ingin pulang ke rumah dari kantor." },
+      { speaker: "عُثْمَانُ", text: "كَيْفَ حَالُهُ الآنَ ؟", translation: "Bagaimana keadaannya sekarang?" },
+      { speaker: "فَرِيْدُ", text: "هُوَ الآنَ بِخَيْرٍ، الحَمْدُ للهِ.", translation: "Ia sekarang baik-baik saja, alhamdulillah." },
+      { speaker: "عُثْمَانُ", text: "نَذْهَبُ الآنَ إِلَى المُسْتَشْفَى لِعِيَادَتِهِ.", translation: "Mari kita pergi sekarang ke rumah sakit untuk menjenguknya." },
+      { speaker: "فَرِيْدُ", text: "هُوَ فِي غُرْفَةِ مَأْوَازَ، رَقْمُ 16 فِي الدَّوْرِ الرَّابِعِ.", translation: "Ia ada di kamar Ma'waz, nomor 16 di lantai 4." }
+    ]
+  }
 ];
 
 const bab3QiroahText = {
@@ -612,17 +646,54 @@ function renderIstimaSection() {
   }
 
   if (dialogContainer) {
-    dialogContainer.innerHTML = activeIstimaDialog.map((item, index) => `
-      <div class="p-5 rounded-2xl ${index % 2 === 0 ? 'bg-teal-50/70 border-l-4 border-teal-600' : 'bg-rose-50/70 border-l-4 border-rose-500'} transition space-y-3">
-        <div class="flex justify-between items-center mb-1">
-          <span class="font-bold text-sm ${index % 2 === 0 ? 'text-teal-800' : 'text-rose-800'}">${item.speaker}</span>
-          <button onclick="speakArabic('${item.text}', this)" class="flex items-center gap-1 text-xs px-3 py-1.5 rounded-full bg-white text-teal-700 font-semibold shadow-sm hover:bg-teal-600 hover:text-white transition">
-            <span>🔊 Putar</span>
-          </button>
+    if (activeIstimaDialog.length > 0 && activeIstimaDialog[0].lines) {
+      dialogContainer.innerHTML = activeIstimaDialog.map((dialogGroup, groupIdx) => `
+        <div class="mb-8 p-6 rounded-3xl bg-white border border-teal-100 shadow-sm space-y-4">
+          <div class="flex items-center justify-between border-b border-stone-100 pb-3">
+            <h4 class="font-bold text-teal-900 text-lg md:text-xl flex items-center gap-2">
+              <span>💬</span> ${dialogGroup.title}
+            </h4>
+            <button onclick="speakArabic('${dialogGroup.lines.map(l => l.speaker + '. ' + l.text).join(' ')}', this)" class="text-xs px-3.5 py-1.5 rounded-xl bg-teal-700 text-white font-bold transition flex items-center gap-1 shadow-sm">
+              <span>🔊 Putar Seluruh Dialog</span>
+            </button>
+          </div>
+
+          <div class="space-y-3 pt-1">
+            ${dialogGroup.lines.map((item, idx) => `
+              <div class="p-4 rounded-2xl ${idx % 2 === 0 ? 'bg-teal-50/70 border-l-4 border-teal-600' : 'bg-rose-50/70 border-l-4 border-rose-500'} transition space-y-2">
+                <div class="flex justify-between items-center">
+                  <span class="font-bold text-xs md:text-sm ${idx % 2 === 0 ? 'text-teal-800' : 'text-rose-800'}">${item.speaker}</span>
+                  <button onclick="speakArabic('${item.text}', this)" class="flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-white text-teal-700 font-semibold shadow-xs hover:bg-teal-600 hover:text-white transition">
+                    <span>🔊 Putar</span>
+                  </button>
+                </div>
+                <p class="font-arabic text-2xl text-stone-900 dir-rtl text-right leading-[2.6] py-1 font-bold">${item.text}</p>
+                <p class="text-xs text-stone-600 font-semibold italic bg-white/60 p-2 rounded-xl border border-stone-100">${item.translation}</p>
+              </div>
+            `).join('')}
+          </div>
+
+          ${dialogGroup.note ? `
+            <div class="mt-4 p-4 rounded-2xl bg-amber-50 border border-amber-200 text-amber-950 text-xs md:text-sm space-y-1">
+              <span class="font-bold text-amber-800">📌 Catatan Dokter (مُلَاحَظَةُ الطَّبِيْبَةِ):</span>
+              <p class="font-arabic text-xl text-stone-900 dir-rtl text-right leading-[2.6] font-bold">${dialogGroup.note}</p>
+            </div>
+          ` : ''}
         </div>
-        <p class="font-arabic text-2xl text-stone-900 dir-rtl text-right leading-[2.8] py-1">${item.text}</p>
-      </div>
-    `).join('');
+      `).join('');
+    } else {
+      dialogContainer.innerHTML = activeIstimaDialog.map((item, index) => `
+        <div class="p-5 rounded-2xl ${index % 2 === 0 ? 'bg-teal-50/70 border-l-4 border-teal-600' : 'bg-rose-50/70 border-l-4 border-rose-500'} transition space-y-3">
+          <div class="flex justify-between items-center mb-1">
+            <span class="font-bold text-sm ${index % 2 === 0 ? 'text-teal-800' : 'text-rose-800'}">${item.speaker}</span>
+            <button onclick="speakArabic('${item.text}', this)" class="flex items-center gap-1 text-xs px-3 py-1.5 rounded-full bg-white text-teal-700 font-semibold shadow-sm hover:bg-teal-600 hover:text-white transition">
+              <span>🔊 Putar</span>
+            </button>
+          </div>
+          <p class="font-arabic text-2xl text-stone-900 dir-rtl text-right leading-[2.8] py-1">${item.text}</p>
+        </div>
+      `).join('');
+    }
   }
 }
 
@@ -638,7 +709,12 @@ function playAllMateriInti() {
 }
 
 function playAllIstima() {
-  const fullText = activeIstimaDialog.map(d => d.speaker + ". " + d.text).join(" ");
+  let fullText = "";
+  if (activeIstimaDialog.length > 0 && activeIstimaDialog[0].lines) {
+    fullText = activeIstimaDialog.map(g => g.lines.map(l => l.speaker + ". " + l.text).join(" ")).join(" ");
+  } else {
+    fullText = activeIstimaDialog.map(d => d.speaker + ". " + d.text).join(" ");
+  }
   speakArabic(fullText, document.getElementById('btn-play-all-istima'));
 }
 
