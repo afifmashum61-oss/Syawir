@@ -160,33 +160,36 @@ const bab2QuizQuestions = [
 // ==================== DATASET BAB 3: النظافة في الإسلام ====================
 const bab3Mufrodat = [
   { arabic: "النَّظَافَة", translation: "Kebersihan", category: "Kata Benda", example: "النَّظَافَةُ مِنَ الإِيْمَانِ وَتَحْفَظُ الصِّحَّةَ" },
-  { arabic: "الطَّهَارَة", translation: "Bersuci / Kesucian", category: "Kata Benda", example: "الطَّهَارَةُ شَطْرُ الإِيْمَانِ وَشَرْطُ الصَّلَاةِ" },
-  { arabic: "الوَضُوْء", translation: "Wudhu", category: "Ibadah", example: "الوَضُوْءُ مِفْتَاحُ الصَّلَاةِ وَطَهَارَةُ الجِسْمِ" },
-  { arabic: "الغُسْل", translation: "Mandi bersuci", category: "Ibadah", example: "الغُسْلُ مُسْتَحَبٌّ لِيَوْمِ الجُمُعَةِ" },
-  { arabic: "البِيْئَة", translation: "Lingkungan hidup", category: "Kata Benda", example: "نَحْمِي البِيْئَةَ مِنَ التَّلَوُّثِ وَالأَقْذَارِ" },
-  { arabic: "القُمَامَة", translation: "Sampah / Kotoran", category: "Kata Benda", example: "نَرْمِي القُمَامَةَ فِي سَلَّةِ المُهْمَلَاتِ" },
-  { arabic: "إِزَالَةُ الأَذَى", translation: "Menyingkirkan gangguan/sampah", category: "Ungkapan", example: "إِزَالَةُ الأَذَى عَنِ الطَّرِيْقِ صَدَقَةٌ" },
-  { arabic: "المَاءُ الطَّهُوْر", translation: "Air yang suci menyucikan", category: "Ungkapan", example: "نَتَوَضَّأُ بِالمَاءِ الطَّهُوْرِ لِلصَّلَاةِ" },
-  { arabic: "الصَّابُوْن", translation: "Sabun pembersih", category: "Kata Benda", example: "نَغْسِلُ الأَيْدِيَ بِالصَّابُوْنِ وَالمَاءِ" },
-  { arabic: "الفِنَاء", translation: "Halaman rumah / madrasah", category: "Kata Benda", example: "نُنَظِّفُ فِنَاءَ المَدْرَسَةِ كُلَّ صَبَاحٍ" },
-  { arabic: "النَّجَاسَة", translation: "Najis / Kotoran berhalang", category: "Kata Benda", example: "نُطَهِّرُ الثَّوْبَ وَالمَكَانَ مِنَ النَّجَاسَةِ" },
-  { arabic: "السِّوَاك", translation: "Bersiwak / Sikat gigi", category: "Sunnah", example: "السِّوَاكُ مَطْهَرَةٌ لِلْفَمِ مَرْضَاةٌ لِلرَّبِّ" },
-  { arabic: "صِحَّةُ الأَبْدَان", translation: "Kesehatan tubuh / badan", category: "Ungkapan", example: "النَّظَافَةُ تَحْفَظُ صِحَّةَ الأَبْدَانِ مِنَ الأَمْرَاضِ" },
-  { arabic: "سُنَنُ الفِطْرَة", translation: "Sunnah-sunnah fitrah", category: "Ungkapan", example: "قَصُّ الأَظْفَارِ وَالسِّوَاكُ مِنْ سُنَنِ الفِطْرَةِ" },
-  { arabic: "التَّيَمُّم", translation: "Tayammum (Bersuci debu)", category: "Ibadah", example: "التَّيَمُّمُ رُخْصَةٌ عِنْدَ فَقْدِ المَاءِ" },
-  { arabic: "المَكَانُ الطَّاهِر", translation: "Tempat yang suci", category: "Ungkapan", example: "نُصَلِّي فِي المَكَانِ الطَّاهِرِ النَّظِيْفِ" },
-  { arabic: "مَكَارِمُ الأَخْلَاق", translation: "Kemuliaan akhlak", category: "Ungkapan", example: "الإِسْلَامُ يَدْعُوْ إِلَى مَكَارِمِ الأَخْلَاقِ وَالنَّظَافَةِ" }
+  { arabic: "المَضْمَضَة", translation: "Berkumur-kumur", category: "Bersuci", example: "المَضْمَضَةُ مِنْ سُنَنِ الوُضُوءِ فِي الصَّبَاحِ" },
+  { arabic: "السِّوَاك", translation: "Siwak / Sikat gigi", category: "Sunnah", example: "السِّوَاكُ مَطْهَرَةٌ لِلْفَمِ مَرْضَاةٌ لِلرَّبِّ" },
+  { arabic: "إِنَاءُ الطَّعَام", translation: "Wadah / tempat makanan", category: "Ungkapan", example: "نُغَطِّي إِنَاءَ الطَّعَامِ لِلْمُحَافَظَةِ عَلَيْهِ" },
+  { arabic: "مَكْشُوْف", translation: "Terbuka / Terdedah", category: "Kata Sifat", example: "لَا نَتْرُكُ الطَّعَامَ مَكْشُوْفًا لِلْحَشَرَاتِ" },
+  { arabic: "مَاء (ج مِيَاه)", translation: "Air (Jamak: Air-air)", category: "Kata Benda", example: "نَشْرَبُ المِيَاهَ النَّظِيْفَةَ لِلصِّحَّةِ" },
+  { arabic: "الغُبَار", translation: "Debu", category: "Kata Benda", example: "نُنَظِّفُ الغُبَارَ عَنِ الأَثَاثِ وَالفَصْلِ" },
+  { arabic: "الحَشَرَات", translation: "Serangga-serangga / Hama", category: "Kata Benda", example: "الحَشَرَاتُ تَنْقُلُ الأَمْرَاضَ فِي المَكَانِ القَذِرِ" },
+  { arabic: "مَاءٌ دَائِم", translation: "Air tenang / Genangan air", category: "Ungkapan", example: "لَا نَبُولُ فِي المَاءِ الدَّائِمِ الَّذِي لَا يَجْرِي" },
+  { arabic: "قَذَارَة", translation: "Kotoran / Najis", category: "Kata Benda", example: "نُنَظِّفُ القَذَارَةَ عَنِ الثَّوْبِ وَالمَكَانِ" },
+  { arabic: "بِئْر (ج آَبَار)", translation: "Sumur (Jamak: Sumur-sumur)", category: "Kata Benda", example: "نَسْتَخْرِجُ المَاءَ الطَّهُوْرَ مِنَ البِئْرِ" },
+  { arabic: "فِنَاء (ج أَفْنِيَة)", translation: "Halaman (Jamak: Halaman-halaman)", category: "Kata Benda", example: "نُنَظِّفُ فِنَاءَ المَدْرَسَةِ كُلَّ صَبَاحٍ" },
+  { arabic: "دَار (ج دُوْر)", translation: "Rumah / Tempat tinggal", category: "Kata Benda", example: "نُحَافِظُ عَلَى نَظَافَةِ الدَّارِ وَالفَصْلِ" },
+  { arabic: "مَصْدَر (ج مَصَادِر)", translation: "Sumber (Jamak: Sumber-sumber)", category: "Kata Benda", example: "النَّظَافَةُ مَصْدَرٌ لِلصِّحَّةِ وَالعَافِيَةِ" },
+  { arabic: "صُدَاع", translation: "Sakit kepala / Pusing", category: "Kesehatan", example: "أَشْعُرُ بِصُدَاعٍ فِي رَأْسِي عِنْدَ المَرَضِ" },
+  { arabic: "تَنْظِيْفُ القَذَارَة", translation: "Membersihkan kotoran", category: "Ungkapan", example: "تَنْظِيْفُ القَذَارَةِ يَقِي المُجْتَمَعَ مِنَ الأَمْرَاضِ" },
+  { arabic: "مَزْبَلَة", translation: "Tempat pembuangan sampah", category: "Kata Benda", example: "نَرْمِي القُمَامَةَ فِي المَزْبَلَةِ أَوْ السَّلَّةِ" },
+  { arabic: "الحَبَّات", translation: "Obat pil / Tablet", category: "Kesehatan", example: "يَتَنَاوَلُ المَرِيْضُ الحَبَّاتِ بِإِذْنِ الطَّبِيْبِ" }
 ];
 
 const bab3Afal = [
-  { madhi: "نَظَّفَ", mudhari: "يُنَظِّفُ", masdar: "تَنْظِيْف", meaning: "membersihkan" },
-  { madhi: "تَوَضَّأَ", mudhari: "يَتَوَضَّأُ", masdar: "تَوَضُّؤ", meaning: "berwudhu" },
-  { madhi: "اِغْتَسَلَ", mudhari: "يَغْتَسِلُ", masdar: "اِغْتِسَال", meaning: "mandi bersuci" },
-  { madhi: "أَزَالَ", mudhari: "يُزِيْلُ", masdar: "إِزَالَة", meaning: "menyingkirkan, membuang" },
-  { madhi: "حَافَظَ", mudhari: "يُحَافِظُ", masdar: "مُحَافَظَة", meaning: "merawat, menjaga" },
-  { madhi: "طَهَّرَ", mudhari: "يُطَهِّرُ", masdar: "تَطْهِيْر", meaning: "mensucikan" },
-  { madhi: "غَسَلَ", mudhari: "يَغْسِلُ", masdar: "غَسْل", meaning: "mencuci" },
-  { madhi: "قَصَّ", mudhari: "يَقُصُّ", masdar: "قَصّ", meaning: "memotong (kuku)" }
+  { madhi: "أَمَرَ", mudhari: "يَأْمُرُ", masdar: "أَمْرًا", meaning: "memerintah" },
+  { madhi: "نَهَى", mudhari: "يَنْهَى", masdar: "نَهْيًا", meaning: "melarang" },
+  { madhi: "تَرَكَ", mudhari: "يَتْرُكُ", masdar: "تَرْكًا", meaning: "membiarkan, meninggalkan" },
+  { madhi: "عَبَّرَ", mudhari: "يُعَبِّرُ", masdar: "تَعْبِيْرًا", meaning: "mengungkapkan" },
+  { madhi: "بَصَقَ", mudhari: "يَبْصُقُ", masdar: "بَصْقًا", meaning: "meludah" },
+  { madhi: "نَظَّفَ", mudhari: "يُنَظِّفُ", masdar: "تَنْظِيْفًا", meaning: "membersihkan" },
+  { madhi: "كَشَفَ", mudhari: "يَكْشِفُ", masdar: "كَشْفًا", meaning: "membuka, memeriksa" },
+  { madhi: "أَلْقَى", mudhari: "يُلْقِي", masdar: "إِلْقَاء", meaning: "membuang, melemparkan" },
+  { madhi: "نَقَلَ", mudhari: "يَنْقُلُ", masdar: "نَقْلًا", meaning: "memindahkan" },
+  { madhi: "إِهْتَمَّ", mudhari: "يَهْتَمُّ", masdar: "إِهْتِمَام", meaning: "memperhatikan" }
 ];
 
 const bab3IstimaInti = {
