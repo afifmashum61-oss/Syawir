@@ -262,45 +262,57 @@ const bab3IstimaDialog = [
 ];
 
 const bab3QiroahText = {
-  title: "النَّظَافَةُ فِي الإِسْلَامِ",
+  title: "صِحَّةُ الجِسْمِ فِي الإِسْلَامِ",
   sections: [
     {
-      code: "( أ )",
-      title: "Bagian A: Kebersihan Bagian Dari Iman (النَّظَافَةُ مِنَ الإِيْمَانِ)",
-      ar: "الإِسْلَامُ دِيْنُ النَّظَافَةِ وَالطَّهَارَةِ. وَقَدْ جَعَلَ الإِسْلَامُ الطَّهَارَةَ شَرْطًا أَسَاسِيًّا لِصِحَّةِ الصَّلَاةِ. قَالَ اللهُ تَعَالَى: ﴿إِنَّ اللهَ يُحِبُّ التَّوَّابِيْنَ وَيُحِبُّ المُتَطَهِّرِيْنَ﴾. فَيَجِبُ عَلَى المُسْلِمِ أَنْ يَتَوَضَّأَ قَبْلَ كُلِّ صَلَاةٍ، وَأَنْ يَغْتَسِلَ لِيَكُوْنَ بَدَنُهُ طَاهِرًا وَنَظِيْفًا.",
-      id: "Islam adalah agama kebersihan dan kesucian. Islam menjadikan bersuci sebagai syarat utama sahnya shalat. Allah Ta'ala berfirman: \"Sesungguhnya Allah menyukai orang-orang yang bertaubat dan menyukai orang-orang yang mensucikan diri\". Maka wajib bagi seorang muslim untuk berwudhu sebelum setiap shalat, dan mandi agar badannya suci dan bersih."
+      code: "( ١ )",
+      title: "Point 1: Kebersihan Mulut & Gigi (نَظَافَةُ الْفَمِ وَالأَسْنَانِ)",
+      ar: "١- نَظَافَةُ الْفَمِ وَالأَسْنَانِ، كَانَ النَّبِيُّ ﷺ يَحُثُّ عَلَى اسْتِعْمَالِ السِّوَاكِ وَمَضْمَضَةِ الْفَمِ. وَقَدْ قَالَ النَّبِيُّ ﷺ: (السِّوَاكُ مَطْهَرَةٌ لِلْفَمِ مَرْضَاةٌ لِلرَّبِّ) أخرجه النسائي وأحمد.",
+      id: "1. Kebersihan mulut dan gigi: Nabi ﷺ menganjurkan penggunaan siwak dan berkumur-kumur. Beliau ﷺ bersabda: \"(Siwak itu mensucikan mulut dan meredhai Rabb)\" (HR. An-Nasa'i dan Ahmad)."
     },
     {
-      code: "( ب )",
-      title: "Bagian B: Kebersihan Lingkungan & Sekolah (نَظَافَةُ البِيْئَةِ وَالمَدْرَسَةِ)",
-      ar: "لَا تَكْتَفِي النَّظَافَةُ بِالبَدَنِ فَقَطْ، بَلْ تَشْمَلُ ثِيَابَ الإِنْسَانِ وَمَكَانَهُ وَبِيْئَتَهُ. فَالطَّالِبُ المُمَتَازُ يُحَافِظُ عَلَى نَظَافَةِ فَصْلِهِ وَفِنَاءِ مَدْرَسَتِهِ. وَيَرْمِي القُمَامَةَ فِي سَلَّةِ المُهْمَلَاتِ، وَيُزِيْلُ الأَذَى عَنِ الطَّرِيْقِ. قَالَ النَّبِيُّ ﷺ: (وَيُمِيْطُ الأَذَى عَنِ الطَّرِيْقِ صَدَقَةٌ).",
-      id: "Kebersihan tidak terbatas pada badan saja, tetapi mencakup pakaian manusia, tempatnya, dan lingkungannya. Siswa yang berprestasi menjaga kebersihan kelas dan halaman sekolahnya. Ia membuang sampah di tempat sampah, dan menyingkirkan gangguan dari jalan. Nabi ﷺ bersabda: \"Dan menyingkirkan gangguan dari jalan adalah sedekah\"."
+      code: "( ٢ )",
+      title: "Point 2: Kebersihan Wadah Makanan & Minuman (نَظَافَةُ أَوْعِيَةِ الطَّعَامِ وَالشَّرَابِ)",
+      ar: "٢- نَظَافَةُ أَوْعِيَةِ الطَّعَامِ وَالشَّرَابِ، أَمَرَ النَّبِيُّ ﷺ بِتَغْطِيَةِ أَوْعِيَةِ الطَّعَامِ وَالشَّرَابِ حَتَّى لَا يَقَعَ فِيْهِ الْغُبَارُ وَالحَشَرَاتُ. وَقَالَ ﷺ: (أَوْكُؤُوا قِرَبَكُمْ وَاذْكُرُوا اللهَ).",
+      id: "2. Kebersihan wadah makanan dan minuman: Nabi ﷺ memerintahkan untuk menutup tempat makanan dan minuman agar tidak kejatuhan debu dan serangga. Beliau ﷺ bersabda: \"(Tutuplah wadah air kalian dan sebutlah nama Allah)\"."
     },
     {
-      code: "( ج )",
-      title: "Bagian C: Sunnah Fitrah & Bersiwak (سُنَنُ الفِطْرَةِ وَالسِّوَاكُ)",
-      ar: "وَمِنْ مَظَاهِرِ النَّظَافَةِ فِي الإِسْلَامِ مُمَارَسَةُ سُنَنِ الفِطْرَةِ، كَقَصِّ الأَظْفَارِ، وَتَنْظِيْفِ الأَسْنَانِ بِالسِّوَاكِ أَوْ الفُرْشَاةِ. فَقَدْ حَثَّ النَّبِيُّ ﷺ عَلَى السِّوَاكِ فَقَالَ: (السِّوَاكُ مَطْهَرَةٌ لِلْفَمِ مَرْضَاةٌ لِلرَّبِّ). فَالنَّظَافَةُ تَحْمِي المُجْتَمَعَ مِنَ الأَمْرَاضِ وَتَجْعَلُ الحَيَاةَ طَيِّبَةً.",
-      id: "Dan di antara bentuk kebersihan dalam Islam adalah menjalankan sunnah-sunnah fitrah, seperti memotong kuku, dan membersihkan gigi dengan siwak atau sikat gigi. Nabi ﷺ sangat menganjurkan bersiwak seraya bersabda: \"Siwak itu mensucikan mulut dan mendatangkan keridhaan Rabb\". Maka kebersihan menjaga masyarakat dari penyakit dan menjadikan hidup tenteram."
+      code: "( ٣ )",
+      title: "Point 3: Larangan Mencemari Sumber Air (النَّهْيُ عَنْ تَلْوِيْثِ مَصَادِرِ المِيَاهِ)",
+      ar: "٣- النَّهْيُ عَنْ تَلْوِيْثِ مَصَادِرِ المِيَاهِ، فَلَا يَجُوْزُ التَّبَوُّلُ فِي المِيَاهِ الرَّاكِدَةِ أَوْ عِنْدَ مَصَادِرِ المِيَاهِ لِمَا فِيْهِ مِنْ نَشْرِ الأَمْرَاضِ. قَالَ ﷺ: (لَا يَبُوْلَنَّ أَحَدُكُمْ فِي المَاءِ الدَّائِمِ الَّذِي لَا يَجْرِي، ثُمَّ يَتَوَضَّأُ فِيْهِ) أخرجه الترمذي والنسائي.",
+      id: "3. Larangan mencemari sumber air: Tidak boleh kencing di air tenang (genangan) atau dekat sumber air karena dapat menyebarkan penyakit. Beliau ﷺ bersabda: \"(Janganlah sekali-kali salah seorang dari kalian kencing di air tenang yang tidak mengalir, kemudian berwudhu di dalamnya)\" (HR. At-Tirmidzi dan An-Nasa'i)."
+    },
+    {
+      code: "( ٤ )",
+      title: "Point 4: Kebersihan Rumah & Jalanan (نَظَافَةُ الْبُيُوْتِ وَالشَّوَارِعِ)",
+      ar: "٤- نَظَافَةُ الْبُيُوْتِ وَالشَّوَارِعِ، أَمَرَ الإِسْلَامُ بِنَظَافَةِ الْأَفْنِيَةِ وَالدُّوْرِ، وَنَهَى عَنِ الْبَصْقِ وَالتَّبَوُّلِ فِي الطُُّرُقَاتِ. قَالَ ﷺ: (إِنَّ اللهَ طَيِّبٌ يُحِبُّ الطَّيِّبَ، نَظِيْفٌ يُحِبُّ النَّظَافَةَ، فَنَظِّفُوْا أَفْنِيَتَكُمْ وَدُوْرَكُمْ) أخرجه الترمذي. وَقَالَ: (البَصْقُ عَلَى الأَرْضِ خَطِيْئَةٌ وَكَفَّارَتُهَا رَدْمُهَا).",
+      id: "4. Kebersihan rumah dan jalanan: Islam memerintahkan kebersihan halaman dan rumah, serta melarang meludah dan kencing di jalanan. Beliau ﷺ bersabda: \"(Sesungguhnya Allah Mahabaik menyukai kebaikan, Mahabersih menyukai kebersihan, maka bersihkanlah halaman dan rumah kalian)\" (HR. At-Tirmidzi). Beliau juga bersabda: \"(Meludah di tanah adalah kesalahan dan penebusnya adalah menimbunnya)\"."
+    },
+    {
+      code: "( ٥ )",
+      title: "Point 5: Bersuci & Kebersihan Adalah Ibadah (الطَّهَارَةُ وَالنَّظَافَةُ عِبَادَةٌ)",
+      ar: "٥- الطَّهَارَةُ وَالنَّظَافَةُ عِبَادَةٌ، الطَّهَارَةُ فِي الإِسْلَامِ تَشْمَلُ إِزَالَةَ النَّجَاسَاتِ (القَذَارَةِ) وَشَرْطٌ لِصِحَّةِ الصَّلَاةِ، كَمَا قَالَ اللهُ تَعَالَى: ﴿إِنَّ اللهَ يُحِبُّ التَّوَّابِيْنَ وَيُحِبُّ المُتَطَهِّرِيْنَ﴾.",
+      id: "5. Bersuci dan kebersihan adalah ibadah: Thaharah dalam Islam mencakup menghilangkan najis/kotoran dan merupakan syarat sah shalat, sebagaimana firman Allah Ta'ala: \"Sesungguhnya Allah menyukai orang-orang yang bertaubat dan menyukai orang-orang yang mensucikan diri\"."
     }
   ]
 };
 
 const bab3QiroahTadrib1 = [
-  { id: 1, statement: "الإِسْلَامُ لا يَهْتَمُّ بِالنَّظَافَةِ وَالطَّهَارَةِ", translation: "Islam tidak memperhatikan kebersihan.", answer: "khata", explanation: "خَطَأ (Salah)! Pembetulan: الإِسْلَامُ دِيْنُ النَّظَافَةِ وَالطَّهَارَةِ." },
-  { id: 2, statement: "الطَّهَارَةُ شَرْطٌ أَسَاسِيٌّ لِصِحَّةِ الصَّلَاةِ", translation: "Bersuci syarat utama sah shalat.", answer: "sahih", explanation: "صَحِيْح (Benar)! Sebagaimana dalam paragraf ( أ ), berwudhu/bersuci adalah syarat sah shalat." },
-  { id: 3, statement: "إِزَالَةُ الأَذَى عَنِ الطَّرِيْقِ مِنَ الصَّدَقَةِ", translation: "Menyingkirkan kotoran di jalan adalah sedekah.", answer: "sahih", explanation: "صَحِيْح (Benar)! Sesuai hadits Nabi ﷺ dalam paragraf ( ب )." },
-  { id: 4, statement: "نَرْمِي القُمَامَةَ فِي فِنَاءِ المَدْرَسَةِ", translation: "Kita membuang sampah di halaman sekolah.", answer: "khata", explanation: "خَطَأ (Salah)! Pembetulan: نَرْمِي القُمَامَةَ فِي سَلَّةِ المُهْمَلَاتِ." },
-  { id: 5, statement: "السِّوَاكُ مَطْهَرَةٌ لِلْفَمِ وَمَرْضَاةٌ لِلرَّبِّ", translation: "Siwak mensucikan mulut dan meredhai Rabb.", answer: "sahih", explanation: "صَحِيْح (Benar)! Sesuai hadits shahih pada paragraf ( ج )." },
-  { id: 6, statement: "قَصُّ الأَظْفَارِ لَيْسَ مِنْ سُنَنِ الفِطْرَةِ", translation: "Memotong kuku bukan sunnah fitrah.", answer: "khata", explanation: "خَطَأ (Salah)! Pembetulan: قَصُّ الأَظْفَارِ مِنْ سُنَنِ الفِطْرَةِ." },
-  { id: 7, statement: "النَّظَافَةُ تَحْمِي المُجْتَمَعَ مِنَ الأَمْرَاضِ", translation: "Kebersihan menjaga masyarakat dari penyakit.", answer: "sahih", explanation: "صَحِيْح (Benar)! Kebersihan dan kehigienisan mencegah penularan penyakit." }
+  { id: 1, statement: "كَانَ النَّبِيُّ ﷺ يَحُثُّ عَلَى اسْتِعْمَالِ السِّوَاكِ وَمَضْمَضَةِ الْفَمِ", translation: "Nabi ﷺ menganjurkan penggunaan siwak dan berkumur-kumur.", answer: "sahih", explanation: "صَحِيْح (Benar)! Sesuai dengan hadits: (السِّوَاكُ مَطْهَرَةٌ لِلْفَمِ مَرْضَاةٌ لِلرَّبِّ)." },
+  { id: 2, statement: "يَجُوْزُ تَرْكُ أَوْعِيَةِ الطَّعَامِ وَالشَّرَابِ مَكْشُوْفَةً", translation: "Boleh membiarkan wadah makanan dan minuman terbuka.", answer: "khata", explanation: "خَطَأ (Salah)! Pembetulan: أَمَرَ النَّبِيُّ ﷺ بِتَغْطِيَةِ أَوْعِيَةِ الطَّعَامِ وَالشَّرَابِ حَتَّى لَا يَقَعَ فِيْهِ الْغُبَارُ." },
+  { id: 3, statement: "نَهَى النَّبِيُّ ﷺ عَنِ التَّبَوُّلِ فِي المَاءِ الدَّائِمِ الَّذِي لَا يَجْرِي", translation: "Nabi ﷺ melarang kencing di air tenang yang tidak mengalir.", answer: "sahih", explanation: "صَحِيْح (Benar)! Sesuai hadits HR. At-Tirmidzi & An-Nasa'i." },
+  { id: 4, statement: "إِنَّ اللهَ طَيِّبٌ يُحِبُّ الطَّيِّبَ، نَظِيْفٌ يُحِبُّ النَّظَافَةَ", translation: "Allah Mahabaik menyukai kebaikan, Mahabersih menyukai kebersihan.", answer: "sahih", explanation: "صَحِيْح (Benar)! Sesuai hadits HR. At-Tirmidzi pada poin 4." },
+  { id: 5, statement: "البَصْقُ عَلَى الأَرْضِ فِي الطُُّرُقَاتِ لَيْسَ بِخَطِيْئَةٍ", translation: "Meludah di tanah di jalanan bukan kesalahan.", answer: "khata", explanation: "خَطَأ (Salah)! Pembetulan: (البَصْقُ عَلَى الأَرْضِ خَطِيْئَةٌ وَكَفَّارَتُهَا رَدْمُهَا)." },
+  { id: 6, statement: "تَشْمَلُ الطَّهَارَةُ فِي الإِسْلَامِ إِزَالَةَ النَّجَاسَاتِ (القَذَارَةِ)", translation: "Bersuci dalam Islam mencakup menghilangkan najis/kotoran.", answer: "sahih", explanation: "صَحِيْح (Benar)! Sesuai penjelasan poin 5." },
+  { id: 7, statement: "الطَّهَارَةُ شَرْطٌ لِصِحَّةِ الصَّلَاةِ فِي الإِسْلَامِ", translation: "Bersuci adalah syarat sah shalat dalam Islam.", answer: "sahih", explanation: "صَحِيْح (Benar)! Sebagaimana firman Allah ﴿إِنَّ اللهَ يُحِبُّ التَّوَّابِيْنَ وَيُحِبُّ المُتَطَهِّرِيْنَ﴾." }
 ];
 
 const bab3QiroahTadrib2 = [
-  { id: 1, question: "مَا هُوَ شَرْطُ صِحَّةِ الصَّلَاةِ فِي الإِسْلَامِ ؟", answer: "شَرْطُ صِحَّةِ الصَّلَاةِ فِي الإِسْلَامِ هُوَ الطَّهَارَةُ وَالوَضُوْءُ." },
-  { id: 2, question: "أَيْنَ يَرْمِي الطَّالِبُ المُمَتَازُ القُمَامَةَ ؟", answer: "يَرْمِي الطَّالِبُ المُمَتَازُ القُمَامَةَ فِي سَلَّةِ المُهْمَلَاتِ." },
-  { id: 3, question: "مَاذَا قَالَ النَّبِيُّ ﷺ عَنْ إِزَالَةِ الأَذَى عَنِ الطَّرِيْقِ ؟", answer: "قَالَ النَّبِيُّ ﷺ: (وَيُمِيْطُ الأَذَى عَنِ الطَّرِيْقِ صَدَقَةٌ)." },
-  { id: 4, question: "أُذْكُرْ فِعْلَيْنِ مِنْ سُنَنِ الفِطْرَةِ ؟", answer: "فِعْلَانِ مِنْ سُنَنِ الفِطْرَةِ هُمَا: قَصُّ الأَظْفَارِ، وَاسْتِعْمَالُ السِّوَاكِ." },
-  { id: 5, question: "مَا فَائِدَةُ النَّظَافَةِ لِلْمُجْتَمَعِ ؟", answer: "فَائِدَةُ النَّظَافَةِ أَنَّهَا تَحْمِي المُجْتَمَعَ مِنَ الأَمْرَاضِ وَتَجْعَلُ الحَيَاةَ طَيِّبَةً." }
+  { id: 1, question: "مَاذَا قَالَ النَّبِيُّ ﷺ عَنِ السِّوَاكِ ؟", answer: "قَالَ النَّبِيُّ ﷺ: (السِّوَاكُ مَطْهَرَةٌ لِلْفَمِ مَرْضَاةٌ لِلرَّبِّ)." },
+  { id: 2, question: "لِمَاذَا أَمَرَ النَّبِيُّ ﷺ بِتَغْطِيَةِ أَوْعِيَةِ الطَّعَامِ وَالشَّرَابِ ؟", answer: "أَمَرَ النَّبِيُّ ﷺ بِتَغْطِيَةِ أَوْعِيَةِ الطَّعَامِ وَالشَّرَابِ حَتَّى لَا يَقَعَ فِيْهِ الْغُبَارُ وَالحَشَرَاتُ." },
+  { id: 3, question: "مَا حُكْمُ التَّبَوُّلِ فِي المَاءِ الدَّائِمِ الَّذِي لَا يَجْرِي ؟", answer: "لَا يَجُوْزُ التَّبَوُّلُ فِي المَاءِ الدَّائِمِ، لِمَا فِيْهِ مِنْ نَشْرِ الأَمْرَاضِ." },
+  { id: 4, question: "مَا كَفَّارَةُ البَصْقِ عَلَى الأَرْضِ ؟", answer: "كَفَّارَةُ البَصْقِ عَلَى الأَرْضِ هِيَ رَدْمُهَا (تَغْطِيَتُهَا بِالتُّرَابِ)." },
+  { id: 5, question: "مَاذَا تَشْمَلُ الطَّهَارَةُ فِي الإِسْلَامِ ؟", answer: "تَشْمَلُ الطَّهَارَةُ فِي الإِسْلَامِ إِزَالَةَ النَّجَاسَاتِ (القَذَارَةِ) وَهِيَ شَرْطٌ لِصِحَّةِ الصَّلَاةِ." }
 ];
 
 const bab3QowaidQuestions = [
@@ -1188,6 +1200,15 @@ function checkTadrib1(qId, choice, btnEl) {
 
 // Render Qiroah Section
 function renderQiroahSection() {
+  const mainTitleEl = document.getElementById('qiroah-main-title');
+  if (mainTitleEl) {
+    if (currentChapter === 'bab3') {
+      mainTitleEl.innerHTML = `صِحَّةُ الجِسْمِ فِي الإِسْلَامِ <span class="text-base font-normal text-stone-600 font-sans">(Kesehatan Tubuh dalam Islam)</span>`;
+    } else {
+      mainTitleEl.innerHTML = `الحَيَاةُ الصِّحِّيَّةُ <span class="text-base font-normal text-stone-600 font-sans">(Kehidupan yang Sehat)</span>`;
+    }
+  }
+
   const container = document.getElementById('qiroah-paragraphs');
   const tadrib1Container = document.getElementById('qiroah-tadrib1-container');
   const tadrib2Container = document.getElementById('qiroah-tadrib2-container');
